@@ -1,0 +1,19 @@
+{
+  "temas": [
+    {
+      "id": "desarrollo-ia",
+      "nombre": "Desarrollo e IA",
+      "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
+      "frecuenciaHoras": 12,
+      "ultimaEjecucion": "2026-10-15T00:00:00.000Z"
+    },
+    {
+      "id": "backend-arquitectura",
+      "nombre": "Backend y arquitectura",
+      "consulta": "Novedades recientes sobre backend, arquitectura de software, bases de datos y sistemas distribuidos",
+      "frecuenciaHoras": 24,
+      "ultimaEjecucion": "2026-10-15T00:00:00.000Z"
+    }
+  ],
+  "novedades": []
+}

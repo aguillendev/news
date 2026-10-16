@@ -1,0 +1,38 @@
+name: Radar de novedades
+
+on:
+  schedule:
+    - cron: "0 */2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  recolectar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Recolectar novedades
+        run: node recolector.mjs
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      - name: Guardar estado actualizado
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "bot@noreply.github.com"
+          git add estado.json
+          if git diff --cached --quiet -- estado.json; then
+            echo "No hay cambios en estado.json."
+            exit 0
+          fi
+          git commit -m "Actualizar novedades del radar"
+          git push

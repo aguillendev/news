@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Novedades recientes de desarrollo, inteligencia artificial y arquitectura backend."
+    />
+    <meta name="theme-color" content="#0b1020" />
+    <title>Radar de novedades</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        background: #0b1020;
+        color: #e8edf8;
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-width: 320px;
+        min-height: 100vh;
+        margin: 0;
+        background:
+          radial-gradient(ellipse at 50% -20%, #182b4b 0, transparent 50%),
+          #0b1020;
+      }
+
+      button,
+      a {
+        font: inherit;
+      }
+
+      .shell {
+        width: min(100% - 32px, 960px);
+        margin-inline: auto;
+        padding-block: 36px 64px;
+      }
+
+      .hero {
+        padding: 20px 0 30px;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0 0 13px;
+        color: #83d6b2;
+        font-size: 0.76rem;
+        font-weight: 750;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+      }
+
+      .eyebrow::before {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: currentColor;
+        box-shadow: 0 0 14px currentColor;
+        content: "";
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2.1rem, 8vw, 3.8rem);
+        letter-spacing: -0.055em;
+        line-height: 1.05;
+      }
+
+      .intro {
+        max-width: 580px;
+        margin: 14px 0 0;
+        color: #9caac2;
+        font-size: 1rem;
+        line-height: 1.65;
+      }
+
+      .filters {
+        display: flex;
+        gap: 9px;
+        overflow-x: auto;
+        margin-inline: -16px;
+        padding: 4px 16px 15px;
+        scrollbar-width: thin;
+        scrollbar-color: #34415b transparent;
+      }
+
+      .filter-button {
+        flex: 0 0 auto;
+        min-height: 40px;
+        padding: 9px 15px;
+        border: 1px solid #2b3650;
+        border-radius: 999px;
+        background: #11192b;
+        color: #aeb9cc;
+        cursor: pointer;
+        font-size: 0.88rem;
+        font-weight: 650;
+        transition:
+          border-color 150ms ease,
+          color 150ms ease,
+          background 150ms ease;
+      }
+
+      .filter-button:hover {
+        border-color: #647594;
+        color: #f5f7fb;
+      }
+
+      .filter-button[aria-pressed="true"] {
+        border-color: #83d6b2;
+        background: #16332f;
+        color: #a6f0ce;
+      }
+
+      .section-heading {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 12px;
+        margin: 15px 0 15px;
+      }
+
+      h2 {
+        margin: 0;
+        font-size: 1.05rem;
+        letter-spacing: -0.02em;
+      }
+
+      .count {
+        color: #8492aa;
+        font-size: 0.82rem;
+      }
+
+      .news-list {
+        display: grid;
+        gap: 13px;
+      }
+
+      .news-card {
+        min-width: 0;
+        padding: 19px;
+        border: 1px solid #222d43;
+        border-radius: 16px;
+        background: linear-gradient(145deg, #141d30, #101727);
+        box-shadow: 0 12px 30px rgb(0 0 0 / 12%);
+      }
+
+      .card-meta {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 9px;
+        margin-bottom: 13px;
+      }
+
+      .topic-badge {
+        max-width: 100%;
+        overflow: hidden;
+        padding: 5px 9px;
+        border: 1px solid #34445e;
+        border-radius: 999px;
+        background: #1a2940;
+        color: #b7d1ff;
+        font-size: 0.73rem;
+        font-weight: 700;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .news-date {
+        color: #8492aa;
+        font-size: 0.78rem;
+      }
+
+      .news-title {
+        margin: 0;
+        color: #f4f6fb;
+        font-size: 1.12rem;
+        letter-spacing: -0.025em;
+        line-height: 1.42;
+      }
+
+      .news-summary {
+        display: -webkit-box;
+        overflow: hidden;
+        margin: 9px 0 15px;
+        color: #a7b3c8;
+        font-size: 0.92rem;
+        line-height: 1.6;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+      }
+
+      .source-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        color: #8ee0bd;
+        font-size: 0.86rem;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .source-link:hover {
+        color: #c2ffe2;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+
+      .empty-state {
+        padding: 35px 20px;
+        border: 1px dashed #34415b;
+        border-radius: 16px;
+        color: #9caac2;
+        text-align: center;
+        line-height: 1.6;
+      }
+
+      .empty-state strong {
+        display: block;
+        margin-bottom: 5px;
+        color: #e8edf8;
+      }
+
+      .status-error {
+        color: #ffb4b4;
+      }
+
+      @media (min-width: 640px) {
+        .shell {
+          width: min(100% - 56px, 960px);
+          padding-top: 56px;
+        }
+
+        .hero {
+          padding-bottom: 37px;
+        }
+
+        .filters {
+          margin-inline: 0;
+          padding-inline: 0;
+        }
+
+        .news-card {
+          padding: 23px 25px;
+        }
+
+        .news-title {
+          font-size: 1.25rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="shell">
+      <header class="hero">
+        <p class="eyebrow">Radar activo</p>
+        <h1>Radar de novedades</h1>
+        <p class="intro">
+          Una selección reciente de noticias y tendencias en desarrollo,
+          inteligencia artificial y arquitectura de software.
+        </p>
+      </header>
+
+      <nav class="filters" id="filters" aria-label="Filtrar novedades por tema">
+        <button class="filter-button" type="button" data-topic="all" aria-pressed="true">
+          Todos
+        </button>
+      </nav>
+
+      <section aria-labelledby="news-heading">
+        <div class="section-heading">
+          <h2 id="news-heading">Últimas novedades</h2>
+          <span class="count" id="count" aria-live="polite"></span>
+        </div>
+        <div class="news-list" id="news-list" aria-live="polite">
+          <div class="empty-state">Cargando novedades…</div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const filtersElement = document.querySelector("#filters");
+      const listElement = document.querySelector("#news-list");
+      const countElement = document.querySelector("#count");
+      let activeTopic = "all";
+      let topics = [];
+      let news = [];
+
+      function formatDate(value) {
+        const date = new Date(value);
+        if (Number.isNaN(date.getTime())) {
+          return "Fecha desconocida";
+        }
+        return new Intl.DateTimeFormat(undefined, {
+          dateStyle: "medium",
+          timeStyle: "short",
+        }).format(date);
+      }
+
+      function addTextElement(parent, tag, className, text) {
+        const element = document.createElement(tag);
+        element.className = className;
+        element.textContent = text;
+        parent.append(element);
+        return element;
+      }
+
+      function parseSourceUrl(value) {
+        try {
+          const url = new URL(value);
+          return url.protocol === "https:" || url.protocol === "http:"
+            ? url.href
+            : null;
+        } catch (error) {
+          if (error instanceof TypeError) {
+            return null;
+          }
+          throw error;
+        }
+      }
+
+      function renderFilters() {
+        for (const topic of topics) {
+          const button = document.createElement("button");
+          button.type = "button";
+          button.className = "filter-button";
+          button.dataset.topic = topic.id;
+          button.setAttribute("aria-pressed", String(activeTopic === topic.id));
+          button.textContent = `${topic.nombre} · ${topic.frecuenciaHoras} h`;
+          filtersElement.append(button);
+        }
+      }
+
+      function renderNews() {
+        const visibleNews =
+          activeTopic === "all"
+            ? news
+            : news.filter((item) => item.temaId === activeTopic);
+
+        countElement.textContent = `${visibleNews.length} ${
+          visibleNews.length === 1 ? "novedad" : "novedades"
+        }`;
+        listElement.replaceChildren();
+
+        if (visibleNews.length === 0) {
+          const empty = document.createElement("div");
+          empty.className = "empty-state";
+          addTextElement(empty, "strong", "", "Todavía no hay novedades");
+          addTextElement(
+            empty,
+            "span",
+            "",
+            "Vuelve pronto: el radar se actualiza periódicamente.",
+          );
+          listElement.append(empty);
+          return;
+        }
+
+        const topicNames = new Map(topics.map((topic) => [topic.id, topic.nombre]));
+
+        for (const item of visibleNews) {
+          const card = document.createElement("article");
+          card.className = "news-card";
+          const meta = document.createElement("div");
+          meta.className = "card-meta";
+          addTextElement(
+            meta,
+            "span",
+            "topic-badge",
+            topicNames.get(item.temaId) ?? "Novedad",
+          );
+          addTextElement(meta, "time", "news-date", formatDate(item.fecha));
+          card.append(meta);
+
+          addTextElement(card, "h3", "news-title", item.titulo ?? "Sin título");
+          addTextElement(card, "p", "news-summary", item.resumen ?? "");
+
+          const href =
+            typeof item.url === "string" && item.url.trim()
+              ? parseSourceUrl(item.url)
+              : null;
+          if (href) {
+            const link = document.createElement("a");
+            link.className = "source-link";
+            link.href = href;
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+            link.textContent = item.fuente
+              ? `Leer en ${item.fuente} ↗`
+              : "Leer fuente original ↗";
+            card.append(link);
+          } else if (item.fuente) {
+            addTextElement(card, "span", "news-date", `Fuente: ${item.fuente}`);
+          }
+
+          listElement.append(card);
+        }
+      }
+
+      filtersElement.addEventListener("click", (event) => {
+        if (!(event.target instanceof Element)) {
+          return;
+        }
+        const button = event.target.closest("button[data-topic]");
+        if (!button) {
+          return;
+        }
+
+        activeTopic = button.dataset.topic;
+        for (const filter of filtersElement.querySelectorAll("button[data-topic]")) {
+          filter.setAttribute(
+            "aria-pressed",
+            String(filter.dataset.topic === activeTopic),
+          );
+        }
+        renderNews();
+      });
+
+      async function loadState() {
+        try {
+          const response = await fetch(`./estado.json?t=${Date.now()}`);
+          if (!response.ok) {
+            throw new Error(`No se pudo cargar estado.json (HTTP ${response.status}).`);
+          }
+
+          const state = await response.json();
+          if (!Array.isArray(state.temas) || !Array.isArray(state.novedades)) {
+            throw new Error("El estado recibido no tiene el formato esperado.");
+          }
+
+          topics = state.temas;
+          news = state.novedades;
+          renderFilters();
+          renderNews();
+        } catch (error) {
+          listElement.replaceChildren();
+          const message = document.createElement("div");
+          message.className = "empty-state status-error";
+          const detalle =
+            error instanceof Error ? error.message : String(error);
+          message.textContent = `No fue posible cargar las novedades: ${detalle}`;
+          listElement.append(message);
+          countElement.textContent = "";
+        }
+      }
+
+      loadState();
+    </script>
+  </body>
+</html>
