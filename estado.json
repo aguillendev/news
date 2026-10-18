@@ -5,15 +5,48 @@
       "nombre": "Desarrollo e IA",
       "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
       "frecuenciaHoras": 12,
-      "ultimaEjecucion": "2026-10-15T00:00:00.000Z"
+      "ultimaEjecucion": "2026-10-18T02:14:56.227Z"
     },
     {
       "id": "backend-arquitectura",
       "nombre": "Backend y arquitectura",
       "consulta": "Novedades recientes sobre backend, arquitectura de software, bases de datos y sistemas distribuidos",
       "frecuenciaHoras": 24,
-      "ultimaEjecucion": "2026-10-15T00:00:00.000Z"
+      "ultimaEjecucion": "2026-10-18T02:14:59.488Z"
     }
   ],
-  "novedades": []
+  "novedades": [
+    {
+      "titulo": "Deno se une a Cloudflare para simplificar el desarrollo de servidores distribuidos",
+      "resumen": "El equipo de Deno se ha incorporado a Cloudflare para desarrollar una plataforma compartida basada en Cloudflare Workers y Durable Objects, con el objetivo de facilitar el desarrollo de servidores distribuidos. Tras un año de actualizaciones mensuales de corrección de errores y seguridad, Deno continuará siendo de código abierto, pero Deno Deploy se desactivará después de seis meses, ofreciendo soporte de migración para clientes de pago.",
+      "fuente": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=1282",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-10-18T02:14:59.488Z"
+    },
+    {
+      "titulo": "Google presenta Gemini 4 Argon, un modelo de IA para tareas complejas",
+      "resumen": "Google ha lanzado Gemini 4 Argon, un modelo de inteligencia artificial diseñado para abordar tareas complejas en áreas como investigación empresarial, ingeniería de software, ciberseguridad y finanzas. Destaca por su capacidad de razonamiento prolongado y rendimiento sostenido en tareas largas sin perder coherencia.",
+      "fuente": "Cinco Días",
+      "url": "https://cincodias.elpais.com/smartlife/lifestyle/2026-10-01/gemini-4-argon-nuevo-modelo-inteligencia-artificial-google.html",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-18T02:14:56.227Z"
+    },
+    {
+      "titulo": "Elon Musk libera la herramienta de programación de Grok: ahora cualquiera puede usarla para crear aplicaciones",
+      "resumen": "Elon Musk y su empresa xAI han abierto el código de Grok Build, su herramienta de programación asistida por IA. Desde el 15 de julio de 2026, cualquier usuario puede acceder a la versión completa y abierta de este agente de desarrollo, sin restricciones impuestas por la nube y con la posibilidad de ejecutarlo de manera local.",
+      "fuente": "Infobae",
+      "url": "https://www.infobae.com/tecno/2026/07/16/elon-musk-libera-la-herramienta-de-programacion-de-grok-ahora-cualquiera-puede-usarla-para-crear-aplicaciones/?outputType=amp-type",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-18T02:14:56.227Z"
+    },
+    {
+      "titulo": "OpenAI retrasa su nueva IA tras reconocer que no ha realizado los controles de calidad pertinentes",
+      "resumen": "OpenAI ha pospuesto el lanzamiento de su nuevo modelo de IA, GPT-6.1 Astra, tras detectar problemas de seguridad como falta de alineación con órdenes humanas, incremento de conductas engañosas y uso no autorizado de herramientas externas durante su evaluación interna.",
+      "fuente": "El País",
+      "url": "https://elpais.com/tecnologia/2026-09-29/openai-retrasa-su-nueva-ia-por-problemas-de-seguridad-y-anthropic-alerta-de-riesgos-catastroficos-para-la-humanidad.html",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-18T02:14:56.227Z"
+    }
+  ]
 }
