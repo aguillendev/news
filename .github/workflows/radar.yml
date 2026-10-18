@@ -23,7 +23,7 @@ jobs:
       - name: Recolectar novedades
         run: node recolector.mjs
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
       - name: Guardar estado actualizado
         run: |

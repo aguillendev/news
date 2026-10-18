@@ -2,10 +2,10 @@ import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 
 const estadoPath = fileURLToPath(new URL("./estado.json", import.meta.url));
-const apiKey = process.env.GEMINI_API_KEY;
+const apiKey = process.env.OPENAI_API_KEY;
 
 if (!apiKey) {
-  throw new Error("Falta la variable de entorno GEMINI_API_KEY.");
+  throw new Error("Falta la variable de entorno OPENAI_API_KEY.");
 }
 
 function extraerArregloJson(texto) {
@@ -13,7 +13,7 @@ function extraerArregloJson(texto) {
   const inicio = contenido.indexOf("[");
 
   if (inicio === -1) {
-    throw new Error("La respuesta de Gemini no contiene un arreglo JSON.");
+    throw new Error("La respuesta del modelo no contiene un arreglo JSON.");
   }
 
   let profundidad = 0;
@@ -43,23 +43,28 @@ function extraerArregloJson(texto) {
       if (profundidad === 0) {
         const resultado = JSON.parse(contenido.slice(inicio, indice + 1));
         if (!Array.isArray(resultado)) {
-          throw new Error("La respuesta de Gemini no es un arreglo JSON.");
+          throw new Error("La respuesta del modelo no es un arreglo JSON.");
         }
         return resultado;
       }
     }
   }
 
-  throw new Error("El arreglo JSON de la respuesta de Gemini está incompleto.");
+  throw new Error("El arreglo JSON de la respuesta del modelo está incompleto.");
 }
 
-function obtenerWebsConGrounding(respuesta) {
-  const chunks =
-    respuesta.candidates?.[0]?.groundingMetadata?.groundingChunks ?? [];
+function obtenerFuentesWeb(respuesta) {
+  const partes = respuesta.output?.flatMap((elemento) => elemento.content ?? []) ?? [];
 
-  return chunks
-    .map((chunk) => chunk.web)
-    .filter((web) => typeof web?.uri === "string" && web.uri.length > 0);
+  return partes
+    .flatMap((parte) => parte.annotations ?? [])
+    .filter(
+      (anotacion) =>
+        anotacion.type === "url_citation" &&
+        typeof anotacion.url === "string" &&
+        anotacion.url.length > 0,
+    )
+    .map((anotacion) => ({ uri: anotacion.url, title: anotacion.title }));
 }
 
 function validarNoticia(noticia, indice, webs) {
@@ -75,9 +80,9 @@ function validarNoticia(noticia, indice, webs) {
     }
   }
 
-  const grounding = webs[indice] ?? webs[0];
-  const url = noticia.url.trim() || grounding?.uri || "";
-  const fuente = noticia.fuente.trim() || grounding?.title || "";
+  const fuenteCitada = webs[indice] ?? webs[0];
+  const url = noticia.url.trim() || fuenteCitada?.uri || "";
+  const fuente = noticia.fuente.trim() || fuenteCitada?.title || "";
 
   return {
     titulo: noticia.titulo.trim(),
@@ -108,51 +113,50 @@ async function recolectarTema(tema, estado) {
       : "- Ninguno",
   ].join("\n");
 
-  const endpoint = new URL(
-    "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent",
-  );
-  endpoint.searchParams.set("key", apiKey);
+  const endpoint = "https://api.openai.com/v1/responses";
 
   const response = await fetch(endpoint, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${apiKey}`,
+    },
     body: JSON.stringify({
-      systemInstruction: {
-        parts: [
-          {
-            text: [
-              "Eres un recolector de novedades web. Usa Google Search Grounding para buscar noticias recientes, reales y verificables sobre la consulta del usuario.",
-              "No inventes información ni enlaces y no repitas los títulos existentes que recibes.",
-              'Responde estrictamente con un arreglo JSON, sin bloques Markdown ni texto adicional. Cada elemento debe contener únicamente los campos de texto "titulo", "resumen", "fuente" y "url".',
-              "Si no encuentras novedades relevantes, responde con [].",
-            ].join(" "),
-          },
-        ],
-      },
-      contents: [{ role: "user", parts: [{ text: prompt }] }],
-      tools: [{ google_search: {} }],
+      model: "gpt-4.1-mini",
+      instructions: [
+        "Eres un recolector de novedades web. Usa la búsqueda web para encontrar noticias recientes, reales y verificables sobre la consulta.",
+        "No inventes información ni enlaces y no repitas los títulos existentes que recibes.",
+        'Responde estrictamente con un arreglo JSON, sin bloques Markdown ni texto adicional. Cada elemento debe contener únicamente los campos de texto "titulo", "resumen", "fuente" y "url".',
+        "Si no encuentras novedades relevantes, responde con [].",
+      ].join(" "),
+      input: prompt,
+      tools: [{ type: "web_search_preview" }],
     }),
   });
 
   if (!response.ok) {
     const detalle = await response.text();
     throw new Error(
-      `Gemini devolvió HTTP ${response.status} para el tema "${tema.id}": ${detalle}`,
+      `OpenAI devolvió HTTP ${response.status} para el tema "${tema.id}": ${detalle}`,
     );
   }
 
   const resultado = await response.json();
-  const texto = resultado.candidates?.[0]?.content?.parts
-    ?.map((parte) => parte.text)
-    .filter((parte) => typeof parte === "string")
+  const texto = resultado.output
+    ?.filter((elemento) => elemento.type === "message")
+    .flatMap((elemento) => elemento.content ?? [])
+    .filter(
+      (parte) => parte.type === "output_text" && typeof parte.text === "string",
+    )
+    .map((parte) => parte.text)
     .join("");
 
   if (typeof texto !== "string" || texto.length === 0) {
-    throw new Error(`Gemini no devolvió contenido para el tema "${tema.id}".`);
+    throw new Error(`OpenAI no devolvió contenido para el tema "${tema.id}".`);
   }
 
   const noticias = extraerArregloJson(texto);
-  const webs = obtenerWebsConGrounding(resultado);
+  const webs = obtenerFuentesWeb(resultado);
   const titulosExistentes = new Set(
     estado.novedades
       .filter((noticia) => noticia.temaId === tema.id)

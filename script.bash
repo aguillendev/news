@@ -26,91 +26,220 @@ EOF
 
 # 2. Crear recolector.mjs
 cat << 'EOF' > recolector.mjs
-import fs from 'node:fs/promises';
+import { readFile, writeFile } from "node:fs/promises";
+import { fileURLToPath } from "node:url";
 
-const CLAVE_API = process.env.GEMINI_API_KEY;
-const ARCHIVO_DATOS = './estado.json';
-const URL_MODELO = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent?key=${CLAVE_API}`;
+const estadoPath = fileURLToPath(new URL("./estado.json", import.meta.url));
+const apiKey = process.env.OPENAI_API_KEY;
 
-async function buscarNovedadesPorTema(tema, titulosPrevios) {
-      const instruccion = `
-          Busca en la web novedades reales y recientes sobre: "${tema.consulta}".
-              Fecha de referencia actual: ${new Date().toISOString()}.
-                  Ignora por completo noticias que hablen de estos temas ya reportados: ${JSON.stringify(titulosPrevios)}.
-                      
-                          Devuelve UNICAMENTE un bloque JSON válido con este formato exacto (sin texto adicional):
-                              [
-                                      {
-                                                "titulo": "Titular claro y conciso",
-                                                        "resumen": "Explicación de 2 o 3 oraciones con los datos clave.",
-                                                                "fuente": "Nombre del medio o sitio web",
-                                                                        "url": "URL directa si está disponible o cadena vacía"
-                                      }
-                              ]
-                                `;
-
-                                  const respuesta = await fetch(URL_MODELO, {
-                                        method: 'POST',
-                                            headers: { 'Content-Type': 'application/json' },
-                                                body: JSON.stringify({
-                                                          contents: [{ parts: [{ text: instruccion }] }],
-                                                                tools: [{ google_search: {} }]
-})
-});
-
-  const datos = await respuesta.json();
-    const texto = datos?.candidates?.[0]?.content?.parts?.[0]?.text || '[]';
-      const coincidencia = texto.match(/\[[\s\S]*\]/);
-        if (!coincidencia) return [];
-
-          const items = JSON.parse(coincidencia[0]);
-            const enlacesGrounding = datos?.candidates?.[0]?.groundingMetadata?.groundingChunks || [];
-              
-                return items.map((item, indice) => ({
-                        id: crypto.randomUUID(),
-                            temaId: tema.id,
-                                temaNombre: tema.nombre,
-                                    fecha: new Date().toISOString(),
-                                        titulo: item.titulo,
-                                            resumen: item.resumen,
-                                                fuente: item.fuente || 'Web',
-                                                    url: item.url || enlacesGrounding[indice]?.web?.uri || '#'
-}));
+if (!apiKey) {
+  throw new Error("Falta la variable de entorno OPENAI_API_KEY.");
 }
 
-async function ejecutar() {
-      const contenido = await fs.readFile(ARCHIVO_DATOS, 'utf-8');
-        const base = JSON.parse(contenido);
-          const ahora = Date.now();
-            let huboCambios = false;
+function extraerArregloJson(texto) {
+  const contenido = texto.trim();
+  const inicio = contenido.indexOf("[");
 
-              for (const tema of base.temas) {
-                    const ultimaVez = new Date(tema.ultimaEjecucion).getTime();
-                        const horasTranscurridas = (ahora - ultimaVez) / (1000 * 60 * 60);
+  if (inicio === -1) {
+    throw new Error("La respuesta del modelo no contiene un arreglo JSON.");
+  }
 
-                            if (horasTranscurridas >= tema.frecuenciaHoras) {
-                                      const titulosPrevios = base.novedades
-                                              .filter(n => n.temaId === tema.id)
-                                                      .slice(0, 8)
-                                                              .map(n => n.titulo);
+  let profundidad = 0;
+  let dentroDeCadena = false;
+  let escape = false;
 
-                                                                    try {
-                                                                                const nuevas = await buscarNovedadesPorTema(tema, titulosPrevios);
-                                                                                        base.novedades = [...nuevas, ...base.novedades].slice(0, 100);
-                                                                                                tema.ultimaEjecucion = new Date().toISOString();
-                                                                                                        huboCambios = true;
-                                                                    } catch (error) {
-                                                                                console.error(`Error en ${tema.nombre}:`, error);
-                                                                    }
-                            }
-              }
+  for (let indice = inicio; indice < contenido.length; indice += 1) {
+    const caracter = contenido[indice];
 
-                if (huboCambios) {
-                        await fs.writeFile(ARCHIVO_DATOS, JSON.stringify(base, null, 2), 'utf-8');
-                }
+    if (dentroDeCadena) {
+      if (escape) {
+        escape = false;
+      } else if (caracter === "\\") {
+        escape = true;
+      } else if (caracter === '"') {
+        dentroDeCadena = false;
+      }
+      continue;
+    }
+
+    if (caracter === '"') {
+      dentroDeCadena = true;
+    } else if (caracter === "[") {
+      profundidad += 1;
+    } else if (caracter === "]") {
+      profundidad -= 1;
+      if (profundidad === 0) {
+        const resultado = JSON.parse(contenido.slice(inicio, indice + 1));
+        if (!Array.isArray(resultado)) {
+          throw new Error("La respuesta del modelo no es un arreglo JSON.");
+        }
+        return resultado;
+      }
+    }
+  }
+
+  throw new Error("El arreglo JSON de la respuesta del modelo está incompleto.");
 }
 
-ejecutar();
+function obtenerFuentesWeb(respuesta) {
+  const partes = respuesta.output?.flatMap((elemento) => elemento.content ?? []) ?? [];
+
+  return partes
+    .flatMap((parte) => parte.annotations ?? [])
+    .filter(
+      (anotacion) =>
+        anotacion.type === "url_citation" &&
+        typeof anotacion.url === "string" &&
+        anotacion.url.length > 0,
+    )
+    .map((anotacion) => ({ uri: anotacion.url, title: anotacion.title }));
+}
+
+function validarNoticia(noticia, indice, webs) {
+  if (!noticia || typeof noticia !== "object" || Array.isArray(noticia)) {
+    throw new Error(`La noticia ${indice + 1} no es un objeto JSON.`);
+  }
+
+  for (const campo of ["titulo", "resumen", "fuente", "url"]) {
+    if (typeof noticia[campo] !== "string") {
+      throw new Error(
+        `La noticia ${indice + 1} no contiene el campo "${campo}" como texto.`,
+      );
+    }
+  }
+
+  const fuenteCitada = webs[indice] ?? webs[0];
+  const url = noticia.url.trim() || fuenteCitada?.uri || "";
+  const fuente = noticia.fuente.trim() || fuenteCitada?.title || "";
+
+  return {
+    titulo: noticia.titulo.trim(),
+    resumen: noticia.resumen.trim(),
+    fuente,
+    url,
+  };
+}
+
+async function recolectarTema(tema, estado) {
+  const titulosRecientes = estado.novedades
+    .filter((noticia) => noticia.temaId === tema.id)
+    .slice(0, 8)
+    .map((noticia) => noticia.titulo);
+
+  const prompt = [
+    `Consulta del tema: ${tema.consulta}`,
+    "",
+    "Busca en la web noticias recientes, reales y verificables que respondan a esta consulta.",
+    "No inventes información ni enlaces. No repitas ninguna de las noticias indicadas abajo.",
+    "Devuelve estrictamente un arreglo JSON, sin bloques Markdown ni texto adicional.",
+    'Cada elemento debe incluir exactamente estos campos de texto: "titulo", "resumen", "fuente" y "url".',
+    "Si no encuentras novedades relevantes, devuelve [].",
+    "",
+    "Últimos títulos existentes que debes usar para deduplicar:",
+    titulosRecientes.length > 0
+      ? titulosRecientes.map((titulo) => `- ${titulo}`).join("\n")
+      : "- Ninguno",
+  ].join("\n");
+
+  const response = await fetch("https://api.openai.com/v1/responses", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${apiKey}`,
+    },
+    body: JSON.stringify({
+      model: "gpt-4.1-mini",
+      instructions: [
+        "Eres un recolector de novedades web. Usa la búsqueda web para encontrar noticias recientes, reales y verificables sobre la consulta.",
+        "No inventes información ni enlaces y no repitas los títulos existentes que recibes.",
+        'Responde estrictamente con un arreglo JSON, sin bloques Markdown ni texto adicional. Cada elemento debe contener únicamente los campos de texto "titulo", "resumen", "fuente" y "url".',
+        "Si no encuentras novedades relevantes, responde con [].",
+      ].join(" "),
+      input: prompt,
+      tools: [{ type: "web_search_preview" }],
+    }),
+  });
+
+  if (!response.ok) {
+    const detalle = await response.text();
+    throw new Error(
+      `OpenAI devolvió HTTP ${response.status} para el tema "${tema.id}": ${detalle}`,
+    );
+  }
+
+  const resultado = await response.json();
+  const texto = resultado.output
+    ?.filter((elemento) => elemento.type === "message")
+    .flatMap((elemento) => elemento.content ?? [])
+    .filter(
+      (parte) => parte.type === "output_text" && typeof parte.text === "string",
+    )
+    .map((parte) => parte.text)
+    .join("");
+
+  if (typeof texto !== "string" || texto.length === 0) {
+    throw new Error(`OpenAI no devolvió contenido para el tema "${tema.id}".`);
+  }
+
+  const noticias = extraerArregloJson(texto);
+  const webs = obtenerFuentesWeb(resultado);
+  const titulosExistentes = new Set(
+    estado.novedades
+      .filter((noticia) => noticia.temaId === tema.id)
+      .map((noticia) => noticia.titulo.trim().toLocaleLowerCase()),
+  );
+
+  return noticias
+    .map((noticia, indice) => validarNoticia(noticia, indice, webs))
+    .filter((noticia) => {
+      const clave = noticia.titulo.toLocaleLowerCase();
+      if (!clave || titulosExistentes.has(clave)) {
+        return false;
+      }
+      titulosExistentes.add(clave);
+      return true;
+    })
+    .map((noticia) => ({
+      ...noticia,
+      temaId: tema.id,
+      fecha: new Date().toISOString(),
+    }));
+}
+
+const estado = JSON.parse(await readFile(estadoPath, "utf8"));
+
+if (!Array.isArray(estado.temas) || !Array.isArray(estado.novedades)) {
+  throw new Error('estado.json debe contener arreglos "temas" y "novedades".');
+}
+
+const ahora = Date.now();
+
+for (const tema of estado.temas) {
+  const ultimaEjecucion = Date.parse(tema.ultimaEjecucion);
+  const frecuenciaMs = Number(tema.frecuenciaHoras) * 60 * 60 * 1000;
+
+  if (
+    !Number.isFinite(ultimaEjecucion) ||
+    !Number.isFinite(frecuenciaMs) ||
+    frecuenciaMs <= 0
+  ) {
+    throw new Error(`Configuración de frecuencia o fecha inválida: "${tema.id}".`);
+  }
+
+  if (ahora - ultimaEjecucion <= frecuenciaMs) {
+    console.log(`Se omite "${tema.nombre}": aún no corresponde actualizar.`);
+    continue;
+  }
+
+  const nuevasNoticias = await recolectarTema(tema, estado);
+  estado.novedades = [...nuevasNoticias, ...estado.novedades].slice(0, 100);
+  tema.ultimaEjecucion = new Date().toISOString();
+
+  await writeFile(estadoPath, `${JSON.stringify(estado, null, 2)}\n`, "utf8");
+  console.log(
+    `"${tema.nombre}" actualizado: ${nuevasNoticias.length} novedad(es) nueva(s).`,
+  );
+}
 EOF
 
 # 3. Crear el workflow de GitHub Actions
@@ -135,7 +264,7 @@ on:
                                                   node-version: '22'
                                                         - name: Consultar IA y actualizar JSON
                                                                 env:
-                                                                          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+                                                                          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
                                                                                   run: node recolector.mjs
                                                                                         - name: Guardar cambios
                                                                                                 run: |
