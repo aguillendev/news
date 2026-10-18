@@ -30,7 +30,7 @@ import fs from 'node:fs/promises';
 
 const CLAVE_API = process.env.GEMINI_API_KEY;
 const ARCHIVO_DATOS = './estado.json';
-const URL_MODELO = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${CLAVE_API}`;
+const URL_MODELO = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent?key=${CLAVE_API}`;
 
 async function buscarNovedadesPorTema(tema, titulosPrevios) {
       const instruccion = `
