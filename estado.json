@@ -5,7 +5,7 @@
       "nombre": "Desarrollo e IA",
       "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
       "frecuenciaHoras": 12,
-      "ultimaEjecucion": "2026-10-18T02:14:56.227Z"
+      "ultimaEjecucion": "2026-10-18T17:01:49.609Z"
     },
     {
       "id": "backend-arquitectura",
@@ -16,6 +16,46 @@
     }
   ],
   "novedades": [
+    {
+      "titulo": "Google potencia sus herramientas de IA para desarrolladores",
+      "resumen": "Google ha presentado mejoras en sus herramientas de inteligencia artificial diseñadas para acelerar el trabajo de los desarrolladores, incluyendo Gemini Code Assist y Firebase Studio.",
+      "fuente": "Radio Fórmula Morelos",
+      "url": "https://radioformulamorelos.com/google-mejoras-herramientas-ia/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-18T17:01:49.609Z"
+    },
+    {
+      "titulo": "El fin del código manual: cómo la IA generativa transforma el desarrollo en 2026",
+      "resumen": "Las herramientas de IA generativa como GitHub Copilot X y CodeGemini están revolucionando el desarrollo de software, permitiendo la generación automática de funciones completas y pruebas unitarias.",
+      "fuente": "TechOnClicks",
+      "url": "https://techonclicks.com/blog/techonclicks-1/el-fin-del-codigo-manual-como-la-ia-generativa-transforma-el-desarrollo-en-2026-153",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-18T17:01:49.609Z"
+    },
+    {
+      "titulo": "Gemini 4 Argon: nueva y potente inteligencia artificial de Google para tareas complejas",
+      "resumen": "Google ha presentado Gemini 4 Argon, un modelo de IA diseñado para abordar tareas complejas en áreas como investigación empresarial, ingeniería de software y ciberseguridad.",
+      "fuente": "Cinco Días",
+      "url": "https://cincodias.elpais.com/smartlife/lifestyle/2026-10-01/gemini-4-argon-nuevo-modelo-inteligencia-artificial-google.html",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-18T17:01:49.609Z"
+    },
+    {
+      "titulo": "Miguel Ángel Turrado (HP SCDS): \"No va a haber burbuja en la inteligencia artificial\"",
+      "resumen": "Miguel Ángel Turrado, director general de HP SCDS, afirma que la inteligencia artificial atraviesa una nueva etapa enfocada en la rentabilidad y aportación de valor, principalmente para empresas.",
+      "fuente": "Cinco Días",
+      "url": "https://cincodias.elpais.com/economia/foro-creo-creando-oportunidades/2026-10-14/miguel-angel-turrado-hp-scds-no-va-a-haber-burbuja-en-la-inteligencia-artificial.html",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-18T17:01:49.609Z"
+    },
+    {
+      "titulo": "La inteligencia artificial de OpenAI sacude el mundo de las matemáticas: publica 372 resultados que podrían cambiar la ciencia para siempre",
+      "resumen": "OpenAI ha publicado 372 grupos de resultados obtenidos mediante uno de sus modelos de IA, ofreciendo soluciones a diversos problemas matemáticos y materiales para la verificación computacional de algunas demostraciones.",
+      "fuente": "AS",
+      "url": "https://as.com/meristation/betech/la-inteligencia-artificial-de-openai-sacude-el-mundo-de-las-matematicas-publica-372-resultados-que-podrian-cambiar-la-ciencia-para-siempre-f202610-n/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-18T17:01:49.609Z"
+    },
     {
       "titulo": "Deno se une a Cloudflare para simplificar el desarrollo de servidores distribuidos",
       "resumen": "El equipo de Deno se ha incorporado a Cloudflare para desarrollar una plataforma compartida basada en Cloudflare Workers y Durable Objects, con el objetivo de facilitar el desarrollo de servidores distribuidos. Tras un año de actualizaciones mensuales de corrección de errores y seguridad, Deno continuará siendo de código abierto, pero Deno Deploy se desactivará después de seis meses, ofreciendo soporte de migración para clientes de pago.",
