@@ -12,10 +12,50 @@
       "nombre": "Backend y arquitectura",
       "consulta": "Novedades recientes sobre backend, arquitectura de software, bases de datos y sistemas distribuidos",
       "frecuenciaHoras": 24,
-      "ultimaEjecucion": "2026-10-18T02:14:59.488Z"
+      "ultimaEjecucion": "2026-10-19T02:44:15.976Z"
     }
   ],
   "novedades": [
+    {
+      "titulo": "Neon lanza su backend con arquitectura Lakebase",
+      "resumen": "Neon ha presentado una suite completa de primitivas backend basadas en la arquitectura Lakebase, que incluye Lakebase Postgres, almacenamiento de objetos, funciones, autenticación gestionada y una puerta de enlace AI, todas listas para producción.",
+      "fuente": "Neon",
+      "url": "https://neon.com/blog/neon-backend-is-ga",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-10-19T02:44:15.976Z"
+    },
+    {
+      "titulo": "Supabase adopta PostgreSQL 17 y reestructura roles en su arquitectura self-hosted",
+      "resumen": "Supabase ha actualizado su stack autoalojado, estableciendo PostgreSQL 17 como motor predeterminado y reestructurando los roles de seguridad para optimizar la gestión de datos.",
+      "fuente": "Siglo 21 Soluciones",
+      "url": "https://siglo21soluciones.com/noticias/supabase-arquitectura-self-hosted-postgresql-17-roles-2026-08-26",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-10-19T02:44:15.976Z"
+    },
+    {
+      "titulo": "Supabase Select 2026: backend desde código y MCP para tu app",
+      "resumen": "En su evento anual Supabase Select, la plataforma open source de backend sobre Postgres presentó un paquete de novedades orientado a los coding agents, permitiendo la creación de tablas, ajuste de políticas de seguridad y despliegue de servicios directamente desde el código.",
+      "fuente": "El Ecosistema Startup",
+      "url": "https://ecosistemastartup.com/supabase-select-2026-backend-desde-codigo-y-mcp-para-tu-app/",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-10-19T02:44:15.976Z"
+    },
+    {
+      "titulo": "Redis 8.6 lanzado con importantes mejoras de rendimiento y reducción de memoria",
+      "resumen": "Redis 8.6 incorpora optimizaciones de prefetching, mejora en operaciones con conjuntos ordenados y optimización de memoria, aumentando la velocidad y confiabilidad tanto para desarrolladores como para empresas.",
+      "fuente": "CIBERED",
+      "url": "https://cibered.com/programacion/bases-datos/redis-8-6-mejoras-rendimiento-memoria/",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-10-19T02:44:15.976Z"
+    },
+    {
+      "titulo": "El stack backend moderno 2026: Rust + PostgreSQL 18 + Wasm + eBPF",
+      "resumen": "La convergencia de Rust, PostgreSQL 18, WASI 0.3 y eBPF está habilitando arquitecturas backend más eficientes, reduciendo costos de infraestructura y mejorando la confiabilidad y el rendimiento.",
+      "fuente": "Open Soft Blog",
+      "url": "https://opensoft.asia/blog/stack-backend-moderno-2026-rust-postgresql-wasm-ebpf",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-10-19T02:44:15.976Z"
+    },
     {
       "titulo": "Google potencia sus herramientas de IA para desarrolladores",
       "resumen": "Google ha presentado mejoras en sus herramientas de inteligencia artificial diseñadas para acelerar el trabajo de los desarrolladores, incluyendo Gemini Code Assist y Firebase Studio.",
