@@ -5,7 +5,7 @@
       "nombre": "Desarrollo e IA",
       "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
       "frecuenciaHoras": 12,
-      "ultimaEjecucion": "2026-10-19T09:29:54.529Z"
+      "ultimaEjecucion": "2026-10-19T21:54:53.135Z"
     },
     {
       "id": "backend-arquitectura",
@@ -16,6 +16,30 @@
     }
   ],
   "novedades": [
+    {
+      "titulo": "Desarrollo con IA: herramientas, prácticas y arquitectura",
+      "resumen": "La IA puede intervenir al escribir código, revisar cambios o ejecutar tareas del equipo. Esta selección reúne herramientas y prácticas para integrarla en el desarrollo de software.",
+      "fuente": "Puntoes",
+      "url": "https://www.puntoes.es/blog/temas/desarrollo/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-19T21:54:53.135Z"
+    },
+    {
+      "titulo": "CifuenTec",
+      "resumen": "Manus AI lanzó Scheduled Tasks 2.0, una actualización enfocada en la automatización de tareas programadas mediante inteligencia artificial. La nueva versión permite configurar procesos recurrentes que se ejecutan de forma autónoma, reduciendo la necesidad de intervención manual en flujos de trabajo habituales.",
+      "fuente": "CifuenTec",
+      "url": "https://www.cifuentec.com/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-19T21:54:53.135Z"
+    },
+    {
+      "titulo": "Devin AI",
+      "resumen": "Devin AI es una herramienta de asistencia autónoma de inteligencia artificial creada por Cognition Labs. Señalado como un \"desarrollador de Software de IA\", la herramienta de demostración está diseñada para completar tareas de desarrollo de software.",
+      "fuente": "Wikipedia",
+      "url": "https://es.wikipedia.org/wiki/Devin_AI",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-19T21:54:53.135Z"
+    },
     {
       "titulo": "Neon lanza su backend con arquitectura Lakebase",
       "resumen": "Neon ha presentado una suite completa de primitivas backend basadas en la arquitectura Lakebase, que incluye Lakebase Postgres, almacenamiento de objetos, funciones, autenticación gestionada y una puerta de enlace AI, todas listas para producción.",
