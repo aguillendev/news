@@ -12,10 +12,34 @@
       "nombre": "Backend y arquitectura",
       "consulta": "Novedades recientes sobre backend, arquitectura de software, bases de datos y sistemas distribuidos",
       "frecuenciaHoras": 24,
-      "ultimaEjecucion": "2026-10-19T02:44:15.976Z"
+      "ultimaEjecucion": "2026-10-20T06:58:44.787Z"
     }
   ],
   "novedades": [
+    {
+      "titulo": "Amazon RDS para PostgreSQL ahora es compatible con la versión principal 18",
+      "resumen": "Amazon RDS para PostgreSQL ha añadido soporte para la versión principal 18, ofreciendo mejoras significativas en el rendimiento de consultas y la gestión de bases de datos, incluyendo optimizaciones en índices y operaciones de unión.",
+      "fuente": "AWS",
+      "url": "https://aws.amazon.com/es/about-aws/whats-new/2025/11/amazon-rds-postgresql-major-version-18/",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-10-20T06:58:44.787Z"
+    },
+    {
+      "titulo": "QuestDB 9.0 ya está disponible: rendimiento optimizado y con soporte para arrays multidimensionales",
+      "resumen": "QuestDB ha lanzado la versión 9.0, que incluye mejoras en el rendimiento y soporte inicial para arrays multidimensionales, ampliando sus capacidades para el procesamiento de datos en tiempo real.",
+      "fuente": "CIBERED",
+      "url": "https://cibered.com/programacion/bases-datos/questdb-9-0-ya-esta-disponible/",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-10-20T06:58:44.787Z"
+    },
+    {
+      "titulo": "PostgreSQL 18 Press Kit",
+      "resumen": "El Grupo Global de Desarrollo de PostgreSQL ha anunciado el lanzamiento de PostgreSQL 18, la versión más reciente de la base de datos de código abierto más avanzada del mundo, con mejoras en rendimiento y nuevas características.",
+      "fuente": "PostgreSQL",
+      "url": "https://www.postgresql.org/about/press/presskit18/es/",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-10-20T06:58:44.787Z"
+    },
     {
       "titulo": "Desarrollo con IA: herramientas, prácticas y arquitectura",
       "resumen": "La IA puede intervenir al escribir código, revisar cambios o ejecutar tareas del equipo. Esta selección reúne herramientas y prácticas para integrarla en el desarrollo de software.",
