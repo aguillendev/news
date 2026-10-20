@@ -5,7 +5,7 @@
       "nombre": "Desarrollo e IA",
       "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
       "frecuenciaHoras": 12,
-      "ultimaEjecucion": "2026-10-19T21:54:53.135Z"
+      "ultimaEjecucion": "2026-10-20T13:11:52.183Z"
     },
     {
       "id": "backend-arquitectura",
@@ -16,6 +16,38 @@
     }
   ],
   "novedades": [
+    {
+      "titulo": "Amazon lanza un editor de código de inteligencia artificial Kiro, que puede usar gratuitamente Claude 4/3.7 Sonnet",
+      "resumen": "AWS, el servicio de computación en la nube de Amazon, ha anunciado oficialmente el lanzamiento de su nuevo entorno de desarrollo integrado (IDE) impulsado por inteligencia artificial (IA) llamado Kiro. Esta herramienta busca revolucionar el proceso de desarrollo de software mediante el 'desarrollo basado en especificaciones' (Spec-Driven Development), resolviendo los problemas de desorden y ineficiencia asociados al 'código por intuición' (Vibe Coding), ofreciendo un apoyo sin interrupciones a los desarrolladores desde el diseño de prototipos hasta el entorno de producción.",
+      "fuente": "AIbase",
+      "url": "https://www.aibase.com/es/news/19676",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-20T13:11:52.182Z"
+    },
+    {
+      "titulo": "El Futuro del Código: Novedades de OpenAI, Google y Meta en Desarrollo con IA",
+      "resumen": "En el vertiginoso mundo de la inteligencia artificial y el desarrollo tecnológico, mayo de 2025 ha sido un mes memorable. Las grandes empresas tecnológicas como OpenAI, Google, Meta y otras han lanzado una serie de innovaciones que prometen transformar la manera en que interactuamos con la tecnología. Este artículo explora las tendencias y novedades más destacadas en el ámbito del desarrollo de software y la inteligencia artificial, basándonos en las recientes presentaciones y anuncios de estas compañías.",
+      "fuente": "Javadex",
+      "url": "https://www.javadex.es/blog/futuro-codigo-novedades-openai-google-meta-desarrollo-ia-programacion",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-20T13:11:52.182Z"
+    },
+    {
+      "titulo": "Desarrollo de software: artículos y novedades de IA",
+      "resumen": "PUNTOES ofrece una selección de herramientas y prácticas para integrar la inteligencia artificial en el desarrollo de software, incluyendo novedades y guías sobre arquitectura y controles de ejecución, con el objetivo de comprender qué cambia en el flujo de trabajo y qué decisiones siguen necesitando pruebas y criterio técnico.",
+      "fuente": "Puntoes",
+      "url": "https://www.puntoes.es/blog/temas/desarrollo/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-20T13:11:52.182Z"
+    },
+    {
+      "titulo": "Tendencias de Desarrollo de Software 2025–2026",
+      "resumen": "La modernización del desarrollo ya no depende de una sola tecnología. IA generativa, cloud, automatización, contenedores y seguridad están convergiendo dentro de un mismo ciclo de ingeniería. La IA ya forma parte del ciclo moderno de ingeniería, integrándose directamente en actividades como generación y comprensión de código, documentación, pruebas, refactorización y asistencia durante la resolución de problemas técnicos.",
+      "fuente": "C&A Systems",
+      "url": "https://casystem.com.mx/es-mx/tendencias-tecnicas-en-desarrollo-de-software-2025-2026-innovacion-y-eficiencia",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-20T13:11:52.182Z"
+    },
     {
       "titulo": "Amazon RDS para PostgreSQL ahora es compatible con la versión principal 18",
       "resumen": "Amazon RDS para PostgreSQL ha añadido soporte para la versión principal 18, ofreciendo mejoras significativas en el rendimiento de consultas y la gestión de bases de datos, incluyendo optimizaciones en índices y operaciones de unión.",
