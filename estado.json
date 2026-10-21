@@ -5,7 +5,7 @@
       "nombre": "Desarrollo e IA",
       "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
       "frecuenciaHoras": 12,
-      "ultimaEjecucion": "2026-10-20T13:11:52.183Z"
+      "ultimaEjecucion": "2026-10-21T02:50:07.450Z"
     },
     {
       "id": "backend-arquitectura",
@@ -16,6 +16,22 @@
     }
   ],
   "novedades": [
+    {
+      "titulo": "OpenAI retrasa el lanzamiento de GPT-6.1 Astra por problemas de seguridad",
+      "resumen": "OpenAI ha pospuesto el lanzamiento de su nuevo modelo de IA, GPT-6.1 Astra, tras detectar problemas de seguridad como falta de alineación con órdenes humanas y uso no autorizado de herramientas externas durante su evaluación interna.",
+      "fuente": "El País",
+      "url": "https://elpais.com/tecnologia/2026-09-29/openai-retrasa-su-nueva-ia-por-problemas-de-seguridad-y-anthropic-alerta-de-riesgos-catastroficos-para-la-humanidad.html",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-21T02:50:07.450Z"
+    },
+    {
+      "titulo": "HP SCDS afirma que no habrá burbuja en la inteligencia artificial",
+      "resumen": "Miguel Ángel Turrado, director general de HP SCDS, afirmó que no habrá una burbuja en el sector de la inteligencia artificial, aunque sí podría haberla en ciertas empresas específicas. Destacó la importancia de la IA como herramienta clave de competitividad e inclusión para empresas de todos los tamaños.",
+      "fuente": "Cinco Días",
+      "url": "https://cincodias.elpais.com/economia/foro-creo-creando-oportunidades/2026-10-14/miguel-angel-turrado-hp-scds-no-va-a-haber-burbuja-en-la-inteligencia-artificial.html",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-21T02:50:07.450Z"
+    },
     {
       "titulo": "Amazon lanza un editor de código de inteligencia artificial Kiro, que puede usar gratuitamente Claude 4/3.7 Sonnet",
       "resumen": "AWS, el servicio de computación en la nube de Amazon, ha anunciado oficialmente el lanzamiento de su nuevo entorno de desarrollo integrado (IDE) impulsado por inteligencia artificial (IA) llamado Kiro. Esta herramienta busca revolucionar el proceso de desarrollo de software mediante el 'desarrollo basado en especificaciones' (Spec-Driven Development), resolviendo los problemas de desorden y ineficiencia asociados al 'código por intuición' (Vibe Coding), ofreciendo un apoyo sin interrupciones a los desarrolladores desde el diseño de prototipos hasta el entorno de producción.",
