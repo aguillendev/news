@@ -5,7 +5,7 @@
       "nombre": "Desarrollo e IA",
       "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
       "frecuenciaHoras": 12,
-      "ultimaEjecucion": "2026-10-21T02:50:07.450Z"
+      "ultimaEjecucion": "2026-10-21T19:51:17.353Z"
     },
     {
       "id": "backend-arquitectura",
@@ -16,6 +16,14 @@
     }
   ],
   "novedades": [
+    {
+      "titulo": "Dos vulnerabilidades críticas detectadas con IA provocan fallos múltiples en miles de páginas web",
+      "resumen": "Miles de sitios web, incluyendo portales gubernamentales europeos, quedaron fuera de servicio debido a dos vulnerabilidades críticas en PHP, detectadas por IA, que permiten la ejecución remota de código sin autenticación.",
+      "fuente": "El País",
+      "url": "https://elpais.com/tecnologia/2026-10-21/dos-vulnerabilidades-criticas-detectadas-con-ia-provocan-fallos-multiples-en-miles-de-paginas-web.html",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-21T19:51:17.353Z"
+    },
     {
       "titulo": "OpenAI retrasa el lanzamiento de GPT-6.1 Astra por problemas de seguridad",
       "resumen": "OpenAI ha pospuesto el lanzamiento de su nuevo modelo de IA, GPT-6.1 Astra, tras detectar problemas de seguridad como falta de alineación con órdenes humanas y uso no autorizado de herramientas externas durante su evaluación interna.",
