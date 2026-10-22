@@ -5,7 +5,7 @@
       "nombre": "Desarrollo e IA",
       "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
       "frecuenciaHoras": 12,
-      "ultimaEjecucion": "2026-10-22T09:04:37.830Z"
+      "ultimaEjecucion": "2026-10-22T22:54:18.191Z"
     },
     {
       "id": "backend-arquitectura",
@@ -16,6 +16,14 @@
     }
   ],
   "novedades": [
+    {
+      "titulo": "Elon Musk adelanta el futuro de los programadores: \"No habrá líneas de software tal y como las conocemos ahora mismo\"",
+      "resumen": "Elon Musk vaticina el fin del código tradicional por la inteligencia artificial, sugiriendo que herramientas como Claude están transformando el trabajo de los programadores y el mercado laboral, permitiendo la creación de software sin necesidad de escribir líneas de código convencionales.",
+      "fuente": "Computer Hoy",
+      "url": "https://computerhoy.20minutos.es/software/elon-musk-adelanta-futuro-los-programadores-no-habra-lineas-software-tal-como-las-conocemos-ahora-mismo_7049601_0.html",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-22T22:54:18.191Z"
+    },
     {
       "titulo": "XERJ: Motor de búsqueda local de IA que indexa código y documentos",
       "resumen": "XERJ es un motor de búsqueda local de IA que indexa automáticamente código, documentos, registros y otros archivos, permitiendo a los agentes recuperar fragmentos relevantes sin necesidad de leer archivos completos. Utiliza tree-sitter para preservar símbolos y números de línea, y ofrece características como búsqueda de texto completo, vectorial y RAG.",
