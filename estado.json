@@ -5,17 +5,33 @@
       "nombre": "Desarrollo e IA",
       "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
       "frecuenciaHoras": 12,
-      "ultimaEjecucion": "2026-10-21T19:51:17.353Z"
+      "ultimaEjecucion": "2026-10-22T09:04:37.830Z"
     },
     {
       "id": "backend-arquitectura",
       "nombre": "Backend y arquitectura",
       "consulta": "Novedades recientes sobre backend, arquitectura de software, bases de datos y sistemas distribuidos",
       "frecuenciaHoras": 24,
-      "ultimaEjecucion": "2026-10-21T09:02:10.252Z"
+      "ultimaEjecucion": "2026-10-22T09:04:42.816Z"
     }
   ],
   "novedades": [
+    {
+      "titulo": "XERJ: Motor de búsqueda local de IA que indexa código y documentos",
+      "resumen": "XERJ es un motor de búsqueda local de IA que indexa automáticamente código, documentos, registros y otros archivos, permitiendo a los agentes recuperar fragmentos relevantes sin necesidad de leer archivos completos. Utiliza tree-sitter para preservar símbolos y números de línea, y ofrece características como búsqueda de texto completo, vectorial y RAG.",
+      "fuente": "GitHub",
+      "url": "https://github.com/xerj-org/xerj",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-10-22T09:04:42.816Z"
+    },
+    {
+      "titulo": "ClickHouse introduce SharedCatalog para mejorar el rendimiento en la nube",
+      "resumen": "ClickHouse ha implementado SharedCatalog, un sistema centralizado de coordinación de metadatos que mejora la gestión de metadatos de bases de datos y tablas en ClickHouse Cloud, ofreciendo operaciones DDL a escala en la nube, eliminación resiliente y operaciones DDL rápidas.",
+      "fuente": "ClickHouse Blog",
+      "url": "https://clickhouse.com/blog/clickhouse-2025-roundup",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-10-22T09:04:42.816Z"
+    },
     {
       "titulo": "Dos vulnerabilidades críticas detectadas con IA provocan fallos múltiples en miles de páginas web",
       "resumen": "Miles de sitios web, incluyendo portales gubernamentales europeos, quedaron fuera de servicio debido a dos vulnerabilidades críticas en PHP, detectadas por IA, que permiten la ejecución remota de código sin autenticación.",
