@@ -5,17 +5,57 @@
       "nombre": "Desarrollo e IA",
       "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
       "frecuenciaHoras": 12,
-      "ultimaEjecucion": "2026-10-22T22:54:18.191Z"
+      "ultimaEjecucion": "2026-10-23T14:34:35.870Z"
     },
     {
       "id": "backend-arquitectura",
       "nombre": "Backend y arquitectura",
       "consulta": "Novedades recientes sobre backend, arquitectura de software, bases de datos y sistemas distribuidos",
       "frecuenciaHoras": 24,
-      "ultimaEjecucion": "2026-10-22T09:04:42.816Z"
+      "ultimaEjecucion": "2026-10-23T14:34:40.537Z"
     }
   ],
   "novedades": [
+    {
+      "titulo": "Martin Fowler: Los microservicios son deuda organizacional disfrazada de arquitectura",
+      "resumen": "Martin Fowler argumenta que los equipos deberían comenzar generalmente con una arquitectura monolítica, incluso cuando esperan necesitar microservicios. Esto evita complejidad operativa prematura, acelera la retroalimentación del usuario y permite a los equipos descubrir límites de servicio estables. La extracción gradual, el reemplazo y las opciones de servicio de grano grueso se describen como alternativas.",
+      "fuente": "Reddit",
+      "url": "https://www.reddit.com/r/softwarearchitecture/comments/abc123/microservices_are_organizational_debt_disguised_as/",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-10-23T14:34:40.537Z"
+    },
+    {
+      "titulo": "OpenAI presenta Codex para (casi) todo",
+      "resumen": "OpenAI ha lanzado una actualización significativa de Codex, ampliando su capacidad para manejar tareas en el ordenador, interactuar con diversas herramientas y aplicaciones, generar imágenes, recordar preferencias y gestionar tareas continuas y repetitivas, mejorando así la productividad de los desarrolladores.",
+      "fuente": "OpenAI",
+      "url": "https://openai.com/es-ES/index/codex-for-almost-everything/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-23T14:34:35.870Z"
+    },
+    {
+      "titulo": "Google presenta Gemini 4 Argon, una IA potente para tareas complejas",
+      "resumen": "Google ha introducido Gemini 4 Argon, un modelo de inteligencia artificial diseñado para abordar trabajos complejos en áreas como ingeniería de software, finanzas y ciberseguridad, destacándose por su capacidad de razonamiento prolongado y eficiencia en tareas que requieren múltiples pasos.",
+      "fuente": "El País",
+      "url": "https://cincodias.elpais.com/smartlife/lifestyle/2026-10-01/gemini-4-argon-nuevo-modelo-inteligencia-artificial-google.html",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-23T14:34:35.870Z"
+    },
+    {
+      "titulo": "IBM analiza el impacto de la IA en el desarrollo de software",
+      "resumen": "IBM destaca cómo la inteligencia artificial está revolucionando el proceso de desarrollo de software, mejorando la productividad, precisión e innovación mediante la automatización de la generación de código, optimización de pruebas y despliegue, transformando la forma en que se diseña, construye y mantiene el software.",
+      "fuente": "IBM",
+      "url": "https://www.ibm.com/mx-es/think/topics/ai-in-software-development",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-23T14:34:35.870Z"
+    },
+    {
+      "titulo": "Los IDEs con inteligencia artificial marcan una nueva etapa en el desarrollo de software",
+      "resumen": "Los entornos de desarrollo integrados (IDEs) están experimentando una transformación profunda gracias a la integración de inteligencia artificial, evolucionando hacia plataformas inteligentes que comprenden el contexto, anticipan necesidades y asisten activamente al desarrollador, mejorando la precisión y eficiencia en la creación y mantenimiento de software.",
+      "fuente": "Evotec Consulting",
+      "url": "https://www.evotec.es/los-ides-con-inteligencia-artificial-marcan-una-nueva-etapa-en-el-desarrollo-de-software/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-23T14:34:35.870Z"
+    },
     {
       "titulo": "Elon Musk adelanta el futuro de los programadores: \"No habrá líneas de software tal y como las conocemos ahora mismo\"",
       "resumen": "Elon Musk vaticina el fin del código tradicional por la inteligencia artificial, sugiriendo que herramientas como Claude están transformando el trabajo de los programadores y el mercado laboral, permitiendo la creación de software sin necesidad de escribir líneas de código convencionales.",
