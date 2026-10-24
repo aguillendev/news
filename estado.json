@@ -5,17 +5,57 @@
       "nombre": "Desarrollo e IA",
       "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
       "frecuenciaHoras": 12,
-      "ultimaEjecucion": "2026-10-24T02:49:17.392Z"
+      "ultimaEjecucion": "2026-10-24T17:08:42.504Z"
     },
     {
       "id": "backend-arquitectura",
       "nombre": "Backend y arquitectura",
       "consulta": "Novedades recientes sobre backend, arquitectura de software, bases de datos y sistemas distribuidos",
       "frecuenciaHoras": 24,
-      "ultimaEjecucion": "2026-10-23T14:34:40.537Z"
+      "ultimaEjecucion": "2026-10-24T17:08:48.739Z"
     }
   ],
   "novedades": [
+    {
+      "titulo": "La era del desarrollador de bases de datos agentivo: novedades de Microsoft SQL en Build 2026",
+      "resumen": "En Build 2026, Microsoft presentó avances en el desarrollo de bases de datos, destacando el uso de asistentes y agentes de IA para mejorar la productividad y reducir la fricción en tareas técnicas, sin reemplazar prácticas fundamentales de diseño y seguridad de datos.",
+      "fuente": "Azurebrains",
+      "url": "https://blog.azurebrains.com/2026/06/02/the-era-of-the-agentic-database-developer-microsoft-sql-anno/",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-10-24T17:08:48.739Z"
+    },
+    {
+      "titulo": "Snowflake integra Postgres en su AI Data Cloud para unificar datos transaccionales, analítica e IA en una sola plataforma",
+      "resumen": "Snowflake anunció la integración nativa de Snowflake Postgres en su AI Data Cloud, permitiendo a las organizaciones consolidar cargas transaccionales, analíticas y de IA en una única plataforma segura y gobernada, eliminando la necesidad de mover datos entre sistemas separados.",
+      "fuente": "Silicon",
+      "url": "https://www.silicon.es/snowflake-integra-postgres-en-su-ai-data-cloud-para-unificar-datos-transaccionales-analitica-e-ia-en-una-sola-plataforma-2576910",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-10-24T17:08:48.739Z"
+    },
+    {
+      "titulo": "Elastic 9.4: Workflows GA, actualizaciones de Agent Builder y soporte para Prometheus/PromQL",
+      "resumen": "Elastic 9.4 introduce nuevas funciones que ayudan a los desarrolladores con la ingeniería de contexto, el monitoreo de aplicaciones e infraestructura y las operaciones de seguridad impulsadas por IA, incluyendo la disponibilidad general de Workflows, actualizaciones de Agent Builder y soporte para Prometheus/PromQL.",
+      "fuente": "Elastic Blog",
+      "url": "https://www.elastic.co/es/blog/whats-new-elastic-9-4-0",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-10-24T17:08:48.739Z"
+    },
+    {
+      "titulo": "TypeDB 3.0 ya está disponible",
+      "resumen": "TypeDB 3.0 ha sido lanzado públicamente, marcando un nuevo estándar en términos de rendimiento, usabilidad, mantenibilidad, escalabilidad y seguridad, con una reestructuración completa en Rust para mejorar la eficiencia y seguridad del sistema.",
+      "fuente": "TypeDB Blog",
+      "url": "https://typedb.com/blog/typedb-3-0-is-now-live",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-10-24T17:08:48.739Z"
+    },
+    {
+      "titulo": "PostgreSQL 14 alcanza el fin de su vida útil el 12 de noviembre de 2026",
+      "resumen": "PostgreSQL 14 dejará de recibir parches de seguridad y correcciones de errores después del 12 de noviembre de 2026, lo que requiere que los equipos migren a una versión principal compatible.",
+      "fuente": "TL;Der — Developer news digest",
+      "url": "https://tlder.dev/",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-10-24T17:08:48.739Z"
+    },
     {
       "titulo": "Elon Musk adelanta el futuro de los programadores: 'No habrá líneas de software tal y como las conocemos ahora mismo'",
       "resumen": "Elon Musk predice que la evolución de la inteligencia artificial cambiará radicalmente la forma en que se escribe y se entiende el software, eliminando las líneas de código tradicionales.",
