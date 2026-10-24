@@ -5,7 +5,7 @@
       "nombre": "Desarrollo e IA",
       "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
       "frecuenciaHoras": 12,
-      "ultimaEjecucion": "2026-10-23T14:34:35.870Z"
+      "ultimaEjecucion": "2026-10-24T02:49:17.392Z"
     },
     {
       "id": "backend-arquitectura",
@@ -16,6 +16,14 @@
     }
   ],
   "novedades": [
+    {
+      "titulo": "Elon Musk adelanta el futuro de los programadores: 'No habrá líneas de software tal y como las conocemos ahora mismo'",
+      "resumen": "Elon Musk predice que la evolución de la inteligencia artificial cambiará radicalmente la forma en que se escribe y se entiende el software, eliminando las líneas de código tradicionales.",
+      "fuente": "El País",
+      "url": "https://elpais.com/tecnologia/2026-09-29/openai-retrasa-su-nueva-ia-por-problemas-de-seguridad-y-anthropic-alerta-de-riesgos-catastroficos-para-la-humanidad.html",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-24T02:49:17.391Z"
+    },
     {
       "titulo": "Martin Fowler: Los microservicios son deuda organizacional disfrazada de arquitectura",
       "resumen": "Martin Fowler argumenta que los equipos deberían comenzar generalmente con una arquitectura monolítica, incluso cuando esperan necesitar microservicios. Esto evita complejidad operativa prematura, acelera la retroalimentación del usuario y permite a los equipos descubrir límites de servicio estables. La extracción gradual, el reemplazo y las opciones de servicio de grano grueso se describen como alternativas.",
