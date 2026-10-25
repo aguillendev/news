@@ -5,7 +5,7 @@
       "nombre": "Desarrollo e IA",
       "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
       "frecuenciaHoras": 12,
-      "ultimaEjecucion": "2026-10-24T17:08:42.504Z"
+      "ultimaEjecucion": "2026-10-25T08:52:10.422Z"
     },
     {
       "id": "backend-arquitectura",
@@ -16,6 +16,14 @@
     }
   ],
   "novedades": [
+    {
+      "titulo": "DevDay 2026: OpenAI presenta más de 20 novedades, incluidos nuevos agentes y GPT-6.1 Sol",
+      "resumen": "OpenAI presentó DevDay 2026, su edición más grande hasta ahora, con más de 20 anuncios relacionados con ChatGPT, Codex, sus modelos y nuevas formas de trabajar con inteligencia artificial. Entre los anuncios destacan nuevos agentes capaces de asumir responsabilidades continuas, herramientas para la colaboración entre personas e IA y nuevas opciones para que los desarrolladores creen experiencias directamente dentro de ChatGPT.",
+      "fuente": "TechRadar",
+      "url": "https://global.techradar.com/es-mx/ai-platforms-assistants/chatgpt/devday-2026-openai-presenta-mas-de-20-novedades-incluidos-nuevos-agentes-y-gpt-6-1-sol",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-25T08:52:10.421Z"
+    },
     {
       "titulo": "La era del desarrollador de bases de datos agentivo: novedades de Microsoft SQL en Build 2026",
       "resumen": "En Build 2026, Microsoft presentó avances en el desarrollo de bases de datos, destacando el uso de asistentes y agentes de IA para mejorar la productividad y reducir la fricción en tareas técnicas, sin reemplazar prácticas fundamentales de diseño y seguridad de datos.",
