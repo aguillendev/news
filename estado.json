@@ -5,7 +5,7 @@
       "nombre": "Desarrollo e IA",
       "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
       "frecuenciaHoras": 12,
-      "ultimaEjecucion": "2026-10-25T08:52:10.422Z"
+      "ultimaEjecucion": "2026-10-25T22:13:31.355Z"
     },
     {
       "id": "backend-arquitectura",
@@ -16,6 +16,14 @@
     }
   ],
   "novedades": [
+    {
+      "titulo": "AWS lanza Kiro con soporte para equipos y CLI",
+      "resumen": "Amazon Web Services ha anunciado la disponibilidad general de Kiro, un nuevo entorno de desarrollo integrado con agentes de inteligencia artificial, diseñado para asistir en la construcción rápida de software mediante indicaciones en lenguaje natural.",
+      "fuente": "SiliconANGLE",
+      "url": "https://siliconangle.com/2025/11/17/aws-launches-kiro-general-availability-team-features-cli-support/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-25T22:13:31.355Z"
+    },
     {
       "titulo": "Supabase actualiza su arquitectura self-hosted: Adopción de PostgreSQL 17 por defecto y reestructuración de roles",
       "resumen": "Supabase ha actualizado su arquitectura autoalojada, estableciendo PostgreSQL 17 como motor predeterminado y reestructurando roles de seguridad para optimizar la gestión de datos.",
