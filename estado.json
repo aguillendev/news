@@ -12,10 +12,18 @@
       "nombre": "Backend y arquitectura",
       "consulta": "Novedades recientes sobre backend, arquitectura de software, bases de datos y sistemas distribuidos",
       "frecuenciaHoras": 24,
-      "ultimaEjecucion": "2026-10-24T17:08:48.739Z"
+      "ultimaEjecucion": "2026-10-25T18:39:27.576Z"
     }
   ],
   "novedades": [
+    {
+      "titulo": "Supabase actualiza su arquitectura self-hosted: Adopción de PostgreSQL 17 por defecto y reestructuración de roles",
+      "resumen": "Supabase ha actualizado su arquitectura autoalojada, estableciendo PostgreSQL 17 como motor predeterminado y reestructurando roles de seguridad para optimizar la gestión de datos.",
+      "fuente": "Siglo 21 Soluciones",
+      "url": "https://siglo21soluciones.com/noticias/supabase-arquitectura-self-hosted-postgresql-17-roles-2026-08-26",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-10-25T18:39:27.576Z"
+    },
     {
       "titulo": "DevDay 2026: OpenAI presenta más de 20 novedades, incluidos nuevos agentes y GPT-6.1 Sol",
       "resumen": "OpenAI presentó DevDay 2026, su edición más grande hasta ahora, con más de 20 anuncios relacionados con ChatGPT, Codex, sus modelos y nuevas formas de trabajar con inteligencia artificial. Entre los anuncios destacan nuevos agentes capaces de asumir responsabilidades continuas, herramientas para la colaboración entre personas e IA y nuevas opciones para que los desarrolladores creen experiencias directamente dentro de ChatGPT.",
