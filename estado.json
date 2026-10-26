@@ -5,7 +5,7 @@
       "nombre": "Desarrollo e IA",
       "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
       "frecuenciaHoras": 12,
-      "ultimaEjecucion": "2026-10-25T22:13:31.355Z"
+      "ultimaEjecucion": "2026-10-26T16:24:25.473Z"
     },
     {
       "id": "backend-arquitectura",
@@ -16,6 +16,22 @@
     }
   ],
   "novedades": [
+    {
+      "titulo": "El DevFest Ponferrada-2026 \"redescribe\" con expertos, empresas y estudiantes el horizonte científico de la IA",
+      "resumen": "El DevFest Ponferrada 2026 reunió a expertos, empresas y estudiantes para explorar los avances científicos y tecnológicos de la IA, incluyendo microchips corporales y el uso de la IA para diseñar nuevos medicamentos y combatir la resistencia a los antibióticos.",
+      "fuente": "Cadena SER",
+      "url": "https://cadenaser.com/castillayleon/2026/10/22/ponferrada-redescribe-con-expertos-empresas-y-estudiantes-el-horizonte-cientifico-de-la-ia-en-el-devfest-2026-radio-bierzo/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-26T16:24:25.473Z"
+    },
+    {
+      "titulo": "Adiós al Chatbot: 2026 es el año de los \"Sistemas Multiagente\"",
+      "resumen": "En 2026, la IA evoluciona de los chatbots pasivos a los sistemas multiagente, capaces de ejecutar flujos de trabajo completos de forma autónoma, conectándose a herramientas como correos electrónicos, calendarios y bases de datos para realizar tareas concretas.",
+      "fuente": "Los 40",
+      "url": "https://los40.com/2026/10/26/adios-al-chatbot-2026-es-el-ano-de-los-sistemas-multiagente/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-26T16:24:25.473Z"
+    },
     {
       "titulo": "AWS lanza Kiro con soporte para equipos y CLI",
       "resumen": "Amazon Web Services ha anunciado la disponibilidad general de Kiro, un nuevo entorno de desarrollo integrado con agentes de inteligencia artificial, diseñado para asistir en la construcción rápida de software mediante indicaciones en lenguaje natural.",
