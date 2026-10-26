@@ -12,10 +12,50 @@
       "nombre": "Backend y arquitectura",
       "consulta": "Novedades recientes sobre backend, arquitectura de software, bases de datos y sistemas distribuidos",
       "frecuenciaHoras": 24,
-      "ultimaEjecucion": "2026-10-25T18:39:27.576Z"
+      "ultimaEjecucion": "2026-10-26T22:09:41.046Z"
     }
   ],
   "novedades": [
+    {
+      "titulo": "Meta introduce ZGateway para optimizar conexiones en ZippyDB",
+      "resumen": "Meta ha desarrollado ZGateway, un proxy sin estado que gestiona más de mil millones de operaciones por segundo y reduce las conexiones persistentes en ZippyDB en un factor de 19, mejorando la eficiencia de su almacén distribuido de clave-valor.",
+      "fuente": "LavX News",
+      "url": "https://news.lavx.hu/es/article/zgateway-de-meta-reduce-19-veces-las-conexiones-a-zippydb-mientras-gestiona-mas-de-mil-millones-de-operaciones-por-segundo",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-10-26T22:09:41.046Z"
+    },
+    {
+      "titulo": "Vercel amplía su infraestructura backend con soporte para Python y contenedores",
+      "resumen": "Vercel ha anunciado la disponibilidad general de Python en su plataforma, junto con el soporte para contenedores y la introducción de Vercel Daemons en beta pública, permitiendo a los desarrolladores ejecutar aplicaciones en cualquier lenguaje y gestionar procesos en segundo plano de manera eficiente.",
+      "fuente": "El Ecosistema Startup",
+      "url": "https://ecosistemastartup.com/vercel-abre-el-backend-python-ga-contenedores-y-daemons/",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-10-26T22:09:41.046Z"
+    },
+    {
+      "titulo": "Redis lanza Iris para optimizar la gestión de datos en sistemas de IA",
+      "resumen": "Redis ha presentado Iris, una plataforma de contexto y memoria que se sitúa entre los agentes de IA y los datos que necesitan, combinando ingestión de datos en tiempo real, una interfaz semántica y un servidor de memoria para mejorar la eficiencia en la gestión de datos en aplicaciones de IA.",
+      "fuente": "VentureBeat",
+      "url": "https://venturebeat.com/data/context-architecture-is-replacing-rag-as-agentic-ai-pushes-enterprise-retrieval-to-its-limits",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-10-26T22:09:41.046Z"
+    },
+    {
+      "titulo": "Databricks revela que los agentes IA generan el 80% de las nuevas bases de datos",
+      "resumen": "Según un informe de Databricks, los agentes de inteligencia artificial son responsables del 80% de la creación de nuevas bases de datos en Neon, la base de datos serverless PostgreSQL adquirida por Databricks, destacando el creciente papel de la automatización en la gestión de datos.",
+      "fuente": "Dataprix",
+      "url": "https://dataprix.net/databricks-agentes-ia-crean-bases-de-datos-lakebase/",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-10-26T22:09:41.046Z"
+    },
+    {
+      "titulo": "Supabase adquiere Turso para escalar su infraestructura de bases de datos",
+      "resumen": "Supabase ha recaudado $150 millones y adquirido Turso, con el objetivo de reforzar su posición como proveedor de infraestructura para agentes de IA y herramientas de codificación automatizadas, permitiendo la creación de bases de datos aisladas y de bajo costo en entornos de nube pública y privada.",
+      "fuente": "TipRanks",
+      "url": "https://www.tipranks.com/news/private-companies/supabase-raises-150-million-and-acquires-turso-to-scale-agentic-database-infrastructure",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-10-26T22:09:41.046Z"
+    },
     {
       "titulo": "El DevFest Ponferrada-2026 \"redescribe\" con expertos, empresas y estudiantes el horizonte científico de la IA",
       "resumen": "El DevFest Ponferrada 2026 reunió a expertos, empresas y estudiantes para explorar los avances científicos y tecnológicos de la IA, incluyendo microchips corporales y el uso de la IA para diseñar nuevos medicamentos y combatir la resistencia a los antibióticos.",
