@@ -5,7 +5,7 @@
       "nombre": "Desarrollo e IA",
       "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
       "frecuenciaHoras": 12,
-      "ultimaEjecucion": "2026-10-26T16:24:25.473Z"
+      "ultimaEjecucion": "2026-10-27T09:30:42.371Z"
     },
     {
       "id": "backend-arquitectura",
@@ -16,6 +16,14 @@
     }
   ],
   "novedades": [
+    {
+      "titulo": "Adiós al Chatbot: 2026 es el año de los 'Sistemas Multiagente'",
+      "resumen": "El artículo explica cómo en 2026 la inteligencia artificial evoluciona de los chatbots pasivos a los sistemas multiagente, capaces de ejecutar flujos de trabajo completos de forma autónoma.",
+      "fuente": "Los 40",
+      "url": "https://los40.com/2026/10/26/adios-al-chatbot-2026-es-el-ano-de-los-sistemas-multiagente/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-27T09:30:42.370Z"
+    },
     {
       "titulo": "Meta introduce ZGateway para optimizar conexiones en ZippyDB",
       "resumen": "Meta ha desarrollado ZGateway, un proxy sin estado que gestiona más de mil millones de operaciones por segundo y reduce las conexiones persistentes en ZippyDB en un factor de 19, mejorando la eficiencia de su almacén distribuido de clave-valor.",
