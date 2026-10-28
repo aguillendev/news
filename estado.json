@@ -5,17 +5,57 @@
       "nombre": "Desarrollo e IA",
       "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
       "frecuenciaHoras": 12,
-      "ultimaEjecucion": "2026-10-27T09:30:42.371Z"
+      "ultimaEjecucion": "2026-10-28T00:52:02.843Z"
     },
     {
       "id": "backend-arquitectura",
       "nombre": "Backend y arquitectura",
       "consulta": "Novedades recientes sobre backend, arquitectura de software, bases de datos y sistemas distribuidos",
       "frecuenciaHoras": 24,
-      "ultimaEjecucion": "2026-10-26T22:09:41.046Z"
+      "ultimaEjecucion": "2026-10-28T00:52:08.714Z"
     }
   ],
   "novedades": [
+    {
+      "titulo": "XERJ: Motor de búsqueda local de IA que optimiza la indexación de código y documentos",
+      "resumen": "XERJ es un motor de búsqueda local de IA que indexa automáticamente código, documentos, registros, PDFs y otros archivos, permitiendo a los agentes recuperar fragmentos relevantes sin necesidad de leer archivos completos. Utiliza tree-sitter para preservar símbolos y números de línea, y ofrece características como búsqueda de texto completo, vectorial, híbrida, RAG, auditoría de seguridad y memoria de agentes, todo a través de una API compatible con Elasticsearch.",
+      "fuente": "GitHub",
+      "url": "https://github.com/xerj-org/xerj",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-10-28T00:52:08.713Z"
+    },
+    {
+      "titulo": "Microservicios: ¿Deuda organizacional disfrazada de arquitectura?",
+      "resumen": "Un artículo argumenta que los equipos deberían comenzar generalmente con una arquitectura monolítica, incluso cuando esperan necesitar microservicios. Esto evita complejidades operativas prematuras, acelera la retroalimentación de los usuarios y permite a los equipos descubrir límites de servicio estables. Se describen opciones como extracción gradual, reemplazo y servicios de grano grueso, señalando que comenzar con microservicios puede ser adecuado para equipos experimentados y proyectos de reemplazo de sistemas.",
+      "fuente": "Martin Fowler",
+      "url": "https://martinfowler.com/articles/microservices-are-organizational-debt-disguised-as-architecture.html",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-10-28T00:52:08.714Z"
+    },
+    {
+      "titulo": "Neon lanza su backend como GA: conjunto completo de primitivas para que los agentes construyan",
+      "resumen": "Neon ha lanzado su suite completa de primitivas de backend, construida alrededor de la base de datos y basada en la arquitectura lakebase. Incluye Lakebase Postgres, almacenamiento de objetos, funciones, autenticación gestionada y AI Gateway. Todas las herramientas están disponibles como GA y listas para producción, permitiendo a los agentes desplegar aplicaciones de manera eficiente.",
+      "fuente": "Neon",
+      "url": "https://neon-next-pp.vercel.app/blog/neon-backend-is-ga",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-10-28T00:52:08.714Z"
+    },
+    {
+      "titulo": "QuestDB 9.0 disponible: rendimiento optimizado y soporte para arrays multidimensionales",
+      "resumen": "QuestDB ha lanzado la versión 9.0, marcando una actualización importante en su evolución como solución de alto rendimiento para el procesamiento de datos en tiempo real. Las principales novedades incluyen soporte inicial para arrays multidimensionales al estilo NumPy, un nuevo protocolo binario de línea y mejoras en vistas materializadas y la consola web.",
+      "fuente": "CIBERED",
+      "url": "https://cibered.com/programacion/bases-datos/questdb-9-0-ya-esta-disponible/",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-10-28T00:52:08.714Z"
+    },
+    {
+      "titulo": "Ocho 'startups' en el podio de la innovación",
+      "resumen": "El artículo presenta ocho startups innovadoras reconocidas en los premios BNEW Awards 2026, organizados por el Consorci de la Zona Franca de Barcelona durante la Barcelona New Economy Week. Estas empresas muestran cómo la tecnología puede responder a necesidades sociales, sanitarias, empresariales y medioambientales. Alongside transforma las rutinas de niños con cáncer en aventuras mediante una aplicación de apoyo emocional. NoctuRNA Therapeutics desarrolla tratamientos basados en ARN circular para enfermedades neurodegenerativas y neuromusculares. Altum Sequencing combina inteligencia artificial y análisis de ADN en sangre para detectar y monitorizar células tumorales. Timbal AI ofrece plataformas para que las empresas desarrollen aplicaciones de inteligencia artificial adaptadas a sus necesidades. Pots impulsa la reutilización de envases de vidrio, reduciendo hasta un 86 % las emisiones de CO₂ equivalente frente a fabricar nuevos recipientes. H2 Dron Energy utiliza hidrógeno para multiplicar hasta por cinco la autonomía de los drones. Uvné facilita itinerarios formativos personalizados para mejorar las oportunidades profesionales, especialmente de migrantes. Finalmente, Torch Smart Urban Solutions desarrolla dispositivos autónomos de inteligencia artificial alimentados por energía solar, accesibles y sostenibles. El artículo destaca que el éxito emprendedor requiere perseverancia, equipos sólidos, financiación, visibilidad y colaboración. BNEW conecta estas iniciativas con inversores, empresas e instituciones para impulsar su crecimiento y generar beneficios sociales.",
+      "fuente": "El País",
+      "url": "https://elpais.com/economia/horizonte-4-0/2026-10-26/ocho-startups-en-el-podio-de-la-innovacion.html",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-28T00:52:02.843Z"
+    },
     {
       "titulo": "Adiós al Chatbot: 2026 es el año de los 'Sistemas Multiagente'",
       "resumen": "El artículo explica cómo en 2026 la inteligencia artificial evoluciona de los chatbots pasivos a los sistemas multiagente, capaces de ejecutar flujos de trabajo completos de forma autónoma.",
