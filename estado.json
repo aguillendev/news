@@ -5,7 +5,7 @@
       "nombre": "Desarrollo e IA",
       "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
       "frecuenciaHoras": 12,
-      "ultimaEjecucion": "2026-10-28T14:46:07.353Z"
+      "ultimaEjecucion": "2026-10-29T07:54:13.524Z"
     },
     {
       "id": "backend-arquitectura",
@@ -16,6 +16,22 @@
     }
   ],
   "novedades": [
+    {
+      "titulo": "Google anuncia mejoras en herramientas de IA para desarrolladores",
+      "resumen": "Google ha presentado mejoras en sus herramientas de IA, incluyendo Gemini Code Assist, Firebase Studio y optimizaciones en GKE, con el objetivo de acelerar el trabajo de los desarrolladores y llevar la automatización al ciclo completo del desarrollo de software.",
+      "fuente": "Radio Fórmula Morelos",
+      "url": "https://radioformulamorelos.com/google-mejoras-herramientas-ia/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-29T07:54:13.524Z"
+    },
+    {
+      "titulo": "Nuevo Logitech MX Master 4 Developer Edition: un ratón pensado por y para los desarrolladores",
+      "resumen": "Logitech ha lanzado el MX Master 4 Developer Edition, una edición limitada de su ratón insignia dedicada a la comunidad de desarrolladores, con un diseño exclusivo que incluye grabados láser inspirados en la programación y funciones personalizables.",
+      "fuente": "El País",
+      "url": "https://cincodias.elpais.com/smartlife/gadgets/2026-10-27/logitech-mx-master-4-developer-edition-oficial.html",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-29T07:54:13.524Z"
+    },
     {
       "titulo": "XERJ: Motor de búsqueda local de IA que optimiza la indexación de código y documentos",
       "resumen": "XERJ es un motor de búsqueda local de IA que indexa automáticamente código, documentos, registros, PDFs y otros archivos, permitiendo a los agentes recuperar fragmentos relevantes sin necesidad de leer archivos completos. Utiliza tree-sitter para preservar símbolos y números de línea, y ofrece características como búsqueda de texto completo, vectorial, híbrida, RAG, auditoría de seguridad y memoria de agentes, todo a través de una API compatible con Elasticsearch.",
