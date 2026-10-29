@@ -5,7 +5,7 @@
       "nombre": "Desarrollo e IA",
       "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
       "frecuenciaHoras": 12,
-      "ultimaEjecucion": "2026-10-29T07:54:13.524Z"
+      "ultimaEjecucion": "2026-10-29T20:46:57.346Z"
     },
     {
       "id": "backend-arquitectura",
@@ -16,6 +16,46 @@
     }
   ],
   "novedades": [
+    {
+      "titulo": "Google presenta Gemini 4 Argon, una IA avanzada para tareas complejas",
+      "resumen": "Google ha lanzado Gemini 4 Argon, un modelo de inteligencia artificial diseñado para abordar tareas complejas y razonamiento prolongado, especialmente en áreas como ingeniería de software, finanzas y ciberseguridad. Este modelo destaca por su capacidad de manejar razonamientos profundos y prolongados, superando a varios modelos rivales en pruebas de programación y automatización.",
+      "fuente": "El País",
+      "url": "https://cincodias.elpais.com/smartlife/lifestyle/2026-10-01/gemini-4-argon-nuevo-modelo-inteligencia-artificial-google.html",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-29T20:46:57.345Z"
+    },
+    {
+      "titulo": "OpenAI presenta Dots, agentes autónomos para tareas continuas",
+      "resumen": "Durante el DevDay 2026, OpenAI presentó Dots, agentes desarrollados con GPT-6 Astra capaces de asumir responsabilidades continuas dentro de los límites definidos por el usuario. Estos agentes están diseñados para facilitar la delegación de tareas complejas y prolongadas, mejorando la eficiencia en diversos procesos.",
+      "fuente": "TechRadar",
+      "url": "https://global.techradar.com/es-mx/ai-platforms-assistants/chatgpt/devday-2026-openai-presenta-mas-de-20-novedades-incluidos-nuevos-agentes-y-gpt-6-1-sol",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-29T20:46:57.346Z"
+    },
+    {
+      "titulo": "Logitech lanza el MX Master 4 Developer Edition, un ratón para programadores",
+      "resumen": "Logitech ha presentado el MX Master 4 Developer Edition, una edición limitada de su ratón insignia dedicada a la comunidad de desarrolladores. Este modelo incluye un diseño exclusivo con grabados láser inspirados en la programación y funciones personalizables para mejorar la productividad en el desarrollo de software.",
+      "fuente": "El País",
+      "url": "https://cincodias.elpais.com/smartlife/gadgets/2026-10-27/logitech-mx-master-4-developer-edition-oficial.html",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-29T20:46:57.346Z"
+    },
+    {
+      "titulo": "IBM destaca el papel de la IA generativa en el desarrollo de software",
+      "resumen": "IBM ha publicado un artículo que resalta cómo la inteligencia artificial generativa está revolucionando el proceso de desarrollo de software, mejorando la productividad, precisión e innovación. La IA generativa y los modelos de lenguaje grandes (LLM) están agilizando el ciclo de desarrollo al automatizar pasos clave, desde la generación de ideas hasta las pruebas y el despliegue.",
+      "fuente": "IBM",
+      "url": "https://www.ibm.com/mx-es/think/topics/ai-in-software-development",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-29T20:46:57.346Z"
+    },
+    {
+      "titulo": "OpenAI lanza GPT-6.1 Terra en la API y Copilot, con nuevas capacidades y costes",
+      "resumen": "OpenAI ha lanzado GPT-6.1 Terra, una nueva versión de su modelo de lenguaje, disponible en la API y Copilot. Esta actualización incluye mejoras en la visión, el procesamiento de imágenes y la reducción de costes, ofreciendo nuevas oportunidades para desarrolladores y empresas en la integración de IA generativa en sus aplicaciones.",
+      "fuente": "Puntoes",
+      "url": "https://www.puntoes.es/blog/temas/desarrollo/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-29T20:46:57.346Z"
+    },
     {
       "titulo": "Google anuncia mejoras en herramientas de IA para desarrolladores",
       "resumen": "Google ha presentado mejoras en sus herramientas de IA, incluyendo Gemini Code Assist, Firebase Studio y optimizaciones en GKE, con el objetivo de acelerar el trabajo de los desarrolladores y llevar la automatización al ciclo completo del desarrollo de software.",
