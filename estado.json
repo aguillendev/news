@@ -5,7 +5,7 @@
       "nombre": "Desarrollo e IA",
       "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
       "frecuenciaHoras": 12,
-      "ultimaEjecucion": "2026-10-29T20:46:57.346Z"
+      "ultimaEjecucion": "2026-10-30T14:50:02.529Z"
     },
     {
       "id": "backend-arquitectura",
@@ -16,6 +16,62 @@
     }
   ],
   "novedades": [
+    {
+      "titulo": "Mistral lanza Large 4, su nuevo modelo de IA para programación y ciberseguridad",
+      "resumen": "Mistral ha presentado Large 4, un modelo de IA con 1 billón de parámetros, disponible en Hugging Face, que ha obtenido altos puntajes en benchmarks para agentes de programación.",
+      "fuente": "AI Brunch",
+      "url": "https://aibrunch.ai/news/ai-coding",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-30T14:50:02.529Z"
+    },
+    {
+      "titulo": "NVIDIA presenta tres modelos Nemotron para agentes de IA empresariales",
+      "resumen": "NVIDIA ha lanzado tres modelos Nemotron con pesos abiertos, diseñados para ejecutar agentes de IA en servidores locales, incluyendo un modelo de agente visión-lenguaje y una opción compacta para agentes de programación locales.",
+      "fuente": "AI Brunch",
+      "url": "https://aibrunch.ai/news/ai-coding",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-30T14:50:02.529Z"
+    },
+    {
+      "titulo": "Sakana AI libera \"Agentic Scientist\" tras aceptación en ALIFE 2026",
+      "resumen": "Sakana AI ha abierto el código de su sistema de investigación automatizado, \"Agentic Scientist\", que integra diversos agentes de programación en un proceso de investigación estructurado, contribuyendo a un estudio aceptado en ALIFE 2026.",
+      "fuente": "AI Brunch",
+      "url": "https://aibrunch.ai/news/ai-coding",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-30T14:50:02.529Z"
+    },
+    {
+      "titulo": "GitHub Agentic Workflows permite automatizar tareas de código con agentes",
+      "resumen": "GitHub ha abierto Agentic Workflows a todos sus usuarios, permitiendo describir tareas en Markdown y ejecutarlas con agentes dentro de GitHub Actions.",
+      "fuente": "academIArtificial",
+      "url": "https://academiartificial.com/noticias-ia/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-30T14:50:02.529Z"
+    },
+    {
+      "titulo": "GitHub publica Replica para crear prototipos con el diseño de tu equipo",
+      "resumen": "GitHub ha lanzado Replica, una herramienta abierta que convierte instrucciones en prototipos interactivos utilizando los componentes y reglas visuales de un equipo.",
+      "fuente": "academIArtificial",
+      "url": "https://academiartificial.com/noticias-ia/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-30T14:50:02.529Z"
+    },
+    {
+      "titulo": "Cursor IDE identifica incidente de seguridad en extensión modificada de Claude Code",
+      "resumen": "Cursor IDE ha identificado un incidente de seguridad que afecta a una extensión modificada de Claude Code en su mercado de extensiones, impactando a un máximo de 5,000 usuarios.",
+      "fuente": "AITicker",
+      "url": "https://aiticker.site/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-30T14:50:02.529Z"
+    },
+    {
+      "titulo": "Elon Musk predice el fin del código tradicional por la inteligencia artificial",
+      "resumen": "Elon Musk vaticina que la inteligencia artificial cambiará el desarrollo de software, eliminando las líneas de código tal como las conocemos actualmente.",
+      "fuente": "ComputerHoy",
+      "url": "https://computerhoy.20minutos.es/software/elon-musk-adelanta-futuro-los-programadores-no-habra-lineas-software-tal-como-las-conocemos-ahora-mismo_7049601_0.html",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-30T14:50:02.529Z"
+    },
     {
       "titulo": "Google presenta Gemini 4 Argon, una IA avanzada para tareas complejas",
       "resumen": "Google ha lanzado Gemini 4 Argon, un modelo de inteligencia artificial diseñado para abordar tareas complejas y razonamiento prolongado, especialmente en áreas como ingeniería de software, finanzas y ciberseguridad. Este modelo destaca por su capacidad de manejar razonamientos profundos y prolongados, superando a varios modelos rivales en pruebas de programación y automatización.",
