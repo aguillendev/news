@@ -5,17 +5,25 @@
       "nombre": "Desarrollo e IA",
       "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
       "frecuenciaHoras": 12,
-      "ultimaEjecucion": "2026-10-30T14:50:02.529Z"
+      "ultimaEjecucion": "2026-10-31T07:51:16.099Z"
     },
     {
       "id": "backend-arquitectura",
       "nombre": "Backend y arquitectura",
       "consulta": "Novedades recientes sobre backend, arquitectura de software, bases de datos y sistemas distribuidos",
       "frecuenciaHoras": 24,
-      "ultimaEjecucion": "2026-10-30T01:29:24.283Z"
+      "ultimaEjecucion": "2026-10-31T07:51:23.972Z"
     }
   ],
   "novedades": [
+    {
+      "titulo": "Anthropic reconoce una intensa competencia en la IA y abre la puerta a nuevas adquisiciones",
+      "resumen": "Anthropic enfrenta una competencia intensa en el mercado de la inteligencia artificial y considera adquisiciones para incorporar tecnologías y talento, incluyendo la reciente compra de Stainless Software por 295 millones de dólares.",
+      "fuente": "Cinco Días",
+      "url": "https://cincodias.elpais.com/companias/2026-10-29/anthropic-reconoce-una-intensa-competencia-en-la-ia-y-abre-la-puerta-a-nuevas-adquisiciones.html",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-31T07:51:16.099Z"
+    },
     {
       "titulo": "Mistral lanza Large 4, su nuevo modelo de IA para programación y ciberseguridad",
       "resumen": "Mistral ha presentado Large 4, un modelo de IA con 1 billón de parámetros, disponible en Hugging Face, que ha obtenido altos puntajes en benchmarks para agentes de programación.",
