@@ -5,7 +5,7 @@
       "nombre": "Desarrollo e IA",
       "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
       "frecuenciaHoras": 12,
-      "ultimaEjecucion": "2026-10-31T07:51:16.099Z"
+      "ultimaEjecucion": "2026-10-31T22:57:41.779Z"
     },
     {
       "id": "backend-arquitectura",
@@ -16,6 +16,22 @@
     }
   ],
   "novedades": [
+    {
+      "titulo": "Logitech presenta el MX Master 4 Developer Edition, un ratón diseñado para desarrolladores",
+      "resumen": "Logitech ha lanzado una edición especial de su ratón insignia MX Master 4, denominada Developer Edition, con un diseño exclusivo que incorpora elementos icónicos del mundo de la programación, como símbolos y expresiones utilizadas en el desarrollo de software.",
+      "fuente": "El País",
+      "url": "https://cincodias.elpais.com/smartlife/gadgets/2026-10-27/logitech-mx-master-4-developer-edition-oficial.html",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-31T22:57:41.779Z"
+    },
+    {
+      "titulo": "Google presenta Genie 4, una herramienta de IA para crear mundos interactivos en tiempo real",
+      "resumen": "Google ha presentado Genie 4, una herramienta de inteligencia artificial que permite a los usuarios crear y modificar entornos virtuales interactivos en tiempo real, generando música, sonidos ambientales y diálogos junto con el entorno.",
+      "fuente": "AS",
+      "url": "https://as.com/meristation/betech/google-presenta-genie-4-la-herramienta-de-ia-que-permite-a-los-usuarios-crear-mundos-interactivos-modificarlos-e-interactuar-en-tiempo-real-f202610-n/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-10-31T22:57:41.779Z"
+    },
     {
       "titulo": "Anthropic reconoce una intensa competencia en la IA y abre la puerta a nuevas adquisiciones",
       "resumen": "Anthropic enfrenta una competencia intensa en el mercado de la inteligencia artificial y considera adquisiciones para incorporar tecnologías y talento, incluyendo la reciente compra de Stainless Software por 295 millones de dólares.",
