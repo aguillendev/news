@@ -12,10 +12,34 @@
       "nombre": "Backend y arquitectura",
       "consulta": "Novedades recientes sobre backend, arquitectura de software, bases de datos y sistemas distribuidos",
       "frecuenciaHoras": 24,
-      "ultimaEjecucion": "2026-10-31T07:51:23.972Z"
+      "ultimaEjecucion": "2026-11-01T10:56:53.840Z"
     }
   ],
   "novedades": [
+    {
+      "titulo": "Postgres: De base de datos relacional a hub de datos moderno",
+      "resumen": "PostgreSQL está consolidando su posición como un hub de datos versátil, integrando arquitecturas modernas como OLAP y almacenamiento en la nube mediante extensiones críticas. Esta evolución permite a los equipos simplificar sus pipelines de datos reduciendo la dependencia de ETLs complejos.",
+      "fuente": "TechNexus",
+      "url": "https://www.technexus.com.ar/noticias/el-futuro-de-postgres-ecosistema-y-evolucion-tecnica/",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-11-01T10:56:53.840Z"
+    },
+    {
+      "titulo": "Análisis Técnico: Retrospectiva de Bases de Datos 2025",
+      "resumen": "Un análisis de las transformaciones críticas en bases de datos durante 2025, destacando la adopción de PostgreSQL en proyectos nuevos, mejoras en MongoDB 7.0 y el auge de los sistemas HTAP según el benchmark de Pavlo (CMU).",
+      "fuente": "Norvik Tech",
+      "url": "https://norvik.tech/dynamic/analisis-bases-datos-2025-retrospectiva-tecnica",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-11-01T10:56:53.840Z"
+    },
+    {
+      "titulo": "Backend development en 2026: ¿Qué ha cambiado, qué importa y qué aprender a continuación?",
+      "resumen": "El desarrollo backend ahora incluye APIs impulsadas por IA, flujos de trabajo agentes y herramientas como Claude Code, además de los fundamentos tradicionales. Este artículo explora cómo ha evolucionado el campo en 2026.",
+      "fuente": "The New Stack",
+      "url": "https://thenewstack.io/backend-development/",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-11-01T10:56:53.840Z"
+    },
     {
       "titulo": "Logitech presenta el MX Master 4 Developer Edition, un ratón diseñado para desarrolladores",
       "resumen": "Logitech ha lanzado una edición especial de su ratón insignia MX Master 4, denominada Developer Edition, con un diseño exclusivo que incorpora elementos icónicos del mundo de la programación, como símbolos y expresiones utilizadas en el desarrollo de software.",
