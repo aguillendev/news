@@ -5,7 +5,7 @@
       "nombre": "Desarrollo e IA",
       "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
       "frecuenciaHoras": 12,
-      "ultimaEjecucion": "2026-10-31T22:57:41.779Z"
+      "ultimaEjecucion": "2026-11-01T17:28:57.709Z"
     },
     {
       "id": "backend-arquitectura",
@@ -16,6 +16,22 @@
     }
   ],
   "novedades": [
+    {
+      "titulo": "OpenAI presenta Dots, agentes capaces de asumir responsabilidades continuas",
+      "resumen": "OpenAI ha presentado Dots, agentes desarrollados con GPT-6 Astra que pueden asumir responsabilidades continuas dentro de los límites definidos por el usuario, mejorando la colaboración entre humanos e IA.",
+      "fuente": "TechRadar",
+      "url": "https://global.techradar.com/es-mx/ai-platforms-assistants/chatgpt/devday-2026-openai-presenta-mas-de-20-novedades-incluidos-nuevos-agentes-y-gpt-6-1-sol",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-01T17:28:57.709Z"
+    },
+    {
+      "titulo": "Google presenta Genie 4, la herramienta de IA que permite a los usuarios crear mundos interactivos, modificarlos e interactuar en tiempo real",
+      "resumen": "Google ha presentado Genie 4, una herramienta de IA que permite a los usuarios crear y modificar mundos virtuales interactivos en tiempo real, generando música, sonidos ambientales y diálogos junto con el entorno.",
+      "fuente": "AS",
+      "url": "https://as.com/meristation/betech/google-presenta-genie-4-la-herramienta-de-ia-que-permite-a-los-usuarios-crear-mundos-interactivos-modificarlos-e-interactuar-en-tiempo-real-f202610-n/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-01T17:28:57.709Z"
+    },
     {
       "titulo": "Postgres: De base de datos relacional a hub de datos moderno",
       "resumen": "PostgreSQL está consolidando su posición como un hub de datos versátil, integrando arquitecturas modernas como OLAP y almacenamiento en la nube mediante extensiones críticas. Esta evolución permite a los equipos simplificar sus pipelines de datos reduciendo la dependencia de ETLs complejos.",
