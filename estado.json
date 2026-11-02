@@ -5,17 +5,41 @@
       "nombre": "Desarrollo e IA",
       "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
       "frecuenciaHoras": 12,
-      "ultimaEjecucion": "2026-11-01T17:28:57.709Z"
+      "ultimaEjecucion": "2026-11-02T19:55:29.173Z"
     },
     {
       "id": "backend-arquitectura",
       "nombre": "Backend y arquitectura",
       "consulta": "Novedades recientes sobre backend, arquitectura de software, bases de datos y sistemas distribuidos",
       "frecuenciaHoras": 24,
-      "ultimaEjecucion": "2026-11-01T10:56:53.840Z"
+      "ultimaEjecucion": "2026-11-02T19:55:35.225Z"
     }
   ],
   "novedades": [
+    {
+      "titulo": "PHP anuncia próxima actualización de seguridad crítica",
+      "resumen": "PHP lanzará una actualización de seguridad el 21 de octubre de 2026, abordando dos vulnerabilidades críticas, cada una con una puntuación CVSS v4.0 de 9.2, instando a los usuarios a actualizar inmediatamente.",
+      "fuente": "Snapbyte.dev",
+      "url": "https://snapbyte.dev/topics/backend",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-11-02T19:55:35.225Z"
+    },
+    {
+      "titulo": "ClickHouse 2025: Mejoras en infraestructura y rendimiento",
+      "resumen": "ClickHouse ha implementado mejoras significativas en infraestructura, incluyendo SharedCatalog para coordinación de metadatos y mejoras en escalabilidad vertical y horizontal, además de expandir su presencia global.",
+      "fuente": "ClickHouse",
+      "url": "https://clickhouse.com/blog/clickhouse-2025-roundup",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-11-02T19:55:35.225Z"
+    },
+    {
+      "titulo": "PostgreSQL 18 mejora rendimiento y facilita actualizaciones",
+      "resumen": "PostgreSQL 18 introduce un nuevo subsistema de E/S que incrementa el rendimiento hasta tres veces al leer desde el almacenamiento y facilita las actualizaciones de versión principal, acelerando los tiempos de actualización.",
+      "fuente": "PostgreSQL",
+      "url": "https://www.postgresql.org/about/press/presskit18/es/",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-11-02T19:55:35.225Z"
+    },
     {
       "titulo": "OpenAI presenta Dots, agentes capaces de asumir responsabilidades continuas",
       "resumen": "OpenAI ha presentado Dots, agentes desarrollados con GPT-6 Astra que pueden asumir responsabilidades continuas dentro de los límites definidos por el usuario, mejorando la colaboración entre humanos e IA.",
