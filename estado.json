@@ -5,7 +5,7 @@
       "nombre": "Desarrollo e IA",
       "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
       "frecuenciaHoras": 12,
-      "ultimaEjecucion": "2026-11-02T19:55:29.173Z"
+      "ultimaEjecucion": "2026-11-03T08:59:44.962Z"
     },
     {
       "id": "backend-arquitectura",
@@ -16,6 +16,30 @@
     }
   ],
   "novedades": [
+    {
+      "titulo": "Microsoft abre su infraestructura de IA a modelos externos y amplía funciones para desarrolladores",
+      "resumen": "Microsoft ha abierto su infraestructura de inteligencia artificial a modelos externos y ha ampliado las funciones para desarrolladores, permitiendo una mayor colaboración y personalización en el desarrollo de soluciones de IA en la nube.",
+      "fuente": "Infobae",
+      "url": "https://www.infobae.com/tecno/2025/05/21/microsoft-abre-su-infraestructura-de-ia-a-modelos-externos-y-amplia-funciones-para-desarrolladores/?outputType=amp-type",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-03T08:59:44.961Z"
+    },
+    {
+      "titulo": "xAI lanza Grok Build para disputar mercado de programación con IA con Anthropic",
+      "resumen": "xAI ha lanzado Grok Build, un agente de IA enfocado en tareas de desarrollo de software, entrando en fase de pruebas restringidas a suscriptores de pago, con el objetivo de competir en el mercado de programación asistida por IA.",
+      "fuente": "Exame",
+      "url": "https://exame.com/inteligencia-artificial/xai-lanca-grok-build-para-disputar-mercado-de-programacao-com-ia-com-anthropic/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-03T08:59:44.962Z"
+    },
+    {
+      "titulo": "Gemini 3.7 Flash: IA de Google con precios a la mitad para devs",
+      "resumen": "Google ha lanzado Gemini 3.7 Flash, su último modelo de inteligencia artificial diseñado específicamente para tareas de programación y agentes autónomos, con mejoras sustanciales respecto a versiones anteriores y precios reducidos para desarrolladores.",
+      "fuente": "El Ecosistema Startup",
+      "url": "https://ecosistemastartup.com/gemini-3-7-flash-ia-de-google-con-precios-a-la-mitad-para-devs/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-03T08:59:44.962Z"
+    },
     {
       "titulo": "PHP anuncia próxima actualización de seguridad crítica",
       "resumen": "PHP lanzará una actualización de seguridad el 21 de octubre de 2026, abordando dos vulnerabilidades críticas, cada una con una puntuación CVSS v4.0 de 9.2, instando a los usuarios a actualizar inmediatamente.",
