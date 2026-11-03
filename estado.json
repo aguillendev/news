@@ -5,17 +5,65 @@
       "nombre": "Desarrollo e IA",
       "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
       "frecuenciaHoras": 12,
-      "ultimaEjecucion": "2026-11-03T08:59:44.962Z"
+      "ultimaEjecucion": "2026-11-03T22:45:21.390Z"
     },
     {
       "id": "backend-arquitectura",
       "nombre": "Backend y arquitectura",
       "consulta": "Novedades recientes sobre backend, arquitectura de software, bases de datos y sistemas distribuidos",
       "frecuenciaHoras": 24,
-      "ultimaEjecucion": "2026-11-02T19:55:35.225Z"
+      "ultimaEjecucion": "2026-11-03T22:45:25.921Z"
     }
   ],
   "novedades": [
+    {
+      "titulo": "Microsoft actualiza su portafolio de bases de datos e introduce ofertas de código abierto",
+      "resumen": "Microsoft ha anunciado actualizaciones en su portafolio de bases de datos, incluyendo la disponibilidad general de Azure DocumentDB y SQL Server 2025, así como la vista previa privada de Azure HorizonDB, una base de datos en la nube basada en PostgreSQL.",
+      "fuente": "SiliconANGLE",
+      "url": "https://siliconangle.com/2025/11/18/microsoft-updates-database-portfolio-adds-open-source-offerings/",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-11-03T22:45:25.921Z"
+    },
+    {
+      "titulo": "Supabase Select 2026: Multigres, OrioleDB y dbarena",
+      "resumen": "Supabase ha presentado tres soluciones open source —Multigres, OrioleDB y dbarena— diseñadas para abordar problemas históricos de PostgreSQL, como la falta de alta disponibilidad y la deuda operativa del VACUUM.",
+      "fuente": "Ecosistema Startup",
+      "url": "https://ecosistemastartup.com/supabase-select-2026-multigres-orioledb-y-dbarena/",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-11-03T22:45:25.921Z"
+    },
+    {
+      "titulo": "Marvell adquiere Lumentum por 115.000 millones de dólares en acciones, apostando por la óptica de la IA",
+      "resumen": "Marvell ha acordado la compra de Lumentum en un trato de acciones valorado en 115.000 millones de dólares, buscando fortalecer su presencia en el sector de la óptica aplicada a la inteligencia artificial.",
+      "fuente": "OrigoTech",
+      "url": "https://origotech.dev/es/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-03T22:45:21.390Z"
+    },
+    {
+      "titulo": "Moonshot cierra Kimi K2 a nuevos usuarios y prevé retirarlo antes de fin de año",
+      "resumen": "Desde el 31 de octubre de 2026, Moonshot ha cerrado el acceso a nuevos registros para sus modelos K2 y planea retirarlos antes de finalizar el año.",
+      "fuente": "OrigoTech",
+      "url": "https://origotech.dev/es/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-03T22:45:21.390Z"
+    },
+    {
+      "titulo": "GitHub Copilot Workspace redefine el desarrollo de software en 2026",
+      "resumen": "GitHub Copilot Workspace ha introducido nuevas funcionalidades que transforman la manera en que los desarrolladores interactúan con el código, ofreciendo un entorno más integrado y eficiente.",
+      "fuente": "Codelan",
+      "url": "https://codelan.cl/noticias/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-03T22:45:21.390Z"
+    },
+    {
+      "titulo": "Google Antigravity: el nuevo IDE impulsado por IA para desarrolladores",
+      "resumen": "Google ha lanzado Antigravity, un entorno de desarrollo integrado que utiliza inteligencia artificial para asistir en tareas de codificación complejas, mejorando la productividad de los desarrolladores.",
+      "fuente": "Wikipedia",
+      "url": "https://es.wikipedia.org/wiki/Google_Antigravity",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-03T22:45:21.390Z"
+    },
     {
       "titulo": "Microsoft abre su infraestructura de IA a modelos externos y amplía funciones para desarrolladores",
       "resumen": "Microsoft ha abierto su infraestructura de inteligencia artificial a modelos externos y ha ampliado las funciones para desarrolladores, permitiendo una mayor colaboración y personalización en el desarrollo de soluciones de IA en la nube.",
