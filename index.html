@@ -96,6 +96,94 @@
         scrollbar-color: #34415b transparent;
       }
 
+      .preferences {
+        margin-bottom: 22px;
+        padding: 18px;
+        border: 1px solid #222d43;
+        border-radius: 16px;
+        background: #11192b;
+      }
+
+      .preferences h2 {
+        margin-bottom: 15px;
+      }
+
+      .preference-controls {
+        display: grid;
+        gap: 18px;
+      }
+
+      .preferences fieldset {
+        min-width: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+
+      .preferences legend,
+      .refresh-label {
+        display: block;
+        margin-bottom: 9px;
+        color: #cbd5e6;
+        font-size: 0.88rem;
+        font-weight: 700;
+      }
+
+      .topic-options {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9px;
+      }
+
+      .topic-option {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        min-height: 40px;
+        padding: 8px 12px;
+        border: 1px solid #2b3650;
+        border-radius: 999px;
+        color: #aeb9cc;
+        cursor: pointer;
+        font-size: 0.86rem;
+      }
+
+      .topic-option:has(input:checked) {
+        border-color: #83d6b2;
+        background: #16332f;
+        color: #a6f0ce;
+      }
+
+      .topic-option input {
+        accent-color: #83d6b2;
+      }
+
+      .refresh-select {
+        min-height: 42px;
+        padding: 8px 12px;
+        border: 1px solid #34415b;
+        border-radius: 9px;
+        background: #0b1020;
+        color: #e8edf8;
+        font: inherit;
+      }
+
+      .preferences-note,
+      .settings-status {
+        margin: 12px 0 0;
+        color: #8492aa;
+        font-size: 0.8rem;
+        line-height: 1.5;
+      }
+
+      .settings-status:empty {
+        display: none;
+      }
+
+      .settings-status.status-error {
+        color: #ffb4b4;
+      }
+
       .filter-button {
         flex: 0 0 auto;
         min-height: 40px;
@@ -274,10 +362,35 @@
         </p>
       </header>
 
+      <section class="preferences" aria-labelledby="preferences-heading">
+        <h2 id="preferences-heading">Personaliza tu radar</h2>
+        <div class="preference-controls">
+          <fieldset>
+            <legend>Temas que quieres seguir</legend>
+            <div class="topic-options" id="topic-options"></div>
+          </fieldset>
+          <div>
+            <label class="refresh-label" for="refresh-interval">
+              Comprobar novedades publicadas cada
+            </label>
+            <select class="refresh-select" id="refresh-interval">
+              <option value="900000">15 minutos</option>
+              <option value="1800000" selected>30 minutos</option>
+              <option value="3600000">1 hora</option>
+              <option value="7200000">2 horas</option>
+              <option value="21600000">6 horas</option>
+            </select>
+          </div>
+        </div>
+        <p class="preferences-note">
+          Estos ajustes se guardan en este navegador. La frecuencia solo controla
+          cada cuánto se consulta el estado publicado; la búsqueda de noticias
+          sigue el horario general del radar.
+        </p>
+        <p class="settings-status" id="settings-status" role="status" aria-live="polite"></p>
+      </section>
+
       <nav class="filters" id="filters" aria-label="Filtrar novedades por tema">
-        <button class="filter-button" type="button" data-topic="all" aria-pressed="true">
-          Todos
-        </button>
       </nav>
 
       <section aria-labelledby="news-heading">
@@ -293,11 +406,23 @@
 
     <script>
       const filtersElement = document.querySelector("#filters");
+      const topicOptionsElement = document.querySelector("#topic-options");
       const listElement = document.querySelector("#news-list");
       const countElement = document.querySelector("#count");
+      const refreshIntervalElement = document.querySelector("#refresh-interval");
+      const settingsStatusElement = document.querySelector("#settings-status");
+      const preferencesKey = "radar-preferencias";
+      const refreshIntervals = new Set([900000, 1800000, 3600000, 7200000, 21600000]);
       let activeTopic = "all";
       let topics = [];
       let news = [];
+      let selectedTopicIds = new Set();
+      let refreshInterval = 1800000;
+      let refreshTimer;
+      let hasLoadedState = false;
+      let requestInProgress = false;
+      let renderedTopics = "";
+      let preferencesError = false;
 
       function formatDate(value) {
         const date = new Date(value);
@@ -332,23 +457,120 @@
         }
       }
 
-      function renderFilters() {
+      function showSettingsStatus(message, isError = false) {
+        settingsStatusElement.textContent = message;
+        settingsStatusElement.classList.toggle("status-error", isError);
+      }
+
+      function readPreferences() {
+        const defaults = {
+          topicIds: topics.map((topic) => topic.id),
+          interval: 1800000,
+        };
+
+        try {
+          const saved = localStorage.getItem(preferencesKey);
+          if (saved === null) {
+            return defaults;
+          }
+
+          const parsed = JSON.parse(saved);
+          if (
+            !parsed ||
+            typeof parsed !== "object" ||
+            !Array.isArray(parsed.topicIds) ||
+            !parsed.topicIds.every((id) => typeof id === "string") ||
+            !refreshIntervals.has(parsed.interval)
+          ) {
+            throw new Error("Las preferencias guardadas tienen un formato inválido.");
+          }
+
+          const availableTopicIds = new Set(topics.map((topic) => topic.id));
+          return {
+            topicIds: parsed.topicIds.filter((id) => availableTopicIds.has(id)),
+            interval: parsed.interval,
+          };
+        } catch (error) {
+          const detail = error instanceof Error ? error.message : String(error);
+          preferencesError = true;
+          showSettingsStatus(
+            `No se pudieron leer tus preferencias (${detail}). Se usarán los valores predeterminados.`,
+            true,
+          );
+          return defaults;
+        }
+      }
+
+      function savePreferences() {
+        try {
+          localStorage.setItem(
+            preferencesKey,
+            JSON.stringify({
+              topicIds: [...selectedTopicIds],
+              interval: refreshInterval,
+            }),
+          );
+          preferencesError = false;
+          showSettingsStatus("Preferencias guardadas en este navegador.");
+        } catch (error) {
+          const detail = error instanceof Error ? error.message : String(error);
+          preferencesError = true;
+          showSettingsStatus(`No se pudieron guardar tus preferencias: ${detail}`, true);
+        }
+      }
+
+      function renderTopicOptions() {
+        const topicSignature = JSON.stringify(
+          topics.map((topic) => [topic.id, topic.nombre]),
+        );
+        if (topicSignature === renderedTopics) {
+          return;
+        }
+        renderedTopics = topicSignature;
+        topicOptionsElement.replaceChildren();
+
         for (const topic of topics) {
+          const label = document.createElement("label");
+          label.className = "topic-option";
+          const checkbox = document.createElement("input");
+          checkbox.type = "checkbox";
+          checkbox.dataset.topic = topic.id;
+          checkbox.checked = selectedTopicIds.has(topic.id);
+          label.append(checkbox, document.createTextNode(topic.nombre));
+          topicOptionsElement.append(label);
+        }
+      }
+
+      function renderFilters() {
+        filtersElement.replaceChildren();
+        const allButton = document.createElement("button");
+        allButton.type = "button";
+        allButton.className = "filter-button";
+        allButton.dataset.topic = "all";
+        allButton.setAttribute("aria-pressed", String(activeTopic === "all"));
+        allButton.textContent = "Todos";
+        filtersElement.append(allButton);
+
+        for (const topic of topics) {
+          if (!selectedTopicIds.has(topic.id)) {
+            continue;
+          }
           const button = document.createElement("button");
           button.type = "button";
           button.className = "filter-button";
           button.dataset.topic = topic.id;
           button.setAttribute("aria-pressed", String(activeTopic === topic.id));
-          button.textContent = `${topic.nombre} · ${topic.frecuenciaHoras} h`;
+          button.textContent = topic.nombre;
           filtersElement.append(button);
         }
       }
 
       function renderNews() {
+        const followedNews = news.filter((item) => selectedTopicIds.has(item.temaId));
         const visibleNews =
           activeTopic === "all"
-            ? news
-            : news.filter((item) => item.temaId === activeTopic);
+            ? followedNews
+            : followedNews.filter((item) => item.temaId === activeTopic);
 
         countElement.textContent = `${visibleNews.length} ${
           visibleNews.length === 1 ? "novedad" : "novedades"
@@ -358,12 +580,20 @@
         if (visibleNews.length === 0) {
           const empty = document.createElement("div");
           empty.className = "empty-state";
-          addTextElement(empty, "strong", "", "Todavía no hay novedades");
+          const noTopicsSelected = selectedTopicIds.size === 0;
+          addTextElement(
+            empty,
+            "strong",
+            "",
+            noTopicsSelected ? "No sigues ningún tema" : "Todavía no hay novedades",
+          );
           addTextElement(
             empty,
             "span",
             "",
-            "Vuelve pronto: el radar se actualiza periódicamente.",
+            noTopicsSelected
+              ? "Elige al menos un tema para ver sus novedades."
+              : "Vuelve pronto: el radar se actualiza periódicamente.",
           );
           listElement.append(empty);
           return;
@@ -429,7 +659,46 @@
         renderNews();
       });
 
+      topicOptionsElement.addEventListener("change", (event) => {
+        if (!(event.target instanceof HTMLInputElement)) {
+          return;
+        }
+
+        const topicId = event.target.dataset.topic;
+        if (!topicId) {
+          return;
+        }
+
+        if (event.target.checked) {
+          selectedTopicIds.add(topicId);
+        } else {
+          selectedTopicIds.delete(topicId);
+        }
+        if (activeTopic !== "all" && !selectedTopicIds.has(activeTopic)) {
+          activeTopic = "all";
+        }
+        savePreferences();
+        renderFilters();
+        renderNews();
+      });
+
+      refreshIntervalElement.addEventListener("change", () => {
+        refreshInterval = Number(refreshIntervalElement.value);
+        savePreferences();
+        scheduleRefresh();
+      });
+
+      function scheduleRefresh() {
+        clearInterval(refreshTimer);
+        refreshTimer = setInterval(loadState, refreshInterval);
+      }
+
       async function loadState() {
+        if (requestInProgress) {
+          return;
+        }
+        requestInProgress = true;
+
         try {
           const response = await fetch(`./estado.json?t=${Date.now()}`);
           if (!response.ok) {
@@ -443,21 +712,57 @@
 
           topics = state.temas;
           news = state.novedades;
+          if (!hasLoadedState) {
+            const preferences = readPreferences();
+            selectedTopicIds = new Set(preferences.topicIds);
+            refreshInterval = preferences.interval;
+            refreshIntervalElement.value = String(refreshInterval);
+            renderTopicOptions();
+            hasLoadedState = true;
+          } else {
+            const availableTopicIds = new Set(topics.map((topic) => topic.id));
+            selectedTopicIds = new Set(
+              [...selectedTopicIds].filter((id) => availableTopicIds.has(id)),
+            );
+            renderTopicOptions();
+            if (activeTopic !== "all" && !selectedTopicIds.has(activeTopic)) {
+              activeTopic = "all";
+            }
+          }
+
           renderFilters();
           renderNews();
+          scheduleRefresh();
+          if (!preferencesError) {
+            showSettingsStatus(
+              `Última consulta: ${new Intl.DateTimeFormat(undefined, {
+                timeStyle: "short",
+              }).format(new Date())}.`,
+            );
+          }
         } catch (error) {
-          listElement.replaceChildren();
-          const message = document.createElement("div");
-          message.className = "empty-state status-error";
           const detalle =
             error instanceof Error ? error.message : String(error);
-          message.textContent = `No fue posible cargar las novedades: ${detalle}`;
-          listElement.append(message);
-          countElement.textContent = "";
+          if (hasLoadedState) {
+            showSettingsStatus(
+              `No fue posible consultar las novedades: ${detalle}. Se conservan las últimas cargadas.`,
+              true,
+            );
+          } else {
+            listElement.replaceChildren();
+            const message = document.createElement("div");
+            message.className = "empty-state status-error";
+            message.textContent = `No fue posible cargar las novedades: ${detalle}`;
+            listElement.append(message);
+            countElement.textContent = "";
+          }
+        } finally {
+          requestInProgress = false;
         }
       }
 
       loadState();
+      scheduleRefresh();
     </script>
   </body>
 </html>
