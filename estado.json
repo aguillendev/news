@@ -5,17 +5,49 @@
       "nombre": "Desarrollo e IA",
       "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
       "frecuenciaHoras": 12,
-      "ultimaEjecucion": "2026-11-04T13:36:46.204Z"
+      "ultimaEjecucion": "2026-11-05T01:55:59.141Z"
     },
     {
       "id": "backend-arquitectura",
       "nombre": "Backend y arquitectura",
       "consulta": "Novedades recientes sobre backend, arquitectura de software, bases de datos y sistemas distribuidos",
       "frecuenciaHoras": 24,
-      "ultimaEjecucion": "2026-11-03T22:45:25.921Z"
+      "ultimaEjecucion": "2026-11-05T01:56:03.502Z"
     }
   ],
   "novedades": [
+    {
+      "titulo": "TanStack DB 1.0 RC1: Going All In on Oracles",
+      "resumen": "TanStack DB ha lanzado la versión candidata 1.0 RC1, enfocándose en la integración con oráculos para mejorar la fiabilidad y el rendimiento en aplicaciones que requieren datos externos.",
+      "fuente": "TanStack Blog",
+      "url": "https://tanstack.com/blog?library=db",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-11-05T01:56:03.502Z"
+    },
+    {
+      "titulo": "Reunión de la comunidad de datos de .NET",
+      "resumen": "Microsoft ha organizado una reunión mensual de la comunidad de datos de .NET, donde se discuten temas como el análisis de código estático de T-SQL y las últimas novedades en Entity Framework Core.",
+      "fuente": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/es-es/ef/core/learn-more/community-standups",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-11-05T01:56:03.502Z"
+    },
+    {
+      "titulo": "Automatización Python para ahorrar tiempo y reducir errores",
+      "resumen": "NEXONEXT ofrece soluciones en Python para automatizar procesos empresariales, incluyendo dashboards, monitorización e integraciones, con el objetivo de reducir errores y mejorar el control del negocio.",
+      "fuente": "NEXONEXT",
+      "url": "https://www.nexonext.es/python",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-11-05T01:56:03.502Z"
+    },
+    {
+      "titulo": "GPT-5.3-Codex impulsa la programación y mejora el desarrollo de software",
+      "resumen": "OpenAI ha lanzado GPT-5.3-Codex, su IA más potente hasta la fecha para tareas automatizadas de ingeniería de software, destacándose por su rendimiento superior en benchmarks como SWE-Bench Pro y Terminal-Bench 2.0, y por su capacidad para auto-generarse durante su desarrollo.",
+      "fuente": "Hipertextual",
+      "url": "https://hipertextual.com/inteligencia-artificial/gpt-5-3-codex-openai/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-05T01:55:59.141Z"
+    },
     {
       "titulo": "Microsoft actualiza su portafolio de bases de datos e introduce ofertas de código abierto",
       "resumen": "Microsoft ha anunciado actualizaciones en su portafolio de bases de datos, incluyendo la disponibilidad general de Azure DocumentDB y SQL Server 2025, así como la vista previa privada de Azure HorizonDB, una base de datos en la nube basada en PostgreSQL.",
