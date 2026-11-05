@@ -5,7 +5,7 @@
       "nombre": "Desarrollo e IA",
       "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
       "frecuenciaHoras": 12,
-      "ultimaEjecucion": "2026-11-05T01:55:59.141Z"
+      "ultimaEjecucion": "2026-11-05T17:48:13.761Z"
     },
     {
       "id": "backend-arquitectura",
@@ -16,6 +16,46 @@
     }
   ],
   "novedades": [
+    {
+      "titulo": "OpenAI adquiere Pierre Computer para competir con GitHub",
+      "resumen": "OpenAI ha anunciado la adquisición de Pierre Computer, una startup de herramientas para desarrolladores, con el objetivo de integrar su función de almacenamiento de código en Codex y ofrecer una alternativa a GitHub, especialmente tras los problemas de fiabilidad que ha experimentado la plataforma de Microsoft.",
+      "fuente": "Axios",
+      "url": "https://www.axios.com/2026/11/04/openai-pierre-computer-github",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-05T17:48:13.761Z"
+    },
+    {
+      "titulo": "IBM destaca el impacto de la IA generativa en el desarrollo de software",
+      "resumen": "IBM ha publicado un artículo que resalta cómo la inteligencia artificial generativa está transformando el proceso de desarrollo de software, mejorando la productividad, precisión e innovación al automatizar tareas clave como la generación de código y la optimización de pruebas.",
+      "fuente": "IBM",
+      "url": "https://www.ibm.com/es-es/think/topics/ai-in-software-development",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-05T17:48:13.761Z"
+    },
+    {
+      "titulo": "PUNTUEUS lanza BAAI.EUS, creador de páginas web impulsado por IA en euskera",
+      "resumen": "PUNTUEUS ha presentado BAAI.EUS, una plataforma que integra el modelo de inteligencia artificial en euskera Latxa, permitiendo a empresas y particulares crear y gestionar páginas web profesionales con dominio .eus sin necesidad de conocimientos avanzados de programación.",
+      "fuente": "Cadena SER",
+      "url": "https://cadenaser.com/euskadi/2026/10/30/baaieus-nace-el-primer-creador-de-paginas-web-impulsado-por-la-inteligencia-artificial-vasca-latxa-radio-san-sebastian/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-05T17:48:13.761Z"
+    },
+    {
+      "titulo": "Orange lanza MentorIA, aplicación de inteligencia artificial educativa",
+      "resumen": "Orange ha introducido MentorIA, una aplicación diseñada para fomentar el aprendizaje autónomo en estudiantes de 4.º de ESO, utilizando el método socrático para estimular el razonamiento y evitar que los alumnos deleguen sus tareas en modelos generativos.",
+      "fuente": "Cinco Días",
+      "url": "https://cincodias.elpais.com/companias/2026-10-23/orange-entra-en-el-negocio-de-la-inteligencia-artificial-con-el-lanzamiento-de-mentoria.html",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-05T17:48:13.761Z"
+    },
+    {
+      "titulo": "Logitech presenta el MX Master 4 Developer Edition, ratón para desarrolladores",
+      "resumen": "Logitech ha lanzado el MX Master 4 Developer Edition, una edición limitada de su ratón insignia dedicada a la comunidad de desarrolladores, que incluye un acabado mate con grabados láser inspirados en la programación y funciones personalizables para mejorar la productividad.",
+      "fuente": "Cinco Días",
+      "url": "https://cincodias.elpais.com/smartlife/gadgets/2026-10-27/logitech-mx-master-4-developer-edition-oficial.html",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-05T17:48:13.761Z"
+    },
     {
       "titulo": "TanStack DB 1.0 RC1: Going All In on Oracles",
       "resumen": "TanStack DB ha lanzado la versión candidata 1.0 RC1, enfocándose en la integración con oráculos para mejorar la fiabilidad y el rendimiento en aplicaciones que requieren datos externos.",
