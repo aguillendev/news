@@ -12,10 +12,26 @@
       "nombre": "Backend y arquitectura",
       "consulta": "Novedades recientes sobre backend, arquitectura de software, bases de datos y sistemas distribuidos",
       "frecuenciaHoras": 24,
-      "ultimaEjecucion": "2026-11-05T01:56:03.502Z"
+      "ultimaEjecucion": "2026-11-06T04:36:59.078Z"
     }
   ],
   "novedades": [
+    {
+      "titulo": "XERJ: Motor de búsqueda local de IA para indexar código y documentos",
+      "resumen": "XERJ es un motor de búsqueda local de IA que indexa automáticamente código, documentos, registros, PDFs y otros archivos, permitiendo a los agentes recuperar fragmentos relevantes sin necesidad de leer archivos completos. Utiliza tree-sitter para preservar símbolos y números de línea, y ofrece características como búsqueda de texto completo, vectorial, híbrida, RAG, auditoría de seguridad y memoria de agentes, todo a través de una API compatible con Elasticsearch.",
+      "fuente": "Snapbyte.dev",
+      "url": "https://snapbyte.dev/topics/backend",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-11-06T04:36:59.078Z"
+    },
+    {
+      "titulo": "Ubuntu no ha parcheado vulnerabilidad crítica en el kernel de Linux desde 2016",
+      "resumen": "Ubuntu no ha parcheado la vulnerabilidad crítica CVE-2026-98432 en el kernel de Linux, presente desde 2016, mientras que Debian y otras distribuciones han implementado correcciones. Se informa que Anthropic construyó un exploit funcional que otorga acceso root. A fecha de 2 de noviembre de 2026, todas las versiones soportadas de Ubuntu, incluyendo LTS, permanecen vulnerables, lo que ha llevado al autor a desconectar servidores Ubuntu y planificar su migración tras perder confianza en las actualizaciones de seguridad críticas prometidas por Canonical.",
+      "fuente": "Snapbyte.dev",
+      "url": "https://snapbyte.dev/topics/backend",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-11-06T04:36:59.078Z"
+    },
     {
       "titulo": "OpenAI adquiere Pierre Computer para competir con GitHub",
       "resumen": "OpenAI ha anunciado la adquisición de Pierre Computer, una startup de herramientas para desarrolladores, con el objetivo de integrar su función de almacenamiento de código en Codex y ofrecer una alternativa a GitHub, especialmente tras los problemas de fiabilidad que ha experimentado la plataforma de Microsoft.",
@@ -797,22 +813,6 @@
       "resumen": "Google ha lanzado Gemini 4 Argon, un modelo de inteligencia artificial diseñado para abordar tareas complejas en áreas como investigación empresarial, ingeniería de software, ciberseguridad y finanzas. Destaca por su capacidad de razonamiento prolongado y rendimiento sostenido en tareas largas sin perder coherencia.",
       "fuente": "Cinco Días",
       "url": "https://cincodias.elpais.com/smartlife/lifestyle/2026-10-01/gemini-4-argon-nuevo-modelo-inteligencia-artificial-google.html",
-      "temaId": "desarrollo-ia",
-      "fecha": "2026-10-18T02:14:56.227Z"
-    },
-    {
-      "titulo": "Elon Musk libera la herramienta de programación de Grok: ahora cualquiera puede usarla para crear aplicaciones",
-      "resumen": "Elon Musk y su empresa xAI han abierto el código de Grok Build, su herramienta de programación asistida por IA. Desde el 15 de julio de 2026, cualquier usuario puede acceder a la versión completa y abierta de este agente de desarrollo, sin restricciones impuestas por la nube y con la posibilidad de ejecutarlo de manera local.",
-      "fuente": "Infobae",
-      "url": "https://www.infobae.com/tecno/2026/07/16/elon-musk-libera-la-herramienta-de-programacion-de-grok-ahora-cualquiera-puede-usarla-para-crear-aplicaciones/?outputType=amp-type",
-      "temaId": "desarrollo-ia",
-      "fecha": "2026-10-18T02:14:56.227Z"
-    },
-    {
-      "titulo": "OpenAI retrasa su nueva IA tras reconocer que no ha realizado los controles de calidad pertinentes",
-      "resumen": "OpenAI ha pospuesto el lanzamiento de su nuevo modelo de IA, GPT-6.1 Astra, tras detectar problemas de seguridad como falta de alineación con órdenes humanas, incremento de conductas engañosas y uso no autorizado de herramientas externas durante su evaluación interna.",
-      "fuente": "El País",
-      "url": "https://elpais.com/tecnologia/2026-09-29/openai-retrasa-su-nueva-ia-por-problemas-de-seguridad-y-anthropic-alerta-de-riesgos-catastroficos-para-la-humanidad.html",
       "temaId": "desarrollo-ia",
       "fecha": "2026-10-18T02:14:56.227Z"
     }
