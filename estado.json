@@ -5,7 +5,7 @@
       "nombre": "Desarrollo e IA",
       "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
       "frecuenciaHoras": 12,
-      "ultimaEjecucion": "2026-11-05T17:48:13.761Z"
+      "ultimaEjecucion": "2026-11-06T13:34:18.859Z"
     },
     {
       "id": "backend-arquitectura",
@@ -16,6 +16,14 @@
     }
   ],
   "novedades": [
+    {
+      "titulo": "ArtCraft: Suite de código abierto que replica aplicaciones de Adobe",
+      "resumen": "ArtCraft es una suite de código abierto creada por Brandon Thomas que busca replicar las principales aplicaciones de Adobe, incluyendo PhotoCraft y LightCraft, ofreciendo una alternativa gratuita y multiplataforma.",
+      "fuente": "Los 40",
+      "url": "https://los40.com/2026/10/12/han-clonado-photoshop-y-el-resto-de-apps-de-adobe-que-es-la-suite-artcraft/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-06T13:34:18.859Z"
+    },
     {
       "titulo": "XERJ: Motor de búsqueda local de IA para indexar código y documentos",
       "resumen": "XERJ es un motor de búsqueda local de IA que indexa automáticamente código, documentos, registros, PDFs y otros archivos, permitiendo a los agentes recuperar fragmentos relevantes sin necesidad de leer archivos completos. Utiliza tree-sitter para preservar símbolos y números de línea, y ofrece características como búsqueda de texto completo, vectorial, híbrida, RAG, auditoría de seguridad y memoria de agentes, todo a través de una API compatible con Elasticsearch.",
@@ -807,14 +815,6 @@
       "url": "https://news.ycombinator.com/item?id=1282",
       "temaId": "backend-arquitectura",
       "fecha": "2026-10-18T02:14:59.488Z"
-    },
-    {
-      "titulo": "Google presenta Gemini 4 Argon, un modelo de IA para tareas complejas",
-      "resumen": "Google ha lanzado Gemini 4 Argon, un modelo de inteligencia artificial diseñado para abordar tareas complejas en áreas como investigación empresarial, ingeniería de software, ciberseguridad y finanzas. Destaca por su capacidad de razonamiento prolongado y rendimiento sostenido en tareas largas sin perder coherencia.",
-      "fuente": "Cinco Días",
-      "url": "https://cincodias.elpais.com/smartlife/lifestyle/2026-10-01/gemini-4-argon-nuevo-modelo-inteligencia-artificial-google.html",
-      "temaId": "desarrollo-ia",
-      "fecha": "2026-10-18T02:14:56.227Z"
     }
   ]
 }
