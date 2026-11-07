@@ -5,7 +5,7 @@
       "nombre": "Desarrollo e IA",
       "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
       "frecuenciaHoras": 12,
-      "ultimaEjecucion": "2026-11-07T08:06:45.163Z"
+      "ultimaEjecucion": "2026-11-07T21:17:20.314Z"
     },
     {
       "id": "backend-arquitectura",
@@ -16,6 +16,14 @@
     }
   ],
   "novedades": [
+    {
+      "titulo": "OpenAI planea adquirir Pierre Computer para competir con GitHub",
+      "resumen": "OpenAI tiene previsto adquirir Pierre Computer, una startup de herramientas para desarrolladores cuya tecnología ya está integrada en su producto Codex. Esta adquisición permitirá a OpenAI gestionar el almacenamiento y manejo del código generado por IA, ampliando su papel en el ciclo completo de desarrollo de software.",
+      "fuente": "Axios",
+      "url": "https://www.axios.com/2026/11/04/openai-pierre-computer-github",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-07T21:17:20.314Z"
+    },
     {
       "titulo": "Amazon adquiere DuckLabs y estrena DuckDB dentro de Aurora PostgreSQL",
       "resumen": "Amazon ha adquirido DuckLabs, la empresa detrás de DuckDB, y ha integrado este motor analítico en Aurora PostgreSQL, permitiendo combinar datos en tiempo real con históricos en Iceberg/Parquet sobre S3 en todas las regiones comerciales.",
@@ -805,14 +813,6 @@
       "resumen": "Redis 8.6 incorpora optimizaciones de prefetching, mejora en operaciones con conjuntos ordenados y optimización de memoria, aumentando la velocidad y confiabilidad tanto para desarrolladores como para empresas.",
       "fuente": "CIBERED",
       "url": "https://cibered.com/programacion/bases-datos/redis-8-6-mejoras-rendimiento-memoria/",
-      "temaId": "backend-arquitectura",
-      "fecha": "2026-10-19T02:44:15.976Z"
-    },
-    {
-      "titulo": "El stack backend moderno 2026: Rust + PostgreSQL 18 + Wasm + eBPF",
-      "resumen": "La convergencia de Rust, PostgreSQL 18, WASI 0.3 y eBPF está habilitando arquitecturas backend más eficientes, reduciendo costos de infraestructura y mejorando la confiabilidad y el rendimiento.",
-      "fuente": "Open Soft Blog",
-      "url": "https://opensoft.asia/blog/stack-backend-moderno-2026-rust-postgresql-wasm-ebpf",
       "temaId": "backend-arquitectura",
       "fecha": "2026-10-19T02:44:15.976Z"
     }
