@@ -12,10 +12,34 @@
       "nombre": "Backend y arquitectura",
       "consulta": "Novedades recientes sobre backend, arquitectura de software, bases de datos y sistemas distribuidos",
       "frecuenciaHoras": 24,
-      "ultimaEjecucion": "2026-11-07T08:06:50.708Z"
+      "ultimaEjecucion": "2026-11-08T08:25:56.537Z"
     }
   ],
   "novedades": [
+    {
+      "titulo": "IBM presenta Db2 Serverless: una base de datos sin servidor para desarrolladores y agentes",
+      "resumen": "IBM ha lanzado la vista previa técnica de Db2 Serverless, un servicio de bases de datos nativo de la nube totalmente gestionado que facilita la creación, conexión y escalado de bases de datos sin necesidad de gestionar la infraestructura.",
+      "fuente": "IBM",
+      "url": "https://www.ibm.com/es-es/new/announcements/tech-preview-ibm-db2-serverless",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-11-08T08:25:56.536Z"
+    },
+    {
+      "titulo": "Novedades del Centro de arquitectura de Azure",
+      "resumen": "Microsoft ha actualizado el Centro de arquitectura de Azure con nuevos artículos sobre actualizaciones de caché controladas por eventos con Azure Managed Redis y Azure Cosmos DB, y almacenamiento en caché de tipo cache-aside con Azure Managed Redis y Azure Database for PostgreSQL.",
+      "fuente": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/es-es/azure/architecture/changelog",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-11-08T08:25:56.537Z"
+    },
+    {
+      "titulo": "Supabase: por qué los agentes de IA eligen su backend",
+      "resumen": "Supabase ha ganado popularidad entre los agentes de IA como backend debido a su familiaridad y eficiencia, facilitando la creación y gestión de bases de datos por parte de modelos de IA.",
+      "fuente": "Ecosistema Startup",
+      "url": "https://ecosistemastartup.com/supabase-por-que-los-agentes-de-ia-eligen-su-backend/",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-11-08T08:25:56.537Z"
+    },
     {
       "titulo": "OpenAI planea adquirir Pierre Computer para competir con GitHub",
       "resumen": "OpenAI tiene previsto adquirir Pierre Computer, una startup de herramientas para desarrolladores cuya tecnología ya está integrada en su producto Codex. Esta adquisición permitirá a OpenAI gestionar el almacenamiento y manejo del código generado por IA, ampliando su papel en el ciclo completo de desarrollo de software.",
@@ -789,30 +813,6 @@
       "resumen": "Neon ha presentado una suite completa de primitivas backend basadas en la arquitectura Lakebase, que incluye Lakebase Postgres, almacenamiento de objetos, funciones, autenticación gestionada y una puerta de enlace AI, todas listas para producción.",
       "fuente": "Neon",
       "url": "https://neon.com/blog/neon-backend-is-ga",
-      "temaId": "backend-arquitectura",
-      "fecha": "2026-10-19T02:44:15.976Z"
-    },
-    {
-      "titulo": "Supabase adopta PostgreSQL 17 y reestructura roles en su arquitectura self-hosted",
-      "resumen": "Supabase ha actualizado su stack autoalojado, estableciendo PostgreSQL 17 como motor predeterminado y reestructurando los roles de seguridad para optimizar la gestión de datos.",
-      "fuente": "Siglo 21 Soluciones",
-      "url": "https://siglo21soluciones.com/noticias/supabase-arquitectura-self-hosted-postgresql-17-roles-2026-08-26",
-      "temaId": "backend-arquitectura",
-      "fecha": "2026-10-19T02:44:15.976Z"
-    },
-    {
-      "titulo": "Supabase Select 2026: backend desde código y MCP para tu app",
-      "resumen": "En su evento anual Supabase Select, la plataforma open source de backend sobre Postgres presentó un paquete de novedades orientado a los coding agents, permitiendo la creación de tablas, ajuste de políticas de seguridad y despliegue de servicios directamente desde el código.",
-      "fuente": "El Ecosistema Startup",
-      "url": "https://ecosistemastartup.com/supabase-select-2026-backend-desde-codigo-y-mcp-para-tu-app/",
-      "temaId": "backend-arquitectura",
-      "fecha": "2026-10-19T02:44:15.976Z"
-    },
-    {
-      "titulo": "Redis 8.6 lanzado con importantes mejoras de rendimiento y reducción de memoria",
-      "resumen": "Redis 8.6 incorpora optimizaciones de prefetching, mejora en operaciones con conjuntos ordenados y optimización de memoria, aumentando la velocidad y confiabilidad tanto para desarrolladores como para empresas.",
-      "fuente": "CIBERED",
-      "url": "https://cibered.com/programacion/bases-datos/redis-8-6-mejoras-rendimiento-memoria/",
       "temaId": "backend-arquitectura",
       "fecha": "2026-10-19T02:44:15.976Z"
     }
