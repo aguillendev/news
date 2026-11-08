@@ -5,7 +5,7 @@
       "nombre": "Desarrollo e IA",
       "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
       "frecuenciaHoras": 12,
-      "ultimaEjecucion": "2026-11-07T21:17:20.314Z"
+      "ultimaEjecucion": "2026-11-08T16:28:29.242Z"
     },
     {
       "id": "backend-arquitectura",
@@ -16,6 +16,22 @@
     }
   ],
   "novedades": [
+    {
+      "titulo": "El linense Ismael Cruz conquista el mercado internacional con un software para talleres",
+      "resumen": "Ismael Cruz ha desarrollado Sattotal, un software en la nube para gestionar talleres de reparación de dispositivos electrónicos, que ya se utiliza en 24 países y ha incorporado inteligencia artificial para adaptarse a diferentes idiomas y normativas.",
+      "fuente": "Cadena SER",
+      "url": "https://cadenaser.com/andalucia/2026/10/12/el-linense-ismael-cruz-conquista-el-mercado-internacional-con-un-software-para-talleres-radio-algeciras/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-08T16:28:29.242Z"
+    },
+    {
+      "titulo": "Han clonado Photoshop y el resto de apps de Adobe y son gratuitas: ¿qué es ArtCraft?",
+      "resumen": "ArtCraft es una suite de código abierto creada por Brandon Thomas que replica las principales aplicaciones de Adobe, ofreciendo una alternativa gratuita y multiplataforma para creativos y desarrolladores.",
+      "fuente": "Los 40",
+      "url": "https://los40.com/2026/10/12/han-clonado-photoshop-y-el-resto-de-apps-de-adobe-que-es-la-suite-artcraft/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-08T16:28:29.242Z"
+    },
     {
       "titulo": "IBM presenta Db2 Serverless: una base de datos sin servidor para desarrolladores y agentes",
       "resumen": "IBM ha lanzado la vista previa técnica de Db2 Serverless, un servicio de bases de datos nativo de la nube totalmente gestionado que facilita la creación, conexión y escalado de bases de datos sin necesidad de gestionar la infraestructura.",
@@ -799,22 +815,6 @@
       "url": "https://www.cifuentec.com/",
       "temaId": "desarrollo-ia",
       "fecha": "2026-10-19T21:54:53.135Z"
-    },
-    {
-      "titulo": "Devin AI",
-      "resumen": "Devin AI es una herramienta de asistencia autónoma de inteligencia artificial creada por Cognition Labs. Señalado como un \"desarrollador de Software de IA\", la herramienta de demostración está diseñada para completar tareas de desarrollo de software.",
-      "fuente": "Wikipedia",
-      "url": "https://es.wikipedia.org/wiki/Devin_AI",
-      "temaId": "desarrollo-ia",
-      "fecha": "2026-10-19T21:54:53.135Z"
-    },
-    {
-      "titulo": "Neon lanza su backend con arquitectura Lakebase",
-      "resumen": "Neon ha presentado una suite completa de primitivas backend basadas en la arquitectura Lakebase, que incluye Lakebase Postgres, almacenamiento de objetos, funciones, autenticación gestionada y una puerta de enlace AI, todas listas para producción.",
-      "fuente": "Neon",
-      "url": "https://neon.com/blog/neon-backend-is-ga",
-      "temaId": "backend-arquitectura",
-      "fecha": "2026-10-19T02:44:15.976Z"
     }
   ]
 }
