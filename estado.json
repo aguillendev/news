@@ -5,17 +5,57 @@
       "nombre": "Desarrollo e IA",
       "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
       "frecuenciaHoras": 12,
-      "ultimaEjecucion": "2026-11-08T16:28:29.242Z"
+      "ultimaEjecucion": "2026-11-09T08:56:37.508Z"
     },
     {
       "id": "backend-arquitectura",
       "nombre": "Backend y arquitectura",
       "consulta": "Novedades recientes sobre backend, arquitectura de software, bases de datos y sistemas distribuidos",
       "frecuenciaHoras": 24,
-      "ultimaEjecucion": "2026-11-08T08:25:56.537Z"
+      "ultimaEjecucion": "2026-11-09T08:56:42.604Z"
     }
   ],
   "novedades": [
+    {
+      "titulo": "Escalando D1: Arquitectura del Plano de Control para Millones de Bases de Datos SQLite",
+      "resumen": "Un artículo analiza cómo desacoplar el plano de control del plano de datos es crucial para la escalabilidad y baja latencia en sistemas distribuidos a escala de hyperscaler, utilizando SQLite como ejemplo.",
+      "fuente": "KernelDigest",
+      "url": "https://kerneldigest.dev/articulos/escalando-d1-arquitectura-del-plano-de-control-para-millones-de-bases-de-datos-sqlite",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-11-09T08:56:42.604Z"
+    },
+    {
+      "titulo": "Backend & Fullstack Daily — 19 Oct 2026: Amazon buys DuckDB, Kysely hardens transactions and Nx 24 keeps breaking things",
+      "resumen": "Amazon ha adquirido DuckLabs, la empresa detrás de DuckDB, y ha integrado esta tecnología en Aurora PostgreSQL, permitiendo combinar datos en vivo con históricos en una sola consulta.",
+      "fuente": "Dev Daily Briefs",
+      "url": "https://devbrief.dev/backend-fullstack/backend-fullstack-2026-10-19/",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-11-09T08:56:42.604Z"
+    },
+    {
+      "titulo": "Meta adquiere la startup de IA Conductor para mejorar herramientas de desarrollo",
+      "resumen": "Meta ha adquirido Conductor, una startup de IA que permite a los ingenieros de software gestionar múltiples agentes de codificación simultáneamente, fortaleciendo su presencia en herramientas para desarrolladores.",
+      "fuente": "Axios",
+      "url": "https://www.axios.com/2026/11/04/meta-acquires-ai-coding-startup-conductor",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-09T08:56:37.508Z"
+    },
+    {
+      "titulo": "Orange lanza MentorIA, una aplicación educativa impulsada por IA",
+      "resumen": "Orange ha introducido MentorIA, una aplicación diseñada para fomentar el aprendizaje autónomo en estudiantes de 4.º de ESO, utilizando el método socrático y respetando la privacidad de los usuarios.",
+      "fuente": "Cinco Días",
+      "url": "https://cincodias.elpais.com/companias/2026-10-23/orange-entra-en-el-negocio-de-la-inteligencia-artificial-con-el-lanzamiento-de-mentoria.html",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-09T08:56:37.508Z"
+    },
+    {
+      "titulo": "Logitech presenta el MX Master 4 Developer Edition, un ratón para desarrolladores",
+      "resumen": "Logitech ha lanzado el MX Master 4 Developer Edition, una edición limitada de su ratón insignia con características personalizadas para la comunidad de desarrolladores.",
+      "fuente": "Cinco Días",
+      "url": "https://cincodias.elpais.com/smartlife/gadgets/2026-10-27/logitech-mx-master-4-developer-edition-oficial.html",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-09T08:56:37.508Z"
+    },
     {
       "titulo": "El linense Ismael Cruz conquista el mercado internacional con un software para talleres",
       "resumen": "Ismael Cruz ha desarrollado Sattotal, un software en la nube para gestionar talleres de reparación de dispositivos electrónicos, que ya se utiliza en 24 países y ha incorporado inteligencia artificial para adaptarse a diferentes idiomas y normativas.",
@@ -775,46 +815,6 @@
       "url": "https://casystem.com.mx/es-mx/tendencias-tecnicas-en-desarrollo-de-software-2025-2026-innovacion-y-eficiencia",
       "temaId": "desarrollo-ia",
       "fecha": "2026-10-20T13:11:52.182Z"
-    },
-    {
-      "titulo": "Amazon RDS para PostgreSQL ahora es compatible con la versión principal 18",
-      "resumen": "Amazon RDS para PostgreSQL ha añadido soporte para la versión principal 18, ofreciendo mejoras significativas en el rendimiento de consultas y la gestión de bases de datos, incluyendo optimizaciones en índices y operaciones de unión.",
-      "fuente": "AWS",
-      "url": "https://aws.amazon.com/es/about-aws/whats-new/2025/11/amazon-rds-postgresql-major-version-18/",
-      "temaId": "backend-arquitectura",
-      "fecha": "2026-10-20T06:58:44.787Z"
-    },
-    {
-      "titulo": "QuestDB 9.0 ya está disponible: rendimiento optimizado y con soporte para arrays multidimensionales",
-      "resumen": "QuestDB ha lanzado la versión 9.0, que incluye mejoras en el rendimiento y soporte inicial para arrays multidimensionales, ampliando sus capacidades para el procesamiento de datos en tiempo real.",
-      "fuente": "CIBERED",
-      "url": "https://cibered.com/programacion/bases-datos/questdb-9-0-ya-esta-disponible/",
-      "temaId": "backend-arquitectura",
-      "fecha": "2026-10-20T06:58:44.787Z"
-    },
-    {
-      "titulo": "PostgreSQL 18 Press Kit",
-      "resumen": "El Grupo Global de Desarrollo de PostgreSQL ha anunciado el lanzamiento de PostgreSQL 18, la versión más reciente de la base de datos de código abierto más avanzada del mundo, con mejoras en rendimiento y nuevas características.",
-      "fuente": "PostgreSQL",
-      "url": "https://www.postgresql.org/about/press/presskit18/es/",
-      "temaId": "backend-arquitectura",
-      "fecha": "2026-10-20T06:58:44.787Z"
-    },
-    {
-      "titulo": "Desarrollo con IA: herramientas, prácticas y arquitectura",
-      "resumen": "La IA puede intervenir al escribir código, revisar cambios o ejecutar tareas del equipo. Esta selección reúne herramientas y prácticas para integrarla en el desarrollo de software.",
-      "fuente": "Puntoes",
-      "url": "https://www.puntoes.es/blog/temas/desarrollo/",
-      "temaId": "desarrollo-ia",
-      "fecha": "2026-10-19T21:54:53.135Z"
-    },
-    {
-      "titulo": "CifuenTec",
-      "resumen": "Manus AI lanzó Scheduled Tasks 2.0, una actualización enfocada en la automatización de tareas programadas mediante inteligencia artificial. La nueva versión permite configurar procesos recurrentes que se ejecutan de forma autónoma, reduciendo la necesidad de intervención manual en flujos de trabajo habituales.",
-      "fuente": "CifuenTec",
-      "url": "https://www.cifuentec.com/",
-      "temaId": "desarrollo-ia",
-      "fecha": "2026-10-19T21:54:53.135Z"
     }
   ]
 }
