@@ -12,10 +12,50 @@
       "nombre": "Backend y arquitectura",
       "consulta": "Novedades recientes sobre backend, arquitectura de software, bases de datos y sistemas distribuidos",
       "frecuenciaHoras": 24,
-      "ultimaEjecucion": "2026-11-09T08:56:42.604Z"
+      "ultimaEjecucion": "2026-11-10T12:01:42.094Z"
     }
   ],
   "novedades": [
+    {
+      "titulo": "IMDEA Software co-diseña y verifica Accord, el nuevo motor de transacciones de Apache Cassandra 6.0",
+      "resumen": "IMDEA Software, en colaboración con Apple y Télécom SudParis, ha diseñado y verificado Accord, un protocolo distribuido sin líder que se integrará en Apache Cassandra 6.0, mejorando la escalabilidad y resiliencia de las bases de datos distribuidas.",
+      "fuente": "Instituto IMDEA Software",
+      "url": "https://software.imdea.org/es/news/2026/10-28-accord/",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-11-10T12:01:42.094Z"
+    },
+    {
+      "titulo": "Microsoft pivota con Fabric hacia una plataforma unificada de datos e IA",
+      "resumen": "Microsoft ha presentado en Barcelona nuevas capacidades de Fabric, Power BI, OneLake y Azure SQL, buscando conectar datos, contexto empresarial y agentes de IA en una única plataforma.",
+      "fuente": "Computerworld.es",
+      "url": "https://www.computerworld.es/article/4228347/microsoft-pivota-con-fabric-hacia-una-plataforma-unificada-de-datos-e-ia.html",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-11-10T12:01:42.094Z"
+    },
+    {
+      "titulo": "Google presenta novedades de su Agentic Data Cloud: Lakehouse sin fronteras, Knowledge Catalog y bases de datos para agentes",
+      "resumen": "Google Cloud ha anunciado mejoras en su Agentic Data Cloud, incluyendo un Lakehouse sin fronteras basado en Apache Iceberg, un Knowledge Catalog para agentes y nuevas bases de datos para agentes, con el objetivo de activar todos los datos de una empresa de manera proactiva y a bajo coste.",
+      "fuente": "Zendoric",
+      "url": "https://www.zendoric.com/dia/2026-11-07/27",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-11-10T12:01:42.094Z"
+    },
+    {
+      "titulo": "Tendencias de Desarrollo de Software 2025–2026",
+      "resumen": "Las organizaciones están combinando arquitecturas distribuidas, API-First, inteligencia artificial, contenedores e integración empresarial dentro de un mismo ecosistema, redefiniendo el desarrollo de software.",
+      "fuente": "C&A Systems",
+      "url": "https://casystem.com.mx/es-mx/tendencias-tecnicas-en-desarrollo-de-software-2025-2026-innovacion-y-eficiencia",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-11-10T12:01:42.094Z"
+    },
+    {
+      "titulo": "El procesamiento asincrónico con `transformWithState` está ahora generalmente disponible",
+      "resumen": "Azure Databricks ha hecho generalmente disponible el procesamiento asincrónico para la API basada en filas `transformWithState` de Python, permitiendo ejecutar operaciones de estado y lógica de usuario simultáneamente para mayor rendimiento con cambios menores en el código.",
+      "fuente": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/es-es/azure/databricks/release-notes/product/2026/october",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-11-10T12:01:42.094Z"
+    },
     {
       "titulo": "Escalando D1: Arquitectura del Plano de Control para Millones de Bases de Datos SQLite",
       "resumen": "Un artículo analiza cómo desacoplar el plano de control del plano de datos es crucial para la escalabilidad y baja latencia en sistemas distribuidos a escala de hyperscaler, utilizando SQLite como ejemplo.",
@@ -775,46 +815,6 @@
       "url": "https://elpais.com/tecnologia/2026-09-29/openai-retrasa-su-nueva-ia-por-problemas-de-seguridad-y-anthropic-alerta-de-riesgos-catastroficos-para-la-humanidad.html",
       "temaId": "desarrollo-ia",
       "fecha": "2026-10-21T02:50:07.450Z"
-    },
-    {
-      "titulo": "HP SCDS afirma que no habrá burbuja en la inteligencia artificial",
-      "resumen": "Miguel Ángel Turrado, director general de HP SCDS, afirmó que no habrá una burbuja en el sector de la inteligencia artificial, aunque sí podría haberla en ciertas empresas específicas. Destacó la importancia de la IA como herramienta clave de competitividad e inclusión para empresas de todos los tamaños.",
-      "fuente": "Cinco Días",
-      "url": "https://cincodias.elpais.com/economia/foro-creo-creando-oportunidades/2026-10-14/miguel-angel-turrado-hp-scds-no-va-a-haber-burbuja-en-la-inteligencia-artificial.html",
-      "temaId": "desarrollo-ia",
-      "fecha": "2026-10-21T02:50:07.450Z"
-    },
-    {
-      "titulo": "Amazon lanza un editor de código de inteligencia artificial Kiro, que puede usar gratuitamente Claude 4/3.7 Sonnet",
-      "resumen": "AWS, el servicio de computación en la nube de Amazon, ha anunciado oficialmente el lanzamiento de su nuevo entorno de desarrollo integrado (IDE) impulsado por inteligencia artificial (IA) llamado Kiro. Esta herramienta busca revolucionar el proceso de desarrollo de software mediante el 'desarrollo basado en especificaciones' (Spec-Driven Development), resolviendo los problemas de desorden y ineficiencia asociados al 'código por intuición' (Vibe Coding), ofreciendo un apoyo sin interrupciones a los desarrolladores desde el diseño de prototipos hasta el entorno de producción.",
-      "fuente": "AIbase",
-      "url": "https://www.aibase.com/es/news/19676",
-      "temaId": "desarrollo-ia",
-      "fecha": "2026-10-20T13:11:52.182Z"
-    },
-    {
-      "titulo": "El Futuro del Código: Novedades de OpenAI, Google y Meta en Desarrollo con IA",
-      "resumen": "En el vertiginoso mundo de la inteligencia artificial y el desarrollo tecnológico, mayo de 2025 ha sido un mes memorable. Las grandes empresas tecnológicas como OpenAI, Google, Meta y otras han lanzado una serie de innovaciones que prometen transformar la manera en que interactuamos con la tecnología. Este artículo explora las tendencias y novedades más destacadas en el ámbito del desarrollo de software y la inteligencia artificial, basándonos en las recientes presentaciones y anuncios de estas compañías.",
-      "fuente": "Javadex",
-      "url": "https://www.javadex.es/blog/futuro-codigo-novedades-openai-google-meta-desarrollo-ia-programacion",
-      "temaId": "desarrollo-ia",
-      "fecha": "2026-10-20T13:11:52.182Z"
-    },
-    {
-      "titulo": "Desarrollo de software: artículos y novedades de IA",
-      "resumen": "PUNTOES ofrece una selección de herramientas y prácticas para integrar la inteligencia artificial en el desarrollo de software, incluyendo novedades y guías sobre arquitectura y controles de ejecución, con el objetivo de comprender qué cambia en el flujo de trabajo y qué decisiones siguen necesitando pruebas y criterio técnico.",
-      "fuente": "Puntoes",
-      "url": "https://www.puntoes.es/blog/temas/desarrollo/",
-      "temaId": "desarrollo-ia",
-      "fecha": "2026-10-20T13:11:52.182Z"
-    },
-    {
-      "titulo": "Tendencias de Desarrollo de Software 2025–2026",
-      "resumen": "La modernización del desarrollo ya no depende de una sola tecnología. IA generativa, cloud, automatización, contenedores y seguridad están convergiendo dentro de un mismo ciclo de ingeniería. La IA ya forma parte del ciclo moderno de ingeniería, integrándose directamente en actividades como generación y comprensión de código, documentación, pruebas, refactorización y asistencia durante la resolución de problemas técnicos.",
-      "fuente": "C&A Systems",
-      "url": "https://casystem.com.mx/es-mx/tendencias-tecnicas-en-desarrollo-de-software-2025-2026-innovacion-y-eficiencia",
-      "temaId": "desarrollo-ia",
-      "fecha": "2026-10-20T13:11:52.182Z"
     }
   ]
 }
