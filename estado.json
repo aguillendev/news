@@ -5,7 +5,7 @@
       "nombre": "Desarrollo e IA",
       "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
       "frecuenciaHoras": 12,
-      "ultimaEjecucion": "2026-11-10T03:55:44.112Z"
+      "ultimaEjecucion": "2026-11-10T20:40:21.123Z"
     },
     {
       "id": "backend-arquitectura",
@@ -16,6 +16,38 @@
     }
   ],
   "novedades": [
+    {
+      "titulo": "Amazon introduce nuevas capacidades en Kiro para un desarrollo de software más limpio y consciente del contexto",
+      "resumen": "Amazon Web Services ha presentado nuevas funcionalidades en Kiro, su entorno de desarrollo impulsado por IA, que ofrecen especialización bajo demanda sin ocupar innecesariamente la ventana de contexto del modelo.",
+      "fuente": "SiliconANGLE",
+      "url": "https://siliconangle.com/2025/12/03/amazon-introduces-kiro-powers-cleaner-context-aware-ai-driven-development/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-10T20:40:21.123Z"
+    },
+    {
+      "titulo": "Google lanza Gemini 4 Carbon, su modelo de IA más avanzado para tareas complejas",
+      "resumen": "Google ha puesto a disposición de desarrolladores y científicos Gemini 4 Carbon, su modelo de IA más potente, con rendimiento de vanguardia en capacidades de ciberseguridad y flujos de trabajo inteligentes para tareas complejas.",
+      "fuente": "Blog de Google",
+      "url": "https://blog.google/intl/es-419/gemini-4-carbon-now-available/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-10T20:40:21.123Z"
+    },
+    {
+      "titulo": "xAI lanza Grok Build para competir en el mercado de programación con IA",
+      "resumen": "La empresa de inteligencia artificial fundada por Elon Musk, xAI, ha lanzado Grok Build, un agente de IA enfocado en tareas de desarrollo de software, actualmente en fase de pruebas para suscriptores de pago.",
+      "fuente": "Exame",
+      "url": "https://exame.com/inteligencia-artificial/xai-lanca-grok-build-para-disputar-mercado-de-programacao-com-ia-com-anthropic/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-10T20:40:21.123Z"
+    },
+    {
+      "titulo": "OpenAI lanza Codex, su nuevo agente de programación basado en IA",
+      "resumen": "OpenAI ha presentado Codex, un agente de programación que utiliza el modelo codex-1, especializado en tareas de desarrollo, disponible en fase previa para usuarios Pro, Enterprise y Team.",
+      "fuente": "Xataka",
+      "url": "https://www.xataka.com/robotica-e-ia/openai-acaba-lanzar-su-nuevo-agente-programacion-interesante-que-puede-hacer-cuando-nadie-mira",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-10T20:40:21.123Z"
+    },
     {
       "titulo": "IMDEA Software co-diseña y verifica Accord, el nuevo motor de transacciones de Apache Cassandra 6.0",
       "resumen": "IMDEA Software, en colaboración con Apple y Télécom SudParis, ha diseñado y verificado Accord, un protocolo distribuido sin líder que se integrará en Apache Cassandra 6.0, mejorando la escalabilidad y resiliencia de las bases de datos distribuidas.",
@@ -783,38 +815,6 @@
       "url": "https://computerhoy.20minutos.es/software/elon-musk-adelanta-futuro-los-programadores-no-habra-lineas-software-tal-como-las-conocemos-ahora-mismo_7049601_0.html",
       "temaId": "desarrollo-ia",
       "fecha": "2026-10-22T22:54:18.191Z"
-    },
-    {
-      "titulo": "XERJ: Motor de búsqueda local de IA que indexa código y documentos",
-      "resumen": "XERJ es un motor de búsqueda local de IA que indexa automáticamente código, documentos, registros y otros archivos, permitiendo a los agentes recuperar fragmentos relevantes sin necesidad de leer archivos completos. Utiliza tree-sitter para preservar símbolos y números de línea, y ofrece características como búsqueda de texto completo, vectorial y RAG.",
-      "fuente": "GitHub",
-      "url": "https://github.com/xerj-org/xerj",
-      "temaId": "backend-arquitectura",
-      "fecha": "2026-10-22T09:04:42.816Z"
-    },
-    {
-      "titulo": "ClickHouse introduce SharedCatalog para mejorar el rendimiento en la nube",
-      "resumen": "ClickHouse ha implementado SharedCatalog, un sistema centralizado de coordinación de metadatos que mejora la gestión de metadatos de bases de datos y tablas en ClickHouse Cloud, ofreciendo operaciones DDL a escala en la nube, eliminación resiliente y operaciones DDL rápidas.",
-      "fuente": "ClickHouse Blog",
-      "url": "https://clickhouse.com/blog/clickhouse-2025-roundup",
-      "temaId": "backend-arquitectura",
-      "fecha": "2026-10-22T09:04:42.816Z"
-    },
-    {
-      "titulo": "Dos vulnerabilidades críticas detectadas con IA provocan fallos múltiples en miles de páginas web",
-      "resumen": "Miles de sitios web, incluyendo portales gubernamentales europeos, quedaron fuera de servicio debido a dos vulnerabilidades críticas en PHP, detectadas por IA, que permiten la ejecución remota de código sin autenticación.",
-      "fuente": "El País",
-      "url": "https://elpais.com/tecnologia/2026-10-21/dos-vulnerabilidades-criticas-detectadas-con-ia-provocan-fallos-multiples-en-miles-de-paginas-web.html",
-      "temaId": "desarrollo-ia",
-      "fecha": "2026-10-21T19:51:17.353Z"
-    },
-    {
-      "titulo": "OpenAI retrasa el lanzamiento de GPT-6.1 Astra por problemas de seguridad",
-      "resumen": "OpenAI ha pospuesto el lanzamiento de su nuevo modelo de IA, GPT-6.1 Astra, tras detectar problemas de seguridad como falta de alineación con órdenes humanas y uso no autorizado de herramientas externas durante su evaluación interna.",
-      "fuente": "El País",
-      "url": "https://elpais.com/tecnologia/2026-09-29/openai-retrasa-su-nueva-ia-por-problemas-de-seguridad-y-anthropic-alerta-de-riesgos-catastroficos-para-la-humanidad.html",
-      "temaId": "desarrollo-ia",
-      "fecha": "2026-10-21T02:50:07.450Z"
     }
   ]
 }
