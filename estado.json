@@ -12,10 +12,26 @@
       "nombre": "Backend y arquitectura",
       "consulta": "Novedades recientes sobre backend, arquitectura de software, bases de datos y sistemas distribuidos",
       "frecuenciaHoras": 24,
-      "ultimaEjecucion": "2026-11-10T12:01:42.094Z"
+      "ultimaEjecucion": "2026-11-11T17:37:37.350Z"
     }
   ],
   "novedades": [
+    {
+      "titulo": "Google Cloud amplía Agentic Data Cloud",
+      "resumen": "Google Cloud ha anunciado nuevas capacidades para su plataforma Agentic Data Cloud, diseñada para integrar datos empresariales y proporcionar contexto confiable a los agentes de inteligencia artificial, facilitando su ejecución a escala.",
+      "fuente": "CTO Perú",
+      "url": "https://ctoperu.pe/articulo/45675/google-cloud-amplia-agentic-data-cloud/",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-11-11T17:37:37.350Z"
+    },
+    {
+      "titulo": "Adiós al Chatbot: 2026 es el año de los 'Sistemas Multiagente'",
+      "resumen": "En 2026, la inteligencia artificial ha evolucionado de los chatbots pasivos a sistemas multiagente capaces de ejecutar flujos de trabajo completos de forma autónoma, integrándose con herramientas como correos electrónicos, calendarios y bases de datos para realizar tareas concretas.",
+      "fuente": "Los 40",
+      "url": "https://los40.com/2026/10/26/adios-al-chatbot-2026-es-el-ano-de-los-sistemas-multiagente/",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-11-11T17:37:37.350Z"
+    },
     {
       "titulo": "Meta lanza Muse Ember, su modelo eficiente para tareas continuas de agentes de IA",
       "resumen": "Meta presentó el 9 de noviembre de 2026 su modelo Muse Ember, diseñado como la opción más pequeña y eficiente de su familia de inteligencia artificial. Esta herramienta busca gestionar tareas repetitivas y operativas dentro de flujos de trabajo automatizados, enfocándose en resolver subtareas de programación, llamadas a herramientas externas, enrutamiento y extracción de información.",
@@ -799,22 +815,6 @@
       "url": "https://tlder.dev/",
       "temaId": "backend-arquitectura",
       "fecha": "2026-10-24T17:08:48.739Z"
-    },
-    {
-      "titulo": "Elon Musk adelanta el futuro de los programadores: 'No habrá líneas de software tal y como las conocemos ahora mismo'",
-      "resumen": "Elon Musk predice que la evolución de la inteligencia artificial cambiará radicalmente la forma en que se escribe y se entiende el software, eliminando las líneas de código tradicionales.",
-      "fuente": "El País",
-      "url": "https://elpais.com/tecnologia/2026-09-29/openai-retrasa-su-nueva-ia-por-problemas-de-seguridad-y-anthropic-alerta-de-riesgos-catastroficos-para-la-humanidad.html",
-      "temaId": "desarrollo-ia",
-      "fecha": "2026-10-24T02:49:17.391Z"
-    },
-    {
-      "titulo": "Martin Fowler: Los microservicios son deuda organizacional disfrazada de arquitectura",
-      "resumen": "Martin Fowler argumenta que los equipos deberían comenzar generalmente con una arquitectura monolítica, incluso cuando esperan necesitar microservicios. Esto evita complejidad operativa prematura, acelera la retroalimentación del usuario y permite a los equipos descubrir límites de servicio estables. La extracción gradual, el reemplazo y las opciones de servicio de grano grueso se describen como alternativas.",
-      "fuente": "Reddit",
-      "url": "https://www.reddit.com/r/softwarearchitecture/comments/abc123/microservices_are_organizational_debt_disguised_as/",
-      "temaId": "backend-arquitectura",
-      "fecha": "2026-10-23T14:34:40.537Z"
     }
   ]
 }
