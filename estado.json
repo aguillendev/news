@@ -5,7 +5,7 @@
       "nombre": "Desarrollo e IA",
       "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
       "frecuenciaHoras": 12,
-      "ultimaEjecucion": "2026-11-10T20:40:21.123Z"
+      "ultimaEjecucion": "2026-11-11T08:42:31.791Z"
     },
     {
       "id": "backend-arquitectura",
@@ -16,6 +16,46 @@
     }
   ],
   "novedades": [
+    {
+      "titulo": "Meta lanza Muse Ember, su modelo eficiente para tareas continuas de agentes de IA",
+      "resumen": "Meta presentó el 9 de noviembre de 2026 su modelo Muse Ember, diseñado como la opción más pequeña y eficiente de su familia de inteligencia artificial. Esta herramienta busca gestionar tareas repetitivas y operativas dentro de flujos de trabajo automatizados, enfocándose en resolver subtareas de programación, llamadas a herramientas externas, enrutamiento y extracción de información.",
+      "fuente": "Aleph Tech",
+      "url": "https://alephramos.com/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-11T08:42:31.791Z"
+    },
+    {
+      "titulo": "Deep Principle publica Hydrogen-1.0, modelo abierto especializado en tareas científicas",
+      "resumen": "Deep Principle publicó el 2 de noviembre de 2026 los pesos de Hydrogen-1.0 en la plataforma abierta Hugging Face. El sistema fue diseñado específicamente para tareas de laboratorio, química, ciencia de materiales y ciencias biológicas, superando a GPT-6-Astra en varias pruebas científicas especializadas.",
+      "fuente": "Aleph Tech",
+      "url": "https://alephramos.com/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-11T08:42:31.791Z"
+    },
+    {
+      "titulo": "Cloudflare lleva el bucle de Codex a Workers: recuperación y límites del ejemplo",
+      "resumen": "Cloudflare ha implementado el bucle de Codex en su plataforma Workers, permitiendo la recuperación de conversaciones, archivos y resultados tras reinicios. Este ejemplo experimental conserva el estado de las interacciones, aunque los pasos interrumpidos y las acciones externas requieren controles propios.",
+      "fuente": "Puntoes",
+      "url": "https://www.puntoes.es/blog/temas/desarrollo/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-11T08:42:31.791Z"
+    },
+    {
+      "titulo": "Cursor añade llamadas con agentes: voz, dictado y límites antes de usarlo",
+      "resumen": "Cursor ha incorporado la capacidad de interactuar con sus agentes mediante llamadas de voz y dictado, facilitando la programación mediante comandos de voz. Sin embargo, se recomienda establecer límites claros antes de utilizar esta función para evitar errores en el código.",
+      "fuente": "Puntoes",
+      "url": "https://www.puntoes.es/blog/temas/desarrollo/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-11T08:42:31.791Z"
+    },
+    {
+      "titulo": "ArtCraft: una suite de código abierto que replica las aplicaciones de Adobe",
+      "resumen": "ArtCraft es una suite de código abierto creada por el ingeniero Brandon Thomas con ayuda de modelos de IA, que busca replicar las principales aplicaciones de Adobe. Incluye PhotoCraft, LightCraft, FilmCraft, EffectsCraft y VectorCraft, con versiones para Windows, macOS y Linux.",
+      "fuente": "Los40",
+      "url": "https://los40.com/2026/10/12/han-clonado-photoshop-y-el-resto-de-apps-de-adobe-que-es-la-suite-artcraft/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-11T08:42:31.791Z"
+    },
     {
       "titulo": "Amazon introduce nuevas capacidades en Kiro para un desarrollo de software más limpio y consciente del contexto",
       "resumen": "Amazon Web Services ha presentado nuevas funcionalidades en Kiro, su entorno de desarrollo impulsado por IA, que ofrecen especialización bajo demanda sin ocupar innecesariamente la ventana de contexto del modelo.",
@@ -775,46 +815,6 @@
       "url": "https://www.reddit.com/r/softwarearchitecture/comments/abc123/microservices_are_organizational_debt_disguised_as/",
       "temaId": "backend-arquitectura",
       "fecha": "2026-10-23T14:34:40.537Z"
-    },
-    {
-      "titulo": "OpenAI presenta Codex para (casi) todo",
-      "resumen": "OpenAI ha lanzado una actualización significativa de Codex, ampliando su capacidad para manejar tareas en el ordenador, interactuar con diversas herramientas y aplicaciones, generar imágenes, recordar preferencias y gestionar tareas continuas y repetitivas, mejorando así la productividad de los desarrolladores.",
-      "fuente": "OpenAI",
-      "url": "https://openai.com/es-ES/index/codex-for-almost-everything/",
-      "temaId": "desarrollo-ia",
-      "fecha": "2026-10-23T14:34:35.870Z"
-    },
-    {
-      "titulo": "Google presenta Gemini 4 Argon, una IA potente para tareas complejas",
-      "resumen": "Google ha introducido Gemini 4 Argon, un modelo de inteligencia artificial diseñado para abordar trabajos complejos en áreas como ingeniería de software, finanzas y ciberseguridad, destacándose por su capacidad de razonamiento prolongado y eficiencia en tareas que requieren múltiples pasos.",
-      "fuente": "El País",
-      "url": "https://cincodias.elpais.com/smartlife/lifestyle/2026-10-01/gemini-4-argon-nuevo-modelo-inteligencia-artificial-google.html",
-      "temaId": "desarrollo-ia",
-      "fecha": "2026-10-23T14:34:35.870Z"
-    },
-    {
-      "titulo": "IBM analiza el impacto de la IA en el desarrollo de software",
-      "resumen": "IBM destaca cómo la inteligencia artificial está revolucionando el proceso de desarrollo de software, mejorando la productividad, precisión e innovación mediante la automatización de la generación de código, optimización de pruebas y despliegue, transformando la forma en que se diseña, construye y mantiene el software.",
-      "fuente": "IBM",
-      "url": "https://www.ibm.com/mx-es/think/topics/ai-in-software-development",
-      "temaId": "desarrollo-ia",
-      "fecha": "2026-10-23T14:34:35.870Z"
-    },
-    {
-      "titulo": "Los IDEs con inteligencia artificial marcan una nueva etapa en el desarrollo de software",
-      "resumen": "Los entornos de desarrollo integrados (IDEs) están experimentando una transformación profunda gracias a la integración de inteligencia artificial, evolucionando hacia plataformas inteligentes que comprenden el contexto, anticipan necesidades y asisten activamente al desarrollador, mejorando la precisión y eficiencia en la creación y mantenimiento de software.",
-      "fuente": "Evotec Consulting",
-      "url": "https://www.evotec.es/los-ides-con-inteligencia-artificial-marcan-una-nueva-etapa-en-el-desarrollo-de-software/",
-      "temaId": "desarrollo-ia",
-      "fecha": "2026-10-23T14:34:35.870Z"
-    },
-    {
-      "titulo": "Elon Musk adelanta el futuro de los programadores: \"No habrá líneas de software tal y como las conocemos ahora mismo\"",
-      "resumen": "Elon Musk vaticina el fin del código tradicional por la inteligencia artificial, sugiriendo que herramientas como Claude están transformando el trabajo de los programadores y el mercado laboral, permitiendo la creación de software sin necesidad de escribir líneas de código convencionales.",
-      "fuente": "Computer Hoy",
-      "url": "https://computerhoy.20minutos.es/software/elon-musk-adelanta-futuro-los-programadores-no-habra-lineas-software-tal-como-las-conocemos-ahora-mismo_7049601_0.html",
-      "temaId": "desarrollo-ia",
-      "fecha": "2026-10-22T22:54:18.191Z"
     }
   ]
 }
