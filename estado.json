@@ -5,7 +5,7 @@
       "nombre": "Desarrollo e IA",
       "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
       "frecuenciaHoras": 12,
-      "ultimaEjecucion": "2026-11-11T08:42:31.791Z"
+      "ultimaEjecucion": "2026-11-11T23:55:39.573Z"
     },
     {
       "id": "backend-arquitectura",
@@ -16,6 +16,30 @@
     }
   ],
   "novedades": [
+    {
+      "titulo": "Orange lanza MentorIA, su aplicación de inteligencia artificial educativa",
+      "resumen": "Orange ha presentado MentorIA, una aplicación diseñada para fomentar el aprendizaje autónomo en estudiantes de 4.º de ESO, utilizando el método socrático para estimular el razonamiento sin delegar tareas en modelos generativos.",
+      "fuente": "Cinco Días",
+      "url": "https://cincodias.elpais.com/companias/2026-10-23/orange-entra-en-el-negocio-de-la-inteligencia-artificial-con-el-lanzamiento-de-mentoria.html",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-11T23:55:39.573Z"
+    },
+    {
+      "titulo": "Xbox anuncia Xbox Labs, una división para innovar en videojuegos y revitalizar títulos clásicos",
+      "resumen": "Xbox ha presentado Xbox Labs, una nueva división experimental que busca explorar tecnologías emergentes para transformar la creación y disfrute de videojuegos, incluyendo la adaptación de juegos antiguos a plataformas modernas.",
+      "fuente": "AS.com",
+      "url": "https://as.com/meristation/noticias/xbox-presenta-xbox-labs-su-nueva-division-para-revolucionar-los-videojuegos-y-dar-una-nueva-vida-a-los-juegos-antiguos-f202610-n/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-11T23:55:39.573Z"
+    },
+    {
+      "titulo": "San Sebastián de los Reyes organiza 'Desayunos Innovadores' sobre uso de la IA en negocios",
+      "resumen": "El 30 de octubre, San Sebastián de los Reyes celebrará una sesión titulada 'IA con criterio: la brújula para guiar a tu proyecto', enfocada en cómo aplicar la inteligencia artificial de manera efectiva en empresas y emprendimientos.",
+      "fuente": "Cadena SER",
+      "url": "https://cadenaser.com/cmadrid/2026/10/28/los-desayunos-innovadores-de-san-sebastian-de-los-reyes-abordaran-el-uso-de-la-inteligencia-artificial-entre-emprendedores-y-autonomos-ser-madrid-norte/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-11T23:55:39.573Z"
+    },
     {
       "titulo": "Google Cloud amplía Agentic Data Cloud",
       "resumen": "Google Cloud ha anunciado nuevas capacidades para su plataforma Agentic Data Cloud, diseñada para integrar datos empresariales y proporcionar contexto confiable a los agentes de inteligencia artificial, facilitando su ejecución a escala.",
@@ -789,30 +813,6 @@
       "resumen": "Snowflake anunció la integración nativa de Snowflake Postgres en su AI Data Cloud, permitiendo a las organizaciones consolidar cargas transaccionales, analíticas y de IA en una única plataforma segura y gobernada, eliminando la necesidad de mover datos entre sistemas separados.",
       "fuente": "Silicon",
       "url": "https://www.silicon.es/snowflake-integra-postgres-en-su-ai-data-cloud-para-unificar-datos-transaccionales-analitica-e-ia-en-una-sola-plataforma-2576910",
-      "temaId": "backend-arquitectura",
-      "fecha": "2026-10-24T17:08:48.739Z"
-    },
-    {
-      "titulo": "Elastic 9.4: Workflows GA, actualizaciones de Agent Builder y soporte para Prometheus/PromQL",
-      "resumen": "Elastic 9.4 introduce nuevas funciones que ayudan a los desarrolladores con la ingeniería de contexto, el monitoreo de aplicaciones e infraestructura y las operaciones de seguridad impulsadas por IA, incluyendo la disponibilidad general de Workflows, actualizaciones de Agent Builder y soporte para Prometheus/PromQL.",
-      "fuente": "Elastic Blog",
-      "url": "https://www.elastic.co/es/blog/whats-new-elastic-9-4-0",
-      "temaId": "backend-arquitectura",
-      "fecha": "2026-10-24T17:08:48.739Z"
-    },
-    {
-      "titulo": "TypeDB 3.0 ya está disponible",
-      "resumen": "TypeDB 3.0 ha sido lanzado públicamente, marcando un nuevo estándar en términos de rendimiento, usabilidad, mantenibilidad, escalabilidad y seguridad, con una reestructuración completa en Rust para mejorar la eficiencia y seguridad del sistema.",
-      "fuente": "TypeDB Blog",
-      "url": "https://typedb.com/blog/typedb-3-0-is-now-live",
-      "temaId": "backend-arquitectura",
-      "fecha": "2026-10-24T17:08:48.739Z"
-    },
-    {
-      "titulo": "PostgreSQL 14 alcanza el fin de su vida útil el 12 de noviembre de 2026",
-      "resumen": "PostgreSQL 14 dejará de recibir parches de seguridad y correcciones de errores después del 12 de noviembre de 2026, lo que requiere que los equipos migren a una versión principal compatible.",
-      "fuente": "TL;Der — Developer news digest",
-      "url": "https://tlder.dev/",
       "temaId": "backend-arquitectura",
       "fecha": "2026-10-24T17:08:48.739Z"
     }
