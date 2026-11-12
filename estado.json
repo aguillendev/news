@@ -5,7 +5,7 @@
       "nombre": "Desarrollo e IA",
       "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
       "frecuenciaHoras": 12,
-      "ultimaEjecucion": "2026-11-11T23:55:39.573Z"
+      "ultimaEjecucion": "2026-11-12T14:26:25.016Z"
     },
     {
       "id": "backend-arquitectura",
@@ -16,6 +16,14 @@
     }
   ],
   "novedades": [
+    {
+      "titulo": "Epic Games retrasa su nuevo juego y apuesta por la inteligencia artificial para desarrollarlo: \"No más código escrito a mano\"",
+      "resumen": "Epic Games ha retrasado el lanzamiento de un ambicioso videojuego en colaboración con Disney y ha adoptado un enfoque 'AI first', pidiendo a sus empleados que dejen de escribir código manualmente y utilicen herramientas generativas basadas en inteligencia artificial.",
+      "fuente": "AS.com",
+      "url": "https://as.com/meristation/noticias/epic-games-retrasa-su-nuevo-juego-y-apuesta-por-la-inteligencia-artificial-para-desarrollarlo-no-mas-codigo-escrito-a-mano-f202610-n/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-12T14:26:25.016Z"
+    },
     {
       "titulo": "Orange lanza MentorIA, su aplicación de inteligencia artificial educativa",
       "resumen": "Orange ha presentado MentorIA, una aplicación diseñada para fomentar el aprendizaje autónomo en estudiantes de 4.º de ESO, utilizando el método socrático para estimular el razonamiento sin delegar tareas en modelos generativos.",
@@ -805,14 +813,6 @@
       "resumen": "En Build 2026, Microsoft presentó avances en el desarrollo de bases de datos, destacando el uso de asistentes y agentes de IA para mejorar la productividad y reducir la fricción en tareas técnicas, sin reemplazar prácticas fundamentales de diseño y seguridad de datos.",
       "fuente": "Azurebrains",
       "url": "https://blog.azurebrains.com/2026/06/02/the-era-of-the-agentic-database-developer-microsoft-sql-anno/",
-      "temaId": "backend-arquitectura",
-      "fecha": "2026-10-24T17:08:48.739Z"
-    },
-    {
-      "titulo": "Snowflake integra Postgres en su AI Data Cloud para unificar datos transaccionales, analítica e IA en una sola plataforma",
-      "resumen": "Snowflake anunció la integración nativa de Snowflake Postgres en su AI Data Cloud, permitiendo a las organizaciones consolidar cargas transaccionales, analíticas y de IA en una única plataforma segura y gobernada, eliminando la necesidad de mover datos entre sistemas separados.",
-      "fuente": "Silicon",
-      "url": "https://www.silicon.es/snowflake-integra-postgres-en-su-ai-data-cloud-para-unificar-datos-transaccionales-analitica-e-ia-en-una-sola-plataforma-2576910",
       "temaId": "backend-arquitectura",
       "fecha": "2026-10-24T17:08:48.739Z"
     }
