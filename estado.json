@@ -12,10 +12,42 @@
       "nombre": "Backend y arquitectura",
       "consulta": "Novedades recientes sobre backend, arquitectura de software, bases de datos y sistemas distribuidos",
       "frecuenciaHoras": 24,
-      "ultimaEjecucion": "2026-11-11T17:37:37.350Z"
+      "ultimaEjecucion": "2026-11-12T21:59:26.964Z"
     }
   ],
   "novedades": [
+    {
+      "titulo": "Kysely 0.29.7 y 0.28.18: mejoras en transacciones y manejo de conexiones",
+      "resumen": "Las nuevas versiones de Kysely mejoran el manejo de transacciones y conexiones, asegurando que las conexiones se liberen adecuadamente y que las transacciones esperen a que finalicen las consultas y streams en curso.",
+      "fuente": "Dev Brief",
+      "url": "https://devbrief.dev/backend-fullstack/backend-fullstack-2026-10-19/",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-11-12T21:59:26.964Z"
+    },
+    {
+      "titulo": "ElastiCache Serverless para Valkey suma búsqueda vectorial, full-text, híbrida y agregaciones",
+      "resumen": "AWS ha introducido ElastiCache Serverless para Valkey, ofreciendo latencias de microsegundos y capacidades de búsqueda avanzadas, incluyendo búsqueda vectorial y full-text, con resultados disponibles inmediatamente después de la escritura.",
+      "fuente": "Dev Brief",
+      "url": "https://devbrief.dev/backend-fullstack/backend-fullstack-2026-11-11/",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-11-12T21:59:26.964Z"
+    },
+    {
+      "titulo": "DocumentDB 8.0.3: TLS post-cuántico, wildcard indexes y $unionWith",
+      "resumen": "DocumentDB 8.0.3 introduce soporte para TLS post-cuántico, índices comodín para esquemas dinámicos y nuevas funcionalidades en la API de MongoDB, mejorando la seguridad y flexibilidad de las bases de datos.",
+      "fuente": "Dev Brief",
+      "url": "https://devbrief.dev/backend-fullstack/backend-fullstack-2026-11-11/",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-11-12T21:59:26.964Z"
+    },
+    {
+      "titulo": "MySQL 26.10 llega al Preview Environment de RDS: adiós al mutex global en READ COMMITTED",
+      "resumen": "MySQL 26.10 en RDS Preview Environment elimina el mutex global en el nivel de aislamiento READ COMMITTED, mejorando el rendimiento en sistemas NUMA al reutilizar vistas de lectura.",
+      "fuente": "Dev Brief",
+      "url": "https://devbrief.dev/backend-fullstack/backend-fullstack-2026-11-11/",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-11-12T21:59:26.964Z"
+    },
     {
       "titulo": "Epic Games retrasa su nuevo juego y apuesta por la inteligencia artificial para desarrollarlo: \"No más código escrito a mano\"",
       "resumen": "Epic Games ha retrasado el lanzamiento de un ambicioso videojuego en colaboración con Disney y ha adoptado un enfoque 'AI first', pidiendo a sus empleados que dejen de escribir código manualmente y utilicen herramientas generativas basadas en inteligencia artificial.",
@@ -783,38 +815,6 @@
       "url": "https://los40.com/2026/10/26/adios-al-chatbot-2026-es-el-ano-de-los-sistemas-multiagente/",
       "temaId": "desarrollo-ia",
       "fecha": "2026-10-26T16:24:25.473Z"
-    },
-    {
-      "titulo": "AWS lanza Kiro con soporte para equipos y CLI",
-      "resumen": "Amazon Web Services ha anunciado la disponibilidad general de Kiro, un nuevo entorno de desarrollo integrado con agentes de inteligencia artificial, diseñado para asistir en la construcción rápida de software mediante indicaciones en lenguaje natural.",
-      "fuente": "SiliconANGLE",
-      "url": "https://siliconangle.com/2025/11/17/aws-launches-kiro-general-availability-team-features-cli-support/",
-      "temaId": "desarrollo-ia",
-      "fecha": "2026-10-25T22:13:31.355Z"
-    },
-    {
-      "titulo": "Supabase actualiza su arquitectura self-hosted: Adopción de PostgreSQL 17 por defecto y reestructuración de roles",
-      "resumen": "Supabase ha actualizado su arquitectura autoalojada, estableciendo PostgreSQL 17 como motor predeterminado y reestructurando roles de seguridad para optimizar la gestión de datos.",
-      "fuente": "Siglo 21 Soluciones",
-      "url": "https://siglo21soluciones.com/noticias/supabase-arquitectura-self-hosted-postgresql-17-roles-2026-08-26",
-      "temaId": "backend-arquitectura",
-      "fecha": "2026-10-25T18:39:27.576Z"
-    },
-    {
-      "titulo": "DevDay 2026: OpenAI presenta más de 20 novedades, incluidos nuevos agentes y GPT-6.1 Sol",
-      "resumen": "OpenAI presentó DevDay 2026, su edición más grande hasta ahora, con más de 20 anuncios relacionados con ChatGPT, Codex, sus modelos y nuevas formas de trabajar con inteligencia artificial. Entre los anuncios destacan nuevos agentes capaces de asumir responsabilidades continuas, herramientas para la colaboración entre personas e IA y nuevas opciones para que los desarrolladores creen experiencias directamente dentro de ChatGPT.",
-      "fuente": "TechRadar",
-      "url": "https://global.techradar.com/es-mx/ai-platforms-assistants/chatgpt/devday-2026-openai-presenta-mas-de-20-novedades-incluidos-nuevos-agentes-y-gpt-6-1-sol",
-      "temaId": "desarrollo-ia",
-      "fecha": "2026-10-25T08:52:10.421Z"
-    },
-    {
-      "titulo": "La era del desarrollador de bases de datos agentivo: novedades de Microsoft SQL en Build 2026",
-      "resumen": "En Build 2026, Microsoft presentó avances en el desarrollo de bases de datos, destacando el uso de asistentes y agentes de IA para mejorar la productividad y reducir la fricción en tareas técnicas, sin reemplazar prácticas fundamentales de diseño y seguridad de datos.",
-      "fuente": "Azurebrains",
-      "url": "https://blog.azurebrains.com/2026/06/02/the-era-of-the-agentic-database-developer-microsoft-sql-anno/",
-      "temaId": "backend-arquitectura",
-      "fecha": "2026-10-24T17:08:48.739Z"
     }
   ]
 }
