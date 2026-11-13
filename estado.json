@@ -5,7 +5,7 @@
       "nombre": "Desarrollo e IA",
       "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
       "frecuenciaHoras": 12,
-      "ultimaEjecucion": "2026-11-13T02:29:00.388Z"
+      "ultimaEjecucion": "2026-11-13T19:02:19.577Z"
     },
     {
       "id": "backend-arquitectura",
@@ -16,6 +16,46 @@
     }
   ],
   "novedades": [
+    {
+      "titulo": "IBM destaca el impacto de la IA en el desarrollo de software",
+      "resumen": "IBM ha publicado un artículo que analiza cómo la inteligencia artificial está transformando el proceso de desarrollo de software, mejorando la productividad y la innovación mediante la automatización de tareas clave.",
+      "fuente": "IBM",
+      "url": "https://www.ibm.com/es-es/think/topics/ai-in-software-development",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-13T19:02:19.577Z"
+    },
+    {
+      "titulo": "Google presenta Genie 4, herramienta de IA para crear mundos interactivos",
+      "resumen": "Google ha lanzado Genie 4, una herramienta de inteligencia artificial que permite a los usuarios crear y modificar entornos virtuales interactivos en tiempo real, ofreciendo un alto nivel de realismo y simulación.",
+      "fuente": "AS",
+      "url": "https://as.com/meristation/betech/google-presenta-genie-4-la-herramienta-de-ia-que-permite-a-los-usuarios-crear-mundos-interactivos-modificarlos-e-interactuar-en-tiempo-real-f202610-n/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-13T19:02:19.577Z"
+    },
+    {
+      "titulo": "Logitech lanza el MX Master 4 Developer Edition para desarrolladores",
+      "resumen": "Logitech ha presentado el MX Master 4 Developer Edition, una edición limitada de su ratón insignia, diseñada especialmente para la comunidad de desarrolladores, con características y diseño inspirados en la programación.",
+      "fuente": "Cinco Días",
+      "url": "https://cincodias.elpais.com/smartlife/gadgets/2026-10-27/logitech-mx-master-4-developer-edition-oficial.html",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-13T19:02:19.577Z"
+    },
+    {
+      "titulo": "Orange lanza MentorIA, aplicación de IA educativa para estudiantes",
+      "resumen": "Orange ha introducido MentorIA, una aplicación de inteligencia artificial educativa que fomenta el aprendizaje autónomo en estudiantes de 4.º de ESO, utilizando el método socrático para estimular el razonamiento.",
+      "fuente": "Cinco Días",
+      "url": "https://cincodias.elpais.com/companias/2026-10-23/orange-entra-en-el-negocio-de-la-inteligencia-artificial-con-el-lanzamiento-de-mentoria.html",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-13T19:02:19.577Z"
+    },
+    {
+      "titulo": "San Sebastián de los Reyes organiza 'Desayunos Innovadores' sobre IA en negocios",
+      "resumen": "San Sebastián de los Reyes ha organizado una sesión de sus 'Desayunos Innovadores' titulada 'IA con criterio: la brújula para guiar a tu proyecto', enfocada en el uso de la inteligencia artificial en negocios.",
+      "fuente": "Cadena SER",
+      "url": "https://cadenaser.com/cmadrid/2026/10/28/los-desayunos-innovadores-de-san-sebastian-de-los-reyes-abordaran-el-uso-de-la-inteligencia-artificial-entre-emprendedores-y-autonomos-ser-madrid-norte/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-13T19:02:19.577Z"
+    },
     {
       "titulo": "Logitech presenta el MX Master 4 Developer Edition, un ratón pensado por y para los desarrolladores",
       "resumen": "Logitech ha lanzado una edición limitada de su ratón insignia, el MX Master 4 Developer Edition, diseñado especialmente para la comunidad de desarrolladores. Esta versión incluye un acabado mate con grabados láser inspirados en la programación y funciones personalizables para mejorar la productividad en el desarrollo de software.",
@@ -775,46 +815,6 @@
       "url": "https://los40.com/2026/10/26/adios-al-chatbot-2026-es-el-ano-de-los-sistemas-multiagente/",
       "temaId": "desarrollo-ia",
       "fecha": "2026-10-27T09:30:42.370Z"
-    },
-    {
-      "titulo": "Meta introduce ZGateway para optimizar conexiones en ZippyDB",
-      "resumen": "Meta ha desarrollado ZGateway, un proxy sin estado que gestiona más de mil millones de operaciones por segundo y reduce las conexiones persistentes en ZippyDB en un factor de 19, mejorando la eficiencia de su almacén distribuido de clave-valor.",
-      "fuente": "LavX News",
-      "url": "https://news.lavx.hu/es/article/zgateway-de-meta-reduce-19-veces-las-conexiones-a-zippydb-mientras-gestiona-mas-de-mil-millones-de-operaciones-por-segundo",
-      "temaId": "backend-arquitectura",
-      "fecha": "2026-10-26T22:09:41.046Z"
-    },
-    {
-      "titulo": "Vercel amplía su infraestructura backend con soporte para Python y contenedores",
-      "resumen": "Vercel ha anunciado la disponibilidad general de Python en su plataforma, junto con el soporte para contenedores y la introducción de Vercel Daemons en beta pública, permitiendo a los desarrolladores ejecutar aplicaciones en cualquier lenguaje y gestionar procesos en segundo plano de manera eficiente.",
-      "fuente": "El Ecosistema Startup",
-      "url": "https://ecosistemastartup.com/vercel-abre-el-backend-python-ga-contenedores-y-daemons/",
-      "temaId": "backend-arquitectura",
-      "fecha": "2026-10-26T22:09:41.046Z"
-    },
-    {
-      "titulo": "Redis lanza Iris para optimizar la gestión de datos en sistemas de IA",
-      "resumen": "Redis ha presentado Iris, una plataforma de contexto y memoria que se sitúa entre los agentes de IA y los datos que necesitan, combinando ingestión de datos en tiempo real, una interfaz semántica y un servidor de memoria para mejorar la eficiencia en la gestión de datos en aplicaciones de IA.",
-      "fuente": "VentureBeat",
-      "url": "https://venturebeat.com/data/context-architecture-is-replacing-rag-as-agentic-ai-pushes-enterprise-retrieval-to-its-limits",
-      "temaId": "backend-arquitectura",
-      "fecha": "2026-10-26T22:09:41.046Z"
-    },
-    {
-      "titulo": "Databricks revela que los agentes IA generan el 80% de las nuevas bases de datos",
-      "resumen": "Según un informe de Databricks, los agentes de inteligencia artificial son responsables del 80% de la creación de nuevas bases de datos en Neon, la base de datos serverless PostgreSQL adquirida por Databricks, destacando el creciente papel de la automatización en la gestión de datos.",
-      "fuente": "Dataprix",
-      "url": "https://dataprix.net/databricks-agentes-ia-crean-bases-de-datos-lakebase/",
-      "temaId": "backend-arquitectura",
-      "fecha": "2026-10-26T22:09:41.046Z"
-    },
-    {
-      "titulo": "Supabase adquiere Turso para escalar su infraestructura de bases de datos",
-      "resumen": "Supabase ha recaudado $150 millones y adquirido Turso, con el objetivo de reforzar su posición como proveedor de infraestructura para agentes de IA y herramientas de codificación automatizadas, permitiendo la creación de bases de datos aisladas y de bajo costo en entornos de nube pública y privada.",
-      "fuente": "TipRanks",
-      "url": "https://www.tipranks.com/news/private-companies/supabase-raises-150-million-and-acquires-turso-to-scale-agentic-database-infrastructure",
-      "temaId": "backend-arquitectura",
-      "fecha": "2026-10-26T22:09:41.046Z"
     }
   ]
 }
