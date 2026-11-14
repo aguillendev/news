@@ -5,7 +5,7 @@
       "nombre": "Desarrollo e IA",
       "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
       "frecuenciaHoras": 12,
-      "ultimaEjecucion": "2026-11-14T08:25:27.209Z"
+      "ultimaEjecucion": "2026-11-14T21:52:30.310Z"
     },
     {
       "id": "backend-arquitectura",
@@ -16,6 +16,14 @@
     }
   ],
   "novedades": [
+    {
+      "titulo": "Epic Games retrasa su nuevo juego y apuesta por la inteligencia artificial para desarrollarlo: 'No más código escrito a mano'",
+      "resumen": "Epic Games ha retrasado el lanzamiento de su nuevo juego y ha decidido utilizar inteligencia artificial para su desarrollo, eliminando la necesidad de escribir código manualmente.",
+      "fuente": "El País",
+      "url": "https://elpais.com/tecnologia/2026-10-21/dos-vulnerabilidades-criticas-detectadas-con-ia-provocan-fallos-multiples-en-miles-de-paginas-web.html",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-14T21:52:30.310Z"
+    },
     {
       "titulo": "IBM presenta Db2 Serverless en vista previa técnica",
       "resumen": "IBM ha lanzado la vista previa técnica de Db2 Serverless, una base de datos sin servidor que permite a los desarrolladores crear y gestionar bases de datos sin necesidad de manejar la infraestructura subyacente. Esta solución ofrece escalabilidad automática y operaciones gestionadas por IBM, facilitando el desarrollo de aplicaciones sin preocuparse por la planificación de capacidad.",
@@ -807,14 +815,6 @@
       "url": "https://cincodias.elpais.com/smartlife/gadgets/2026-10-27/logitech-mx-master-4-developer-edition-oficial.html",
       "temaId": "desarrollo-ia",
       "fecha": "2026-10-29T07:54:13.524Z"
-    },
-    {
-      "titulo": "XERJ: Motor de búsqueda local de IA que optimiza la indexación de código y documentos",
-      "resumen": "XERJ es un motor de búsqueda local de IA que indexa automáticamente código, documentos, registros, PDFs y otros archivos, permitiendo a los agentes recuperar fragmentos relevantes sin necesidad de leer archivos completos. Utiliza tree-sitter para preservar símbolos y números de línea, y ofrece características como búsqueda de texto completo, vectorial, híbrida, RAG, auditoría de seguridad y memoria de agentes, todo a través de una API compatible con Elasticsearch.",
-      "fuente": "GitHub",
-      "url": "https://github.com/xerj-org/xerj",
-      "temaId": "backend-arquitectura",
-      "fecha": "2026-10-28T00:52:08.713Z"
     }
   ]
 }
