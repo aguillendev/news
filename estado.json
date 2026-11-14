@@ -12,10 +12,50 @@
       "nombre": "Backend y arquitectura",
       "consulta": "Novedades recientes sobre backend, arquitectura de software, bases de datos y sistemas distribuidos",
       "frecuenciaHoras": 24,
-      "ultimaEjecucion": "2026-11-12T21:59:26.964Z"
+      "ultimaEjecucion": "2026-11-14T00:36:15.432Z"
     }
   ],
   "novedades": [
+    {
+      "titulo": "IBM presenta Db2 Serverless en vista previa técnica",
+      "resumen": "IBM ha lanzado la vista previa técnica de Db2 Serverless, una base de datos sin servidor que permite a los desarrolladores crear y gestionar bases de datos sin necesidad de manejar la infraestructura subyacente. Esta solución ofrece escalabilidad automática y operaciones gestionadas por IBM, facilitando el desarrollo de aplicaciones sin preocuparse por la planificación de capacidad.",
+      "fuente": "IBM",
+      "url": "https://www.ibm.com/es-es/new/announcements/tech-preview-ibm-db2-serverless",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-11-14T00:36:15.432Z"
+    },
+    {
+      "titulo": "Amazon adquiere DuckLabs e integra DuckDB en Aurora PostgreSQL",
+      "resumen": "Amazon ha adquirido DuckLabs, la empresa detrás de DuckDB, y ha integrado esta tecnología en Aurora PostgreSQL. Esta integración permite combinar datos en vivo de Aurora con datos históricos en formatos como Iceberg y Parquet sobre S3, mejorando la eficiencia en consultas analíticas sin costos adicionales más allá del cómputo y las solicitudes.",
+      "fuente": "Dev Daily Briefs",
+      "url": "https://devbrief.dev/backend-fullstack/backend-fullstack-2026-10-19/",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-11-14T00:36:15.432Z"
+    },
+    {
+      "titulo": "tRPC 11.27 y 11.28: nuevas funcionalidades y mejoras",
+      "resumen": "Las versiones 11.27 y 11.28 de tRPC introducen nuevas funcionalidades, como la transmisión de señales de aborto en localLink y la capacidad de streaming con streamedQuery de TanStack. Estas actualizaciones mejoran la eficiencia y la flexibilidad en la gestión de consultas y flujos de datos en aplicaciones backend.",
+      "fuente": "Dev Daily Briefs",
+      "url": "https://devbrief.dev/backend-fullstack/backend-fullstack-2026-11-11/",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-11-14T00:36:15.432Z"
+    },
+    {
+      "titulo": "Node.js 27.0.0-alpha: nuevas características en la generación de certificados y manejo de procesos",
+      "resumen": "La versión alfa 27.0.0 de Node.js introduce mejoras significativas, incluyendo la generación de certificados X.509 con soporte para solicitudes de firma de certificados (CSR), la adición de subprocess.timedOut para identificar procesos que terminan por tiempo de espera, y la unificación de las llamadas de búsqueda DNS, optimizando el rendimiento y la seguridad en aplicaciones backend.",
+      "fuente": "Dev Daily Briefs",
+      "url": "https://devbrief.dev/backend-fullstack/backend-fullstack-2026-11-13/",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-11-14T00:36:15.432Z"
+    },
+    {
+      "titulo": "Supabase se consolida como backend preferido para agentes de IA",
+      "resumen": "Supabase ha emergido como la opción preferida para el backend de agentes de inteligencia artificial, ofreciendo una infraestructura robusta y flexible que facilita el desarrollo y la implementación de aplicaciones impulsadas por IA. Su popularidad se debe a su facilidad de uso y a la capacidad de manejar cargas de trabajo complejas de manera eficiente.",
+      "fuente": "Ecosistema Startup",
+      "url": "https://ecosistemastartup.com/supabase-por-que-los-agentes-de-ia-eligen-su-backend/",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-11-14T00:36:15.432Z"
+    },
     {
       "titulo": "IBM destaca el impacto de la IA en el desarrollo de software",
       "resumen": "IBM ha publicado un artículo que analiza cómo la inteligencia artificial está transformando el proceso de desarrollo de software, mejorando la productividad y la innovación mediante la automatización de tareas clave.",
@@ -775,46 +815,6 @@
       "url": "https://github.com/xerj-org/xerj",
       "temaId": "backend-arquitectura",
       "fecha": "2026-10-28T00:52:08.713Z"
-    },
-    {
-      "titulo": "Microservicios: ¿Deuda organizacional disfrazada de arquitectura?",
-      "resumen": "Un artículo argumenta que los equipos deberían comenzar generalmente con una arquitectura monolítica, incluso cuando esperan necesitar microservicios. Esto evita complejidades operativas prematuras, acelera la retroalimentación de los usuarios y permite a los equipos descubrir límites de servicio estables. Se describen opciones como extracción gradual, reemplazo y servicios de grano grueso, señalando que comenzar con microservicios puede ser adecuado para equipos experimentados y proyectos de reemplazo de sistemas.",
-      "fuente": "Martin Fowler",
-      "url": "https://martinfowler.com/articles/microservices-are-organizational-debt-disguised-as-architecture.html",
-      "temaId": "backend-arquitectura",
-      "fecha": "2026-10-28T00:52:08.714Z"
-    },
-    {
-      "titulo": "Neon lanza su backend como GA: conjunto completo de primitivas para que los agentes construyan",
-      "resumen": "Neon ha lanzado su suite completa de primitivas de backend, construida alrededor de la base de datos y basada en la arquitectura lakebase. Incluye Lakebase Postgres, almacenamiento de objetos, funciones, autenticación gestionada y AI Gateway. Todas las herramientas están disponibles como GA y listas para producción, permitiendo a los agentes desplegar aplicaciones de manera eficiente.",
-      "fuente": "Neon",
-      "url": "https://neon-next-pp.vercel.app/blog/neon-backend-is-ga",
-      "temaId": "backend-arquitectura",
-      "fecha": "2026-10-28T00:52:08.714Z"
-    },
-    {
-      "titulo": "QuestDB 9.0 disponible: rendimiento optimizado y soporte para arrays multidimensionales",
-      "resumen": "QuestDB ha lanzado la versión 9.0, marcando una actualización importante en su evolución como solución de alto rendimiento para el procesamiento de datos en tiempo real. Las principales novedades incluyen soporte inicial para arrays multidimensionales al estilo NumPy, un nuevo protocolo binario de línea y mejoras en vistas materializadas y la consola web.",
-      "fuente": "CIBERED",
-      "url": "https://cibered.com/programacion/bases-datos/questdb-9-0-ya-esta-disponible/",
-      "temaId": "backend-arquitectura",
-      "fecha": "2026-10-28T00:52:08.714Z"
-    },
-    {
-      "titulo": "Ocho 'startups' en el podio de la innovación",
-      "resumen": "El artículo presenta ocho startups innovadoras reconocidas en los premios BNEW Awards 2026, organizados por el Consorci de la Zona Franca de Barcelona durante la Barcelona New Economy Week. Estas empresas muestran cómo la tecnología puede responder a necesidades sociales, sanitarias, empresariales y medioambientales. Alongside transforma las rutinas de niños con cáncer en aventuras mediante una aplicación de apoyo emocional. NoctuRNA Therapeutics desarrolla tratamientos basados en ARN circular para enfermedades neurodegenerativas y neuromusculares. Altum Sequencing combina inteligencia artificial y análisis de ADN en sangre para detectar y monitorizar células tumorales. Timbal AI ofrece plataformas para que las empresas desarrollen aplicaciones de inteligencia artificial adaptadas a sus necesidades. Pots impulsa la reutilización de envases de vidrio, reduciendo hasta un 86 % las emisiones de CO₂ equivalente frente a fabricar nuevos recipientes. H2 Dron Energy utiliza hidrógeno para multiplicar hasta por cinco la autonomía de los drones. Uvné facilita itinerarios formativos personalizados para mejorar las oportunidades profesionales, especialmente de migrantes. Finalmente, Torch Smart Urban Solutions desarrolla dispositivos autónomos de inteligencia artificial alimentados por energía solar, accesibles y sostenibles. El artículo destaca que el éxito emprendedor requiere perseverancia, equipos sólidos, financiación, visibilidad y colaboración. BNEW conecta estas iniciativas con inversores, empresas e instituciones para impulsar su crecimiento y generar beneficios sociales.",
-      "fuente": "El País",
-      "url": "https://elpais.com/economia/horizonte-4-0/2026-10-26/ocho-startups-en-el-podio-de-la-innovacion.html",
-      "temaId": "desarrollo-ia",
-      "fecha": "2026-10-28T00:52:02.843Z"
-    },
-    {
-      "titulo": "Adiós al Chatbot: 2026 es el año de los 'Sistemas Multiagente'",
-      "resumen": "El artículo explica cómo en 2026 la inteligencia artificial evoluciona de los chatbots pasivos a los sistemas multiagente, capaces de ejecutar flujos de trabajo completos de forma autónoma.",
-      "fuente": "Los 40",
-      "url": "https://los40.com/2026/10/26/adios-al-chatbot-2026-es-el-ano-de-los-sistemas-multiagente/",
-      "temaId": "desarrollo-ia",
-      "fecha": "2026-10-27T09:30:42.370Z"
     }
   ]
 }
