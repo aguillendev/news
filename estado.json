@@ -5,7 +5,7 @@
       "nombre": "Desarrollo e IA",
       "consulta": "Novedades recientes sobre desarrollo de software, inteligencia artificial generativa y herramientas para programadores",
       "frecuenciaHoras": 12,
-      "ultimaEjecucion": "2026-11-15T16:44:24.702Z"
+      "ultimaEjecucion": "2026-11-16T14:28:33.594Z"
     },
     {
       "id": "backend-arquitectura",
@@ -16,6 +16,70 @@
     }
   ],
   "novedades": [
+    {
+      "titulo": "Arkaiu Systems, Uva de Emprendimiento de Radio Algeciras",
+      "resumen": "Arkaiu Systems, una startup de San Roque, ha sido seleccionada entre las cinco ganadoras del Startup Andalucía Roadshow 2026 y ha recibido la Uva del Emprendimiento de Radio Algeciras.",
+      "fuente": "Radio Algeciras",
+      "url": "https://cadenaser.com/andalucia/2026/11/10/arkaiu-systems-uva-de-emprendimiento-de-radio-algeciras-radio-algeciras/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-16T14:28:33.593Z"
+    },
+    {
+      "titulo": "Orange entra en el negocio de la inteligencia artificial con el lanzamiento de MentorIA",
+      "resumen": "Orange lanza MentorIA, una aplicación educativa basada en IA diseñada para fomentar el aprendizaje autónomo y evitar que los estudiantes deleguen sus tareas en modelos generativos.",
+      "fuente": "Cinco Días",
+      "url": "https://cincodias.elpais.com/companias/2026-10-23/orange-entra-en-el-negocio-de-la-inteligencia-artificial-con-el-lanzamiento-de-mentoria.html",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-16T14:28:33.594Z"
+    },
+    {
+      "titulo": "José Luis Pontón, ingeniero informático: \"Una IA que entiende el movimiento humano puede aprender a imitar a una persona y suplantarla\"",
+      "resumen": "El ingeniero José Luis Pontón investiga en el Max Planck Institute for Informatics cómo reconstruir el movimiento humano con IA, lo que podría facilitar videollamadas virtuales con lenguaje corporal natural y aplicaciones biomédicas.",
+      "fuente": "El País",
+      "url": "https://elpais.com/tecnologia/2026-11-11/jose-luis-ponton-ingeniero-informatico-una-ia-que-entiende-el-movimiento-humano-puede-aprender-a-imitar-a-una-persona-y-suplantarla.html",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-16T14:28:33.594Z"
+    },
+    {
+      "titulo": "La Learning Factory en Elche lanza su formación gratuita sobre IA e impresión 3D aplicada al calzado",
+      "resumen": "La Learning Factory–Escuela Municipal de Calzado de Elche inicia su actividad con dos cursos gratuitos para incorporar nuevas tecnologías a la industria del calzado, incluyendo IA y automatización.",
+      "fuente": "Radio Elche",
+      "url": "https://cadenaser.com/comunitat-valenciana/2026/11/16/la-learning-factory-en-elche-lanza-su-formacion-gratuita-sobre-ia-e-impresion-3d-aplicada-al-calzado-radio-elche/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-16T14:28:33.594Z"
+    },
+    {
+      "titulo": "Adobe y Google amplían su alianza: más intercambio de herramientas y modelos IA",
+      "resumen": "Adobe y Google amplían su colaboración para integrar sus herramientas creativas y de productividad y sus modelos de IA en más servicios de ambas compañías, con el objetivo de reducir los cambios entre aplicaciones.",
+      "fuente": "Cinco Días",
+      "url": "https://cincodias.elpais.com/smartlife/lifestyle/2026-11-11/adobe-google-amplian-alianza.html",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-16T14:28:33.594Z"
+    },
+    {
+      "titulo": "Nace Onda Talent Lab, un programa de formación tecnológica intensiva para impulsar empleos cualificados",
+      "resumen": "El Ayuntamiento de Onda lanza Onda Talent Lab, una academia de formación tecnológica intensiva, práctica y gratuita, financiada con 240.000 euros de fondos europeos, abierta a toda la población.",
+      "fuente": "Radio Castellón",
+      "url": "https://cadenaser.com/comunitat-valenciana/2026/11/15/nace-onda-talent-lab-un-programa-de-formacion-tecnologica-intensiva-para-impulsar-empleos-cualificados-radio-castellon/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-16T14:28:33.594Z"
+    },
+    {
+      "titulo": "Cardumen Capital, vivero de empresas de IA para las 'big tech'",
+      "resumen": "La gestora española de capital riesgo Cardumen Capital ha vendido dos participadas de inteligencia artificial a grandes tecnológicas: Loops, adquirida por Salesforce e integrada en Tableau, e Illumex, comprada por Nvidia.",
+      "fuente": "Cinco Días",
+      "url": "https://cincodias.elpais.com/companias/2026-11-13/cardumen-capital-vivero-de-empresas-de-ia-para-las-big-tech.html",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-16T14:28:33.594Z"
+    },
+    {
+      "titulo": "Una desarrolladora muestra su videojuego en redes sociales y se lo copian con IA en menos de cinco horas: la nueva amenaza para los estudios independientes",
+      "resumen": "La desarrolladora Freya Holmér compartió en redes un prototipo de Tetris con un tablero giratorio y recibió comentarios entusiastas. Sin embargo, en pocos días aparecieron copias creadas mediante \"vibe coding\", una técnica que usa IA generativa para producir código e interfaces a partir de instrucciones, sin requerir conocimientos de programación o diseño.",
+      "fuente": "AS",
+      "url": "https://as.com/meristation/noticias/una-desarrolladora-muestra-su-videojuego-en-redes-sociales-y-se-lo-copian-con-ia-en-menos-de-cinco-horas-la-nueva-amenaza-para-los-estudios-independientes-f202611-n/",
+      "temaId": "desarrollo-ia",
+      "fecha": "2026-11-16T14:28:33.594Z"
+    },
     {
       "titulo": "Microsoft presenta novedades en el Centro de Arquitectura de Azure",
       "resumen": "Microsoft ha actualizado su Centro de Arquitectura de Azure con nuevos artículos que abordan temas como actualizaciones de caché controladas por eventos con Azure Managed Redis y Azure Cosmos DB, y almacenamiento en caché de tipo cache-aside con Azure Managed Redis y Azure Database for PostgreSQL.",
@@ -751,70 +815,6 @@
       "url": "https://academiartificial.com/noticias-ia/",
       "temaId": "desarrollo-ia",
       "fecha": "2026-10-30T14:50:02.529Z"
-    },
-    {
-      "titulo": "GitHub publica Replica para crear prototipos con el diseño de tu equipo",
-      "resumen": "GitHub ha lanzado Replica, una herramienta abierta que convierte instrucciones en prototipos interactivos utilizando los componentes y reglas visuales de un equipo.",
-      "fuente": "academIArtificial",
-      "url": "https://academiartificial.com/noticias-ia/",
-      "temaId": "desarrollo-ia",
-      "fecha": "2026-10-30T14:50:02.529Z"
-    },
-    {
-      "titulo": "Cursor IDE identifica incidente de seguridad en extensión modificada de Claude Code",
-      "resumen": "Cursor IDE ha identificado un incidente de seguridad que afecta a una extensión modificada de Claude Code en su mercado de extensiones, impactando a un máximo de 5,000 usuarios.",
-      "fuente": "AITicker",
-      "url": "https://aiticker.site/",
-      "temaId": "desarrollo-ia",
-      "fecha": "2026-10-30T14:50:02.529Z"
-    },
-    {
-      "titulo": "Elon Musk predice el fin del código tradicional por la inteligencia artificial",
-      "resumen": "Elon Musk vaticina que la inteligencia artificial cambiará el desarrollo de software, eliminando las líneas de código tal como las conocemos actualmente.",
-      "fuente": "ComputerHoy",
-      "url": "https://computerhoy.20minutos.es/software/elon-musk-adelanta-futuro-los-programadores-no-habra-lineas-software-tal-como-las-conocemos-ahora-mismo_7049601_0.html",
-      "temaId": "desarrollo-ia",
-      "fecha": "2026-10-30T14:50:02.529Z"
-    },
-    {
-      "titulo": "Google presenta Gemini 4 Argon, una IA avanzada para tareas complejas",
-      "resumen": "Google ha lanzado Gemini 4 Argon, un modelo de inteligencia artificial diseñado para abordar tareas complejas y razonamiento prolongado, especialmente en áreas como ingeniería de software, finanzas y ciberseguridad. Este modelo destaca por su capacidad de manejar razonamientos profundos y prolongados, superando a varios modelos rivales en pruebas de programación y automatización.",
-      "fuente": "El País",
-      "url": "https://cincodias.elpais.com/smartlife/lifestyle/2026-10-01/gemini-4-argon-nuevo-modelo-inteligencia-artificial-google.html",
-      "temaId": "desarrollo-ia",
-      "fecha": "2026-10-29T20:46:57.345Z"
-    },
-    {
-      "titulo": "OpenAI presenta Dots, agentes autónomos para tareas continuas",
-      "resumen": "Durante el DevDay 2026, OpenAI presentó Dots, agentes desarrollados con GPT-6 Astra capaces de asumir responsabilidades continuas dentro de los límites definidos por el usuario. Estos agentes están diseñados para facilitar la delegación de tareas complejas y prolongadas, mejorando la eficiencia en diversos procesos.",
-      "fuente": "TechRadar",
-      "url": "https://global.techradar.com/es-mx/ai-platforms-assistants/chatgpt/devday-2026-openai-presenta-mas-de-20-novedades-incluidos-nuevos-agentes-y-gpt-6-1-sol",
-      "temaId": "desarrollo-ia",
-      "fecha": "2026-10-29T20:46:57.346Z"
-    },
-    {
-      "titulo": "Logitech lanza el MX Master 4 Developer Edition, un ratón para programadores",
-      "resumen": "Logitech ha presentado el MX Master 4 Developer Edition, una edición limitada de su ratón insignia dedicada a la comunidad de desarrolladores. Este modelo incluye un diseño exclusivo con grabados láser inspirados en la programación y funciones personalizables para mejorar la productividad en el desarrollo de software.",
-      "fuente": "El País",
-      "url": "https://cincodias.elpais.com/smartlife/gadgets/2026-10-27/logitech-mx-master-4-developer-edition-oficial.html",
-      "temaId": "desarrollo-ia",
-      "fecha": "2026-10-29T20:46:57.346Z"
-    },
-    {
-      "titulo": "IBM destaca el papel de la IA generativa en el desarrollo de software",
-      "resumen": "IBM ha publicado un artículo que resalta cómo la inteligencia artificial generativa está revolucionando el proceso de desarrollo de software, mejorando la productividad, precisión e innovación. La IA generativa y los modelos de lenguaje grandes (LLM) están agilizando el ciclo de desarrollo al automatizar pasos clave, desde la generación de ideas hasta las pruebas y el despliegue.",
-      "fuente": "IBM",
-      "url": "https://www.ibm.com/mx-es/think/topics/ai-in-software-development",
-      "temaId": "desarrollo-ia",
-      "fecha": "2026-10-29T20:46:57.346Z"
-    },
-    {
-      "titulo": "OpenAI lanza GPT-6.1 Terra en la API y Copilot, con nuevas capacidades y costes",
-      "resumen": "OpenAI ha lanzado GPT-6.1 Terra, una nueva versión de su modelo de lenguaje, disponible en la API y Copilot. Esta actualización incluye mejoras en la visión, el procesamiento de imágenes y la reducción de costes, ofreciendo nuevas oportunidades para desarrolladores y empresas en la integración de IA generativa en sus aplicaciones.",
-      "fuente": "Puntoes",
-      "url": "https://www.puntoes.es/blog/temas/desarrollo/",
-      "temaId": "desarrollo-ia",
-      "fecha": "2026-10-29T20:46:57.346Z"
     }
   ]
 }
