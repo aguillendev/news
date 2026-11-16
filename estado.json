@@ -12,10 +12,18 @@
       "nombre": "Backend y arquitectura",
       "consulta": "Novedades recientes sobre backend, arquitectura de software, bases de datos y sistemas distribuidos",
       "frecuenciaHoras": 24,
-      "ultimaEjecucion": "2026-11-15T01:28:14.626Z"
+      "ultimaEjecucion": "2026-11-16T04:12:57.067Z"
     }
   ],
   "novedades": [
+    {
+      "titulo": "Microsoft presenta novedades en el Centro de Arquitectura de Azure",
+      "resumen": "Microsoft ha actualizado su Centro de Arquitectura de Azure con nuevos artículos que abordan temas como actualizaciones de caché controladas por eventos con Azure Managed Redis y Azure Cosmos DB, y almacenamiento en caché de tipo cache-aside con Azure Managed Redis y Azure Database for PostgreSQL.",
+      "fuente": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/es-es/azure/architecture/changelog",
+      "temaId": "backend-arquitectura",
+      "fecha": "2026-11-16T04:12:57.067Z"
+    },
     {
       "titulo": "ClickHouse amplía su plataforma empresarial con la adquisición de Xata",
       "resumen": "ClickHouse ha adquirido Xata, especialista en Postgres nativo para agentes, integrando capacidades de bases de datos transaccionales, observabilidad, ciberseguridad e ingeniería de IA en una sola plataforma. Esto busca simplificar las cargas de trabajo de IA empresarial y controlar costos asociados con consultas impredecibles generadas por agentes de IA.",
@@ -807,14 +815,6 @@
       "url": "https://www.puntoes.es/blog/temas/desarrollo/",
       "temaId": "desarrollo-ia",
       "fecha": "2026-10-29T20:46:57.346Z"
-    },
-    {
-      "titulo": "Google anuncia mejoras en herramientas de IA para desarrolladores",
-      "resumen": "Google ha presentado mejoras en sus herramientas de IA, incluyendo Gemini Code Assist, Firebase Studio y optimizaciones en GKE, con el objetivo de acelerar el trabajo de los desarrolladores y llevar la automatización al ciclo completo del desarrollo de software.",
-      "fuente": "Radio Fórmula Morelos",
-      "url": "https://radioformulamorelos.com/google-mejoras-herramientas-ia/",
-      "temaId": "desarrollo-ia",
-      "fecha": "2026-10-29T07:54:13.524Z"
     }
   ]
 }
